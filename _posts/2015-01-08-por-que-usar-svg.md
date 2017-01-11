@@ -1,15 +1,14 @@
 ---
 layout: post
-title: "#1 - Por que usar SVG?"
+title: "Data 2"
 date: 2015-01-08 08:39:47
 description: "O SVG finalmente começa dar o ar das graças e você vai saber aqui o porquê disso."
-main-class: 'svg'
+main-class: 'CENSUS'
 color: '#7D669E'
 tags:
-- svg
-- frontend
-- trend
-- "dicarapida"
+- polygon
+- table
+- time
 image: "/assets/img/por-que-usar-svg/coloridos.jpg"
 categories:
 - "O mundo mágico do SVG"
@@ -84,5 +83,3 @@ Deixo para vocês uma última imagem e um link falando sobre quais as tendência
 ![SVG Trends](https://ihatetomatoes.net/wp-content/uploads/2014/12/img_assets_svg.jpg)
 
 [Design Trends de 2015](http://foundersgrid.com/design-trends-2015)
-
-
