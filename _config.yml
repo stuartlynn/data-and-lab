@@ -1,12 +1,12 @@
 # Site settings
-title: GeoDa Data and Lab 
+title: GeoDa Data and Lab
 description: GeoDa site for Data and Labs
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://geodacenter.github.io/data-and-lab/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+baseurl: "/data-and-lab" # the subpath of your site, e.g. /blog
+url: "https://geodacenter.github.io/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: GeoDa
-user_description: GeoDa Data and Lab 
+user_description: GeoDa Data and Lab
 email: spatial@uchicago.edu
 twitter_username: geodacenter
 github_username:  geodacenter
