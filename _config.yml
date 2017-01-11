@@ -5,13 +5,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://geodacenter.github.io/data-and-lab/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: Lorem Ipsum
-user_description: Anon Developer at Lorem Ipsum Dolor
-email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
-disqus_username: lorem_ipsum
+username: GeoDa
+user_description: GeoDa Data and Lab 
+email: spatial@uchicago.edu
+twitter_username: geodacenter
+github_username:  geodacenter
+gplus_username:  geodacenter
+disqus_username: geodacenter
 
 # Build settings
 markdown: kramdown
@@ -35,7 +35,7 @@ links:
     url: /series
   - title: Tags
     url: /tags
-  - title: About Me
+  - title: About Us
     url: /about
 
 # exclude my node related stuff
