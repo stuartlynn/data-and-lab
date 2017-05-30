@@ -10,7 +10,7 @@ tags:
 - polygon
 categories:
 twitter_text:
-introduction:
+introduction: 'Electoral Data for 1999 Argentinean Elections'
 ---
 Selected Electoral Data for the 1999 National Elections, Argentine Congress (Lower House). Download the file [here](https://s3.amazonaws.com/geoda/data/buenosaires.zip).  
 Type = Polygon shape file (ArcView), Projection: Gauss Kruger Zone 3 (Inchauspe).  

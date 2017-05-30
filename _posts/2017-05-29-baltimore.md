@@ -10,7 +10,7 @@ tags:
 - point
 categories:
 twitter_text:
-introduction:
+introduction: 'Baltimore house sales prices and hedonics'
 ---
 <script>
 var map = L.map('map').setView([39.2904, -76.6122], 12);

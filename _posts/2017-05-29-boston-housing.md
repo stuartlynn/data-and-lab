@@ -10,7 +10,7 @@ tags:
 - point
 categories:
 twitter_text:
-introduction:
+introduction: 'Boston housing and neighborhood data'
 ---
 Housing and neighborhood data for the city of Boston.  
 
