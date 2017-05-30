@@ -17,7 +17,7 @@ Type = Polygon shape file (ArcView), Projection: Gauss Kruger Zone 3 (Inchauspe)
 Observations = 209 Electoral Precincts (Circuitos) of the City of Buenos Aires, Argentina.  
 Variables = 21  
 
-**Source**
+**Source**  
 For further details contact Ernesto Calvo (ecalvo@uh.edu) or Marcelo Escolar (marceloescolar@fibertel.com.ar).  
 
 Variable | Description
