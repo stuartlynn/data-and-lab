@@ -1,0 +1,62 @@
+nyc.shp - variables, descriptions, and sources.
+-----------------------------------------------
+<script>
+  var map = L.map('map').setView([28.601151, 84.115914], 6);
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the nyc Geojson-->
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+		id: 'mapbox.light'
+	}).addTo(map);
+
+  // load GeoJSON from an external file
+  // load GeoJSON from an external file
+  $.getJSON("../nyc.geojson",function(data){
+    // add GeoJSON layer to the map once the file is loaded
+    L.geoJson(data).addTo(map);
+  });
+
+</script>
+
+Data provided "as is," no warranties. Contains demographic and housing
+data for 55 sub-boroughs of New York City.
+
+Tags:
+
+Type = polygon file
+
+Observations = 55
+
+Variables = 34
+
+Year Range = 1990-2009
+
+Old/Recent
+
+Spatial resolution = medium
+
+
+Topic = housing
+
+Type of sample data = Census
+
+Luc Anselin course lab
+
+|Variable name | Description | Source|
+|--------------|-------------|-------|
+|FORHIS06-09 | percentage of hispanic population, not born in US | New York City Neighborhood Information provided by the Furman Center, retrieved from [http://www.furmancenter.org/data/search on 10/9/2013](http://www.furmancenter.org/data/search%20on%2010/9/2013.) Terms can be found at [http://www.furmancenter.org/data/disclaimer](http://www.furmancenter.org/data/disclaimer/).|
+|FORWH06-09 | percentage of white population, not born in US|same as above|
+|HHSIZ1990 | average number of people per household | United States Census (2000), New York City Housing and Vacancy Survey.|
+| HHSIZ00 | average number of people per household | same as above|
+|HHSIZ02-05-08 | average number of people per household| same as above|
+|KIDS2000, KIDS2005-2009|percentage households w kids under 18 |United States Census (2000), American Community Survey.|
+|RENT2002,2005,2008 | median monthly contract rent|New York City Housing and Vacancy Survey|
+|RENTPCT02,05,08|percentage of housing stock that is market rate rental units|New York City Housing and Vacancy Survey.
+|PUBAST90,00|percentage of households receiving public assistance|United States Census
+|YRHOMO02,05,08|average number of years living in current residence|New York City Housing and Vacancy Survey.|
+
+Prepared by Center for Spatial Data Science
+([https://spatial.uchicago.edu/](https://spatial.uchicago.edu/))
+
+ Last updated July 10, 2017.

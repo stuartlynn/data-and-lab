@@ -1,0 +1,61 @@
+clev\_sls\_154\_core
+--------------------
+<script>
+  var map = L.map('map').setView([28.601151, 84.115914], 6);
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the clev_sls_154_core Geojson-->
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+		id: 'mapbox.light'
+	}).addTo(map);
+
+  // load GeoJSON from an external file
+  // load GeoJSON from an external file
+  $.getJSON("../clev_sls_154_core.geojson",function(data){
+    // add GeoJSON layer to the map once the file is loaded
+    L.geoJson(data).addTo(map);
+  });
+
+</script>
+
+Data provided "as is," no warranties.
+
+Contains location and sales price of home sales in a core area of Cleveland, OH for the fourth quarter of 2015.
+
+Source: Cuyahoga County Fiscal Office
+
+ Tags:
+
+ Type = point
+
+ Observations = 205
+
+ Variables = 9
+
+ Year = 2015
+
+
+ Spatial resolution = high
+
+ Topic = land value
+
+ Type of sample data = Open data
+
+ Luc Anselin course lab
+
+|Variable|Description|
+|--
+|unique\_id|unique parcel id|
+|parcel|unique parcel number
+|x|point latitude
+|y|point longitude
+|sale\_price|price paid for the house (\$)
+|tract10int|License plate number and sometimes a description (state, color). Some entries did not include a plate number.
+|Quarter|quarter of sale (4th for all)
+|year1|year of sale (2015 for all)
+|yrquarter|year and quarter of sale (4th quarter of 2015 for all)
+
+Prepared by Center for Spatial Data Science ([https://spatial.uchicago.edu/](https://spatial.uchicago.edu/))
+
+ Last updated July 6, 2017.
