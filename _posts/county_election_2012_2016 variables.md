@@ -11,6 +11,7 @@ tags:
 - elections
 - open data
 - Rates
+- Space-time
 categories:
 twitter_text:
 introduction: "US Presidential Election results in 2012 and 2016, by county Election results"
