@@ -1,5 +1,3 @@
-**Guerry**
-----------
 ---
 layout: post
 title: "Guerry"
