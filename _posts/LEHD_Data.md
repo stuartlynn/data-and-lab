@@ -3,7 +3,7 @@ layout: post
 title: "LEHD DATA"
 date: 2017-07-18 16:18:16
 image: /assets/img/
-description: 'LEHD Origin-Destination Employment Statistics'
+description:
 main-class: 'EMPLOYMENT'
 color:
 tags:
@@ -14,7 +14,7 @@ tags:
 - Space-time
 categories:
 twitter_text:
-introduction:
+introduction: 'LEHD Origin-Destination Employment Statistics'
 ---
 
 Data provided "as is", no warranties.

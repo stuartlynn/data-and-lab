@@ -12,7 +12,7 @@ tags:
 - open data
 categories:
 twitter_text:
-introduction:
+introduction: "Income, race, and public health statistics for US counties."
 ---
 
 Data provided "as is", no warranties.

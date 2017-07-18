@@ -54,6 +54,7 @@ Data provided "as is", no warranties.
  Topic = education
 
  Type of sample data = Census
+ 
  Rates
 
 |Variable|Explanation|

@@ -10,10 +10,10 @@ tags:
 - polygon
 - demographics
 - census data
-- RATES
+- Rates
 categories:
 twitter_text:
-introduction:
+introduction: "Demographic information for New York City census tracts."
 ---
 Data provided "as is", no warranties.
 
