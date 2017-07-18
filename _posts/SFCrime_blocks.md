@@ -9,7 +9,8 @@ color:
 tags:
 - polygon
 - crime
-- census/open data
+- census data
+- open data
 - Rates
 categories:
 twitter_text:

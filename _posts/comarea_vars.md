@@ -9,7 +9,8 @@ color:
 tags:
 - polygon
 - health
-- census/open data
+- census data
+- open data
 - Luc Anselin course lab
 - Rates
 - Space-time
