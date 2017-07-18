@@ -1,24 +1,22 @@
 **Guerry**
 ----------
-<script>
-  var map = L.map('map').setView([28.601151, 84.115914], 6);
-  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the Guerry Geojson-->
-		maxZoom: 18,
-		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-		id: 'mapbox.light'
-	}).addTo(map);
-
-  // load GeoJSON from an external file
-  // load GeoJSON from an external file
-  $.getJSON("../Guerry.geojson",function(data){
-    // add GeoJSON layer to the map once the file is loaded
-    L.geoJson(data).addTo(map);
-  });
-
-</script>
-
+---
+layout: post
+title: "Guerry"
+date: 2017-07-18 15:34:43
+image: '/assets/img/'
+description: "Socioeconomic data for 1830 France, collected by Andre-Michel Guerry."
+main-class: 'HISTORICAL'
+color:
+tags:
+- comma separated file
+- Demographics
+- census data
+- Rates
+categories:
+twitter_text:
+introduction: 'Socioeconomic data for 1830 France, collected by Andre-Michel Guerry.'
+---
 Data provided "as is", no warranties.
 
  Socioeconomic data for 1830 France, collected by Andre-Michel Guerry.
@@ -33,8 +31,6 @@ Tags:
  Variables = 23
 
  Year = 1815-1834
-
- Historical
 
  Spatial resolution = low
 
