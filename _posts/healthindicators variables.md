@@ -1,30 +1,24 @@
-HealthIndicators\_withpc
-------------------------
-<script>
-  var map = L.map('map').setView([28.601151, 84.115914], 6);
-  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the HealthIndicators_withpc Geojson-->
-		maxZoom: 18,
-		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-		id: 'mapbox.light'
-	}).addTo(map);
-
-  // load GeoJSON from an external file
-  // load GeoJSON from an external file
-  $.getJSON("../HealthIndicators_withpc.geojson",function(data){
-    // add GeoJSON layer to the map once the file is loaded
-    L.geoJson(data).addTo(map);
-  });
-
-</script>
-
+---
+layout: post
+title: "Health indicators"
+date: 2017-07-18 16:41:16
+image: /assets/img/
+description:
+main-class: 'HEALTH'
+color:
+tags:
+- polygon
+- health
+- open data
+categories:
+twitter_text:
+introduction: "Health indicators for Chicago neighorhoods."
+---
 Data provided "as is", no warranties.
 
  Health indicators for Chicago neighorhoods.
  Source: [City of Chicago Data Portal.](https://data.cityofchicago.org/Health-Human-Services/Public-Health-Statistics-Selected-public-health-in/iqnk-2tcu)
 
-Tags:
 
  Type = polygon shape file
 
@@ -32,9 +26,7 @@ Tags:
 
  Variables = 50
 
- Year = 2005-2011
-
- Old/Recent
+ Year = 2002-2012
 
  Spatial resolution = medium
 

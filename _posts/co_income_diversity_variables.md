@@ -1,23 +1,19 @@
-co\_income\_diversity
----------------------
-<script>
-  var map = L.map('map').setView([28.601151, 84.115914], 6);
-  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the income_diversity Geojson-->
-		maxZoom: 18,
-		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-		id: 'mapbox.light'
-	}).addTo(map);
-
-  // load GeoJSON from an external file
-  // load GeoJSON from an external file
-  $.getJSON("../income_diversity.geojson",function(data){
-    // add GeoJSON layer to the map once the file is loaded
-    L.geoJson(data).addTo(map);
-  });
-
-</script>
+---
+layout: post
+title: "County income diversity"
+date: 2017-07-18 16:44:16
+image: /assets/img/
+description:
+main-class: 'DEMOGRAPHICS'
+color:
+tags:
+- polygon
+- demographics
+- open data
+categories:
+twitter_text:
+introduction:
+---
 
 Data provided "as is", no warranties.
 
@@ -27,7 +23,6 @@ Data provided "as is", no warranties.
  [https://www.kaggle.com/mikejohnsonjr/us-counties-diversity-index](https://www.kaggle.com/mikejohnsonjr/us-counties-diversity-index)
  [http://www.equality-of-opportunity.org/data/](http://www.equality-of-opportunity.org/data/)
 
-Tags:
 
  Type = polygon shape file
 
@@ -36,8 +31,6 @@ Tags:
  Variables = 75
 
  Year = 2000
-
- Old
 
  Spatial resolution = low
 

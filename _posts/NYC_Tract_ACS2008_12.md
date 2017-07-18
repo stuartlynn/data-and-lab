@@ -1,30 +1,25 @@
-NYC\_Tract\_ACS2008\_12
------------------------
-<script>
-  var map = L.map('map').setView([28.601151, 84.115914], 6);
-  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the NYC_Tract_ACS2008_12 Geojson-->
-		maxZoom: 18,
-		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-		id: 'mapbox.light'
-	}).addTo(map);
-
-  // load GeoJSON from an external file
-  // load GeoJSON from an external file
-  $.getJSON("../NYC_Tract_ACS2008_12.geojson",function(data){
-    // add GeoJSON layer to the map once the file is loaded
-    L.geoJson(data).addTo(map);
-  });
-
-</script>
-
+---
+layout: post
+title: "NYC Tracts"
+date: 2017-07-18 16:10:16
+image: /assets/img/
+description:
+main-class: 'DEMOGRAPHICS'
+color:
+tags:
+- polygon
+- demographics
+- census data
+- RATES
+categories:
+twitter_text:
+introduction:
+---
 Data provided "as is", no warranties.
 
  Demographic information for New York City census tracts.
  Source: American Community Survey 2008-2012, US Census Bureau.
 
-Tags:
 
  Type = polygon shape file
 
@@ -33,8 +28,6 @@ Tags:
  Variables = 114
 
  Year = 2008-2012
-
- Recent
 
  Spatial resolution = medium
 

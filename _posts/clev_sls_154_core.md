@@ -1,5 +1,20 @@
-clev\_sls\_154\_core
---------------------
+---
+layout: post
+title: "Cleveland sls 154 core"
+date: 2017-07-18 16:59:16
+image: /assets/img/
+description:
+main-class: 'HOUSING'
+color:
+tags:
+- point shape file
+- housing
+- open data
+- Luc Anselin course lab
+categories:
+twitter_text:
+introduction: "Contains location and sales price of home sales in a core area of Cleveland, OH for the fourth quarter of 2015."
+---
 <script>
   var map = L.map('map').setView([28.601151, 84.115914], 6);
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the clev_sls_154_core Geojson-->
@@ -25,7 +40,6 @@ Contains location and sales price of home sales in a core area of Cleveland, OH 
 
 Source: Cuyahoga County Fiscal Office
 
- Tags:
 
  Type = point
 

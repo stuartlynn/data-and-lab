@@ -1,5 +1,22 @@
-ComArea\_ACS14\_f
------------------
+---
+layout: post
+title: "Community areas"
+date: 2017-07-18 16:50:16
+image: /assets/img/
+description:
+main-class: 'HEALTH'
+color:
+tags:
+- polygon
+- health
+- census/open data
+- Luc Anselin course lab
+- Rates
+- Space-time
+categories:
+twitter_text:
+introduction: "Public health indicators for the 77 community areas of Chicago, IL, 2014."
+---
 <script>
   var map = L.map('map').setView([28.601151, 84.115914], 6);
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the ComArea_ACS14_f Geojson-->
@@ -23,7 +40,6 @@ Data provided "as is", no warranties.
 
 Public health indicators for the 77 community areas of Chicago, IL, 2014.
 
- Tags:
 
  Type = polygon shape file.
 
@@ -32,8 +48,6 @@ Public health indicators for the 77 community areas of Chicago, IL, 2014.
  Observations = 77
 
  Year range = 2012-2014
-
- Recent
 
  Spatial resolution = medium
 

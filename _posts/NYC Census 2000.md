@@ -1,5 +1,38 @@
-NYC2000\_Census
----------------
+---
+layout: post
+title: "NYC education"
+date: 2017-07-18 16:26:16
+image: /assets/img/
+description:
+main-class: 'EDUCATION'
+color:
+tags:
+- point shape file
+- education
+- census data
+- Rates
+categories:
+twitter_text:
+introduction: 'Economic and employment data for NYC'
+---
+<script>
+  var map = L.map('map').setView([28.601151, 84.115914], 6);
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the NYC_2000Census Geojson-->
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+		id: 'mapbox.light'
+	}).addTo(map);
+
+  // load GeoJSON from an external file
+  // load GeoJSON from an external file
+  $.getJSON("../NYC_2000Census.geojson",function(data){
+    // add GeoJSON layer to the map once the file is loaded
+    L.geoJson(data).addTo(map);
+  });
+
+</script>
 
 Data provided "as is", no warranties.
 
@@ -7,7 +40,6 @@ Data provided "as is", no warranties.
 [https://data.cityofnewyork.us/Education/School-Point-Locations/jfju-ynrr](https://data.cityofnewyork.us/Education/School-Point-Locations/jfju-ynrr).
  Demographics source: 2000 Census
 
-Tags:
 
  Type = point shape file
 
@@ -16,8 +48,6 @@ Tags:
  Variables = 56
 
  Year = 2000
-
- Old
 
  Spatial resolution = medium
 

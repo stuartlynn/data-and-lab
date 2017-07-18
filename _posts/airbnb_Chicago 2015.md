@@ -1,30 +1,26 @@
-airbnb\_Chicago 2015
---------------------
-<script>
-  var map = L.map('map').setView([28.601151, 84.115914], 6);
-  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the airbnb_Chicago2015 Geojson-->
-		maxZoom: 18,
-		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-		id: 'mapbox.light'
-	}).addTo(map);
-
-  // load GeoJSON from an external file
-  // load GeoJSON from an external file
-  $.getJSON("../airbnb_Chicago2015.geojson",function(data){
-    // add GeoJSON layer to the map once the file is loaded
-    L.geoJson(data).addTo(map);
-  });
-
-</script>
+---
+layout: post
+title: "AirBnB Chicago 2015"
+date: 2017-07-18 16:29:16
+image: /assets/img/
+description:
+main-class: 'HOUSING'
+color:
+tags:
+- polygon
+- housing
+- census data
+- open data
+- Rates
+categories:
+twitter_text:
+introduction: 'This database is about Airbnb spots, socioeconomic indicators, and crime by community area in Chicago.'
+---
 
 Data provided "as is", no warranties.
 
  This database is about Airbnb spots, socioeconomic indicators, and
 crime by community area in Chicago.
-
-Tags:
 
  Type = polygon shape file
 
@@ -33,8 +29,6 @@ Tags:
  Variables = 20
 
  Year range = 2008-2015
-
- Recent
 
  Spatial resolution = medium
 

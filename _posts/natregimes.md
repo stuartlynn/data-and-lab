@@ -1,24 +1,22 @@
-**NATREGIMES US County Homicides**
-==================================
-<script>
-  var map = L.map('map').setView([28.601151, 84.115914], 6);
-  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the natregimes Geojson-->
-		maxZoom: 18,
-		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-		id: 'mapbox.light'
-	}).addTo(map);
-
-  // load GeoJSON from an external file
-  // load GeoJSON from an external file
-  $.getJSON("../natregimes.geojson",function(data){
-    // add GeoJSON layer to the map once the file is loaded
-    L.geoJson(data).addTo(map);
-  });
-
-</script>
-
+---
+layout: post
+title: "Natregimes"
+date: 2017-07-18 16:49:16
+image: /assets/img/
+description:
+main-class: 'CRIME'
+color:
+tags:
+- polygon
+- crime
+- Research project
+- Luc Anselin course lab
+- Rates
+- Space-time
+categories:
+twitter_text:
+introduction: "Homicides and selected socio-economic characteristics for continental U.S. counties. Data for four decennial census years: 1960, 1970, 1980, 1990."
+---
 **Data provided "as is," no warranties**
 
 
@@ -27,7 +25,7 @@
 
 Homicides and selected socio-economic characteristics for continental U.S. counties. Data for four decennial census years: 1960, 1970, 1980, 1990.
 
-Tags:
+
 
 Type = polygon shape file, unprojected, lat-lon
 
@@ -36,8 +34,6 @@ Observations = 3085
 Variables = 73
 
 Year range = 1959-1990
-
-Historical/Old
 
 Spatial resolution = low
 

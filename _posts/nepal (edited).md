@@ -1,0 +1,64 @@
+---
+layout: post
+title: "Nepal"
+date: 2017-07-18 16:15:16
+image: /assets/img/
+description:
+main-class: 'DEVELOPMENT'
+color:
+tags:
+- polygon
+- Demographics
+- Education
+- open data
+- Rates
+categories:
+twitter_text:
+introduction: 'Contains development-related data for 75 districts in Nepal.'
+---
+
+Data provided "as is," no warranties. Contains development-related data for 75 districts in Nepal. Documentation for original data: [http://data.opennepal.net](http://data.opennepal.net)
+
+
+ Type = polygon file
+
+ Observations = 75
+
+ Variables = 26
+
+ Year Range = 1991-2013
+
+
+Spatial resolution = low
+
+ Topic = Demographics and education
+
+ Type of sample data = Open data
+
+ Rates
+
+|Variable name|Description|Source|
+|---|---|---|
+|DepEcProv|Deprivation in economic provisioning|[http://data.opennepal.net/keywords/deprivation-economic-provisioning](http://data.opennepal.net/keywords/deprivation-economic-provisioning)|
+|PovIndex|Human Poverty Index|[http://data.opennepal.net/content/human-poverty-index-value-districts](http://data.opennepal.net/content/human-poverty-index-value-districts)
+|PCInc|Per Capita Income|[http://data.opennepal.net/content/district-wise-capita-gross-national-income](http://data.opennepal.net/content/district-wise-capita-gross-national-income)
+|PCIncPPP|Per Capita Income PPP|[http://data.opennepal.net/content/district-wise-capita-gross-national-income](http://data.opennepal.net/content/district-wise-capita-gross-national-income)|
+|PCIncMP|Per capita income, Rs. at market price|[http://data.opennepal.net/content/district-wise-capita-gross-national-income](http://data.opennepal.net/content/district-wise-capita-gross-national-income)|
+|MalKids|Percentage of children under age five who are malnourished|[http://data.opennepal.net/keywords/percentage-children-age-5-and-malnourished](http://data.opennepal.net/keywords/percentage-children-age-5-and-malnourished)
+|Lif40|Percentage of People not expected to survive age 40|[http://data.opennepal.net/sector-district-datasets/183?page=6](http://data.opennepal.net/sector-district-datasets/183?page=6)
+|NoSafH20|Percentage without safe water|[http://data.opennepal.net/keywords/percentage-out-safe-water](http://data.opennepal.net/keywords/percentage-out-safe-water)
+|Population|Population|[http://data.opennepal.net/content/district-wise-population-land-ratio-and-population-density](http://data.opennepal.net/content/district-wise-population-land-ratio-and-population-density)
+|BoyG1\_5|Number of Boys Enrolled in Grade 1-5 (2012-2013)|[http://data.opennepal.net/content/number-students-enrolled-grade-1-5-201213](http://data.opennepal.net/content/number-students-enrolled-grade-1-5-201213)
+|GirlG1\_5|Number of Girls Enrolled in Grade 1-5 (2012-2013)|[http://data.opennepal.net/content/number-students-enrolled-grade-1-5-201213](http://data.opennepal.net/content/number-students-enrolled-grade-1-5-201213)|
+|KIDS1\_5|Number of Children Enrolled in Grade 1-5 (2012-2013)|[http://data.opennepal.net/content/number-students-enrolled-grade-1-5-201213](http://data.opennepal.net/content/number-students-enrolled-grade-1-5-201213)|
+|SchoolCnt|Number of Schools (2012-2013)|[http://data.opennepal.net/content/total-number-schools-grade-201213-dolpa](http://data.opennepal.net/content/total-number-schools-grade-201213-dolpa)
+|SCHLPKID|Number of Schools per child (in thousands) (2012-2013)|[http://data.opennepal.net/keywords/adult-literacy-rat](http://data.opennepal.net/keywords/adult-literacy-rate%0A)
+|SCHLPPOP|Number of Schools per population (in thousands) (2012-2013)|[http://data.opennepal.net/keywords/adult-literacy-rat](http://data.opennepal.net/keywords/adult-literacy-rate%0A)|
+|AD\_ILLIT|Adult illiteracy rate (2011)|[http://data.opennepal.net/keywords/adult-literacy-rat](http://data.opennepal.net/keywords/adult-literacy-rate%0A)|
+|AD\_ILGT50|Dummy variable with value of 1 if adult illiteracy rate \>50% (2011)|[http://data.opennepal.net/keywords/adult-literacy-rat](http://data.opennepal.net/keywords/adult-literacy-rate%0A)|
+|VotNum|Number of Voters (lunar years 2047-2063, approx. 1991 to 2006)|[http://data.opennepal.net/content/number-voters-each-districts-between-year-2047-2063-bs](http://data.opennepal.net/content/number-voters-each-districts-between-year-2047-2063-bs)
+|TotEcFMS|"Total economy including financial intermediation service indirectly measured (total value added)"|[http://data.opennepal.net/content/district-wise-capita-gross-national-income](http://data.opennepal.net/content/district-wise-capita-gross-national-income)
+
+Prepared by Center for Spatial Data Science ([https://spatial.uchicago.edu/](https://spatial.uchicago.edu/))
+
+ Last updated July 10, 2017.

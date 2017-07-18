@@ -1,5 +1,21 @@
-walnut\_hills
--------------
+---
+layout: post
+title: "Walnut Hills"
+date: 2017-07-18 16:45:16
+image: /assets/img/
+description:
+main-class: 'CRIME'
+color:
+tags:
+- polygon
+- crime
+- research project
+- Rates
+- Luc Anselin course lab
+categories:
+twitter_text:
+introduction: "Crime data in the Clifton, Walnut Hills, Evanston, and Avondale neighborhoods of Cincinnati, OH for the last 6 months of 2008."
+---
 <script>
   var map = L.map('map').setView([28.601151, 84.115914], 6);
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the walnut_hills Geojson-->
@@ -23,7 +39,6 @@ Data provided "as is", no warranties.
 
 Crime data in the Clifton, Walnut Hills, Evanston, and Avondale neighborhoods of Cincinnati, OH for the last 6 months of 2008. From Grubesic, T, R. Wei and A. Murray (2014). [Spatial clustering overview and comparison: accuracy, sensitivity and computational expense.](http://www.tandfonline.com/doi/full/10.1080/00045608.2014.958389) Annals, Association of American Geographers 104, 1134-1156.
 
- Tags:
 
  Type = polygon shape file
 

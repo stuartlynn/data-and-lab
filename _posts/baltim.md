@@ -1,6 +1,20 @@
-BALTIM
-======
-
+---
+layout: post
+title: "Baltimore"
+date: 2017-07-18 16:47:16
+image: /assets/img/
+description:
+main-class: 'HOUSING'
+color:
+tags:
+- point shape file
+- housing
+- Research project
+- Luc Anselin course lab
+categories:
+twitter_text:
+introduction: "House sales price and characteristics for a spatial hedonic regression, Baltimore, MD 1978."
+---
 Data provided "as is," no warranties
 
 Description
@@ -8,7 +22,6 @@ Description
 
 House sales price and characteristics for a spatial hedonic regression, Baltimore, MD 1978.
 
-Tags:
 
  Type = point shape file, projected, X,Y on Maryland grid, projection type unknown.
 
@@ -17,8 +30,6 @@ Tags:
  Variables = 17
 
  Year = 1978
-
-Historical
 
  Spatial resolution = high
 
