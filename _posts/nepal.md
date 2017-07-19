@@ -16,6 +16,24 @@ categories:
 twitter_text:
 introduction: 'Contains development-related data for 75 districts in Nepal.'
 ---
+<script>
+  var map = L.map('map').setView([28.601151, 84.115914], 6);
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the Nepal Geojson-->
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+		id: 'mapbox.light'
+	}).addTo(map);
+
+  // load GeoJSON from an external file
+  // load GeoJSON from an external file
+  $.getJSON("../Nepal.geojson",function(data){
+    // add GeoJSON layer to the map once the file is loaded
+    L.geoJson(data).addTo(map);
+  });
+
+</script>
 
 Data provided "as is," no warranties. Contains development-related data for 75 districts in Nepal. Documentation for original data: [http://data.opennepal.net](http://data.opennepal.net)
 
