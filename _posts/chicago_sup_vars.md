@@ -17,7 +17,7 @@ introduction: "Grocery stores in Chicago, IL as of 2015. Scraped from Google Map
 ---
 <script>
   var map = L.map('map').setView([28.601151, 84.115914], 6);
-  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the liq_chicago Geojson-->
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the chicago_sup Geojson-->
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
 			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -27,7 +27,7 @@ introduction: "Grocery stores in Chicago, IL as of 2015. Scraped from Google Map
 
   // load GeoJSON from an external file
   // load GeoJSON from an external file
-  $.getJSON("../liq_chicago.geojson",function(data){
+  $.getJSON("../chicago_sup.geojson",function(data){
     // add GeoJSON layer to the map once the file is loaded
     L.geoJson(data).addTo(map);
   });
