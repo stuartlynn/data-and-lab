@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chile"
+title: "Chilean Internal Migration"
 date: 2017-07-19 12:01:16
 image: /assets/img/
 description:
@@ -14,7 +14,7 @@ tags:
 - Space-time
 categories:
 twitter_text:
-introduction: "A set of recently created labour market areas (LMAs) for Chile."
+introduction: "A temporally consistent framework for the analysis of internal migration over a period covering twenty-five years from 1977 to 2002."
 ---
 <script>
   var map = L.map('map').setView([28.601151, 84.115914], 6);
@@ -37,8 +37,7 @@ introduction: "A set of recently created labour market areas (LMAs) for Chile."
 
 Data provided "as is", no warranties.
 
-A set of recently created labour market areas (LMAs) for Chile, required to analyze spatial labour market activity and provide a framework to guide spatially-explicit employment policy development. The data set includes 62 LMAs, providing full coverage of the Chilean territory, delineated based on optimisation requirements of self-containment, cohesion and homogeneity of a regionalisation algorithm described in Casado-Díaz et al. (2017), using commuting data from the CHilean Migration (CHIM) database (Rowe & Bell, 2013). Data from the 1982, 1992 and 2002 Chilean Housing and Population census were appended to the set of LMAs to produce a geographic information database. The database contains information on the resident population by five-year age groups, sex, labour force status, industry sector and occupation.
-
+This dataset presents the CHilean Internal Migration database which provides a temporally consistent framework for the analysis of internal migration over a period covering twenty-five years from 1977 to 2002. Specifically, it offers a hierarchical system of 304 municipalities, 51 provinces and 13 regions, and 10 occupational groups and 11 industrial sectors which are temporally consistent over the 1977-82, 1987-92 and 1997-2002 census intervals.
 
 Sources:
 - Rowe F, & Bell M (2013) <i>Creating an integrated database for the analysis of spatial mobility in Chile</i> (Working Paper 02/2013). Queensland Centre for Population Research, School of Geography, Planning and Environmental Management, The University of Queensland, Brisbane, Australia.											
@@ -47,7 +46,7 @@ Sources:
 
  Type = polygon shape file
 
- Variables = 25
+ Variables = 10
 
  Observations = 304
 
@@ -74,13 +73,6 @@ Sources:
 |C_MUN|Temporal municipality code|
 |MUN|Temporal municipality name|
 |Pop_1982, Pop_1992, Pop_2002|1982-1992-2002 census population |
-|Age group|0-4	(code: 1), 5-9	(2), 10-14	(3), 15-19	(4), 20-24	(5), 25-29	(6), 30-34	(7), 35-39	(8), 40-44	(9), 45-49	(10), 50-54	(11), 55-59	(12), 60-64	(13,) 65-69	(14), 70-74	(15), 75-79	(16), 80-84	(17), 85+	(18)|
-|Gender| Male (code: 1), Female (2)|
-|Education|Never attended	(code: 1), Preschool education	(2), Primary education	(3), Secondary education	(4), Higher education	(5)|
-|Labour force status|Employed	(code: 1), Unemployed	(2), Not in the labour force	(3)|
-|Employment class|Wage earners	(code: 1), Domestic workers	(2), Self-employed	(3), Employers	(4), Unpaid family workers	5)|
-|Industry sector|Agriculture	(code: 1), Mining	(2), Manufacturing	(3), Utilities	(4), Construction	(5), Trade	(6), Transport and Communication	(7), Finance	(8), Business Services	(9), Public Administration	(10), Comm & Personal Services	(11)|
-|Occupation|Managers (code: 1), Professionals	(2), Technicians	(3), Clerks (4), Tradespeople (5), Agr. & Fish. Workers	(6), Craft workers	(7), Plant operators	(8), Labourers	(9), Armed forces	(10)|
 |Per capita wages* | in Chilean pesos|
 |Unemployment rate* | in %|
 |Cummulative Foreign Direct Investemet (FDI)* |USD millions|
@@ -94,7 +86,8 @@ Sources:
 
 (*) The Regional variables data files provides information on 10 variables for three five-year census intervals: 1977-82, 1987-92 and 1997-2002		
 
-Note: No information for wages and exports is available for the 1977-82 interval. Cummulative Foreign Direct Investemet corresponds to the sum of all five years in the interval. For detail information on these variables, see Rowe F, (2013) *Spatial labour mobility in a transition economy: Migration and commuting in Chile*, PhD Thesis, School of Geography, Planning and Environmental Management, The University of Queensland.											
+Note: No information for wages and exports is available for the 1977-82 interval. Cummulative Foreign Direct Investemet corresponds to the sum of all five years in the interval. For detail information on these variables, see Rowe F, (2013) *Spatial labour mobility in a transition economy: Migration and commuting in Chile*, PhD Thesis, School of Geography, Planning and Environmental Management, The University of Queensland.		
+
 
 Prepared by Joshua Mark for the Center for Spatial Data Science ([https://spatial.uchicago.edu/](https://spatial.uchicago.edu/))
 

@@ -1,0 +1,83 @@
+---
+layout: post
+title: "Chile Functional Labour Market Areas"
+date: 2017-07-19 12:01:16
+image: /assets/img/
+description:
+main-class: 'EMPLOYMENT'
+color:
+tags:
+- polygon
+- demographics
+- employment
+- research project
+- Rates
+- Space-time
+categories:
+twitter_text:
+introduction: "A set of recently created labour market areas (LMAs) for Chile."
+---
+<script>
+  var map = L.map('map').setView([28.601151, 84.115914], 6);
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the FLMA Geojson-->
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+		id: 'mapbox.light'
+	}).addTo(map);
+
+  // load GeoJSON from an external file
+  // load GeoJSON from an external file
+  $.getJSON("../FLMA.geojson",function(data){
+    // add GeoJSON layer to the map once the file is loaded
+    L.geoJson(data).addTo(map);
+  });
+
+</script>
+
+Data provided "as is", no warranties.
+
+A set of recently created labour market areas (LMAs) for Chile, required to analyze spatial labour market activity and provide a framework to guide spatially-explicit employment policy development. The data set includes 62 LMAs, providing full coverage of the Chilean territory, delineated based on optimisation requirements of self-containment, cohesion and homogeneity of a regionalisation algorithm described in Casado-Díaz et al. (2017), using commuting data from the CHilean Migration (CHIM) database (Rowe & Bell, 2013). Data from the 1982, 1992 and 2002 Chilean Housing and Population census were appended to the set of LMAs to produce a geographic information database. The database contains information on the resident population by five-year age groups, sex, labour force status, industry sector and occupation.
+
+
+Sources:
+- Rowe F, & Bell M (2013) <i>Creating an integrated database for the analysis of spatial mobility in Chile</i> (Working Paper 02/2013). Queensland Centre for Population Research, School of Geography, Planning and Environmental Management, The University of Queensland, Brisbane, Australia.											
+
+- Rowe F (2017) The CHilean Internal Migration (CHIM) database: A Temporally Consistent Spatial Data Framework for the Analysis of Human Mobility											
+
+ Type = polygon shape file
+
+ Variables = 141
+
+ Observations = 62
+
+ Year Range = 1982-2002
+
+ Spatial resolution = low
+
+ Topic = demographics
+
+ Type of sample data = research project
+
+ Rates
+
+ Space-time
+
+
+|Variable|Description|
+|:-------|:----------|
+|code_flma|Functional Labour Market Area ID code|
+|code_mun|Municipality ID code|
+|mun|Functional Labour Market Area name |
+|pop_19..|Census population for 1982, 1992, 2002.|
+|area_km2|Area in square kilometers|
+|age1_19.. to age18_19..| Population per age group for 1982, 1992, 2002. Each age group is represented by a code number as follows 0-4	(code: 1), 5-9	(2), 10-14	(3), 15-19	(4), 20-24	(5), 25-29	(6), 30-34	(7), 35-39	(8), 40-44	(9), 45-49	(10), 50-54	(11), 55-59	(12), 60-64	(13,) 65-69	(14), 70-74	(15), 75-79	(16), 80-84	(17), 85+	(18)|
+|sex1_19.. and sex2_19..| Population per gender for 1982, 1992, 2002. Male (code: 1), Female (2)|
+|lfs1_19.. to lfs3_198..| Population per labor force status for 1982, 1992, 2002. Employed	(code: 1), Unemployed	(2), Not in the labour force	(3)|
+|is1_r_19.. to is11_r_19..| Population per industry sector for 1982, 1992, 2002. Agriculture	(code: 1), Mining	(2), Manufacturing	(3), Utilities	(4), Construction	(5), Trade	(6), Transport and Communication	(7), Finance	(8), Business Services	(9), Public Administration	(10), Comm & Personal Services	(11)|
+|oc0_r_19.. to oc9_r_19..|Population per Occupation for 1982, 1992, 2002. Armed Forces (code: 0), Managers (1), Professionals	(2), Technicians	(3), Clerks (4), Tradespeople (5), Agricultural & Fishery Workers	(6), Craft workers	(7), Plant operators	(8), Laborers	(9)|
+
+Prepared by Joshua Mark for the Center for Spatial Data Science ([https://spatial.uchicago.edu/](https://spatial.uchicago.edu/))
+
+ Last updated July 19, 2017.
