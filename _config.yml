@@ -1,7 +1,7 @@
 # Site settings
 title: GeoDa Data and Lab
 description: GeoDa site for Data and Labs
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/data-and-lab" # the subpath of your site, e.g. /blog
 url: "https://geodacenter.github.io/data-and-lab" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
