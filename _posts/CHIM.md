@@ -75,8 +75,8 @@ Sources:
 |Pop_1982, Pop_1992, Pop_2002|1982-1992-2002 census population |
 |Per capita wages* | in Chilean pesos|
 |Unemployment rate* | in %|
-|Cummulative Foreign Direct Investemet (FDI)* |USD millions|
-|Exports* |USD millions|
+|Cumulative Foreign Direct Investment (FDI)* |USD millions|
+|Exports* |USD millions, FOB|
 |Housing cost index* |Index 100=1980|
 |Housing cost supply* |In number of housing units|
 |15-34 age population* |in %|
@@ -86,7 +86,7 @@ Sources:
 
 (*) The Regional variables data files provides information on 10 variables for three five-year census intervals: 1977-82, 1987-92 and 1997-2002		
 
-Note: No information for wages and exports is available for the 1977-82 interval. Cummulative Foreign Direct Investemet corresponds to the sum of all five years in the interval. For detail information on these variables, see Rowe F, (2013) *Spatial labour mobility in a transition economy: Migration and commuting in Chile*, PhD Thesis, School of Geography, Planning and Environmental Management, The University of Queensland.		
+Note: No information for wages and exports is available for the 1977-82 interval. Cumulative Foreign Direct Investment corresponds to the sum of all five years in the interval. For detail information on these variables, see Rowe F, (2013) *Spatial labour mobility in a transition economy: Migration and commuting in Chile*, PhD Thesis, School of Geography, Planning and Environmental Management, The University of Queensland.		
 
 
 Prepared by Joshua Mark for the Center for Spatial Data Science ([https://spatial.uchicago.edu/](https://spatial.uchicago.edu/))
