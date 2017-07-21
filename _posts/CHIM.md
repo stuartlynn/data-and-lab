@@ -97,7 +97,7 @@ has the same file structure of the “Matrices” folder and provide matching da
 
 
 
-|Regional variables*|
+|Regional variables*| Unit of measurement|
 |----|----|
 |Per capita wages | in Chilean pesos|
 |Unemployment rate | in %|
