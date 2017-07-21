@@ -73,20 +73,46 @@ Sources:
 |C_MUN|Temporal municipality code|
 |MUN|Temporal municipality name|
 |Pop_1982, Pop_1992, Pop_2002|1982-1992-2002 census population |
-|Per capita wages* | in Chilean pesos|
-|Unemployment rate* | in %|
-|Cumulative Foreign Direct Investment (FDI)* |USD millions|
-|Exports* |USD millions, FOB|
-|Housing cost index* |Index 100=1980|
-|Housing cost supply* |In number of housing units|
-|15-34 age population* |in %|
-|Agricultural employment* |in %|
-|Owner occupiers*|in %|
-|Population* |in number of people|
+
+The Matrices folder contains three sub-folders corresponding to data from the 1982, 1992 and 2002 Chilean Housing and Population census. Each sub-folder contains six additional sub-folders, containing origin-destination migration data by sex, age, education, employment class, employment status. industry and occupation. The migration data are in long format ie. each row represents an origin-destination pair, indicating the number of migrants between temporal municipalities. The six sub-folders are:
+
+- overall
+- sex age and education
+- sex age and employment class
+- sex age and industry
+- sex age and labour force status
+- sex age and occupation
+- sex and age
+
+Note:
+- The overall, sex, age and education subfolders provide data for the entire census population.
+- The labour force status subfolder provides data for the population aged 15 and over
+- The employment class, industry and occupation subfolders provide data for the population aged 15 and over in employment
+
+**Labels:**
+Files’ labels follow the label of their containing folder eg. file “data_1_4_5_1982.csv” within the “sex age and industry” contain data for sex 1, age group 4 and industry 5. See the “Variable listing and metadata.xlsx” file for the variable code definition.
+
+Population folder:
+has the same file structure of the “Matrices” folder and provide matching data on the population at risk  for each of the origin-destination matrices.
+
+
+
+|Regional variables*
+|----|----|
+|Per capita wages | in Chilean pesos|
+|Unemployment rate | in %|
+|Cumulative Foreign Direct Investment (FDI) |USD millions|
+|Exports|USD millions, FOB|
+|Housing cost index|Index 100=1980|
+|Housing cost supply |In number of housing units|
+|15-34 age population|in %|
+|Agricultural employment |in %|
+|Owner occupiers|in %|
+|Population |in number of people|
 
 (*) The Regional variables data files provides information on 10 variables for three five-year census intervals: 1977-82, 1987-92 and 1997-2002		
 
-Note: No information for wages and exports is available for the 1977-82 interval. Cumulative Foreign Direct Investment corresponds to the sum of all five years in the interval. For detail information on these variables, see Rowe F, (2013) *Spatial labour mobility in a transition economy: Migration and commuting in Chile*, PhD Thesis, School of Geography, Planning and Environmental Management, The University of Queensland.		
+***Note:*** No information for wages and exports is available for the 1977-82 interval. Cumulative Foreign Direct Investment corresponds to the sum of all five years in the interval. For detail information on these variables, see Rowe F, (2013) *Spatial labour mobility in a transition economy: Migration and commuting in Chile*, PhD Thesis, School of Geography, Planning and Environmental Management, The University of Queensland.		
 
 
 Prepared by Joshua Mark for the Center for Spatial Data Science ([https://spatial.uchicago.edu/](https://spatial.uchicago.edu/))
