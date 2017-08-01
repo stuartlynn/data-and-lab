@@ -82,6 +82,16 @@ gulp.task('imagemin', function() {
 });
 
 /**
+ * Geojson Task
+ */
+gulp.task('imagemin', function() {
+	return gulp.src('src/img/**/*.{jpg,png,gif}')
+		.pipe(plumber())
+		.pipe(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true }))
+		.pipe(gulp.dest('assets/json/'));
+});
+
+/**
  * Watch stylus files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
  */
