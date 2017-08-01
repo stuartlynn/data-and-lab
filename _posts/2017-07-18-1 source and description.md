@@ -15,7 +15,32 @@ categories:
 twitter_text:
 introduction: "Information about abandoned vehicles in Chicago, Illinois. Includes all open abandoned vehicle service complaints made to 311 since January 2011, and all requests completed since January 1 2011."
 ---
+<script>
+  var map = L.map('map').setView([28.601151, 84.115914], 6);
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the Nepal Geojson-->
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+		id: 'mapbox.light'
+	}).addTo(map);
 
+  map.scrollWheelZoom.disable();
+  map.touchZoom.disable();
+  var enableMapInteraction = function () {
+      map.scrollWheelZoom.enable();
+      map.touchZoom.enable();
+  }
+  $('#map').on('click touch', enableMapInteraction);
+
+  // load GeoJSON from an external file
+  // load GeoJSON from an external file
+  $.getJSON("../data/Nepal.geojson",function(data){
+    // add GeoJSON layer to the map once the file is loaded
+    L.geoJson(data).addTo(map);
+  });
+
+</script>
 Data provided "as is," no warranties.
 
 Information about abandoned vehicles in Chicago, Illinois. Includes all open abandoned vehicle service complaints made to 311 since January 2011, and all requests completed since January 1 2011.

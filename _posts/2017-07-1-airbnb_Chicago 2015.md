@@ -18,7 +18,7 @@ introduction: 'This database is about Airbnb spots, socioeconomic indicators, an
 ---
 <script>
   var map = L.map('map').setView([28.601151, 84.115914], 6);
-  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the airbnb_Chicago2015 Geojson-->
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the Nepal Geojson-->
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
 			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -26,11 +26,21 @@ introduction: 'This database is about Airbnb spots, socioeconomic indicators, an
 		id: 'mapbox.light'
 	}).addTo(map);
 
+  map.scrollWheelZoom.disable();
+  map.touchZoom.disable();
+  var enableMapInteraction = function () {
+      map.scrollWheelZoom.enable();
+      map.touchZoom.enable();
+  }
+  $('#map').on('click touch', enableMapInteraction);
+
   // load GeoJSON from an external file
   // load GeoJSON from an external file
-  $.getJSON("../airbnb_Chicago2015.geojson",function(data){
+  $.getJSON("../data/airbnb_Chicago2015.geojson",function(data){
     // add GeoJSON layer to the map once the file is loaded
-    L.geoJson(data).addTo(map);
+    var json = L.geoJson(data);
+    json.addTo(map);
+    map.fitBounds(json.getBounds());
   });
 
 </script>

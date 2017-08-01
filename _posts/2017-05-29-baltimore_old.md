@@ -22,15 +22,32 @@ var map = L.map('map').setView([39.2904, -76.6122], 12);
 			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
 		id: 'mapbox.light'
 	}).addTo(map);
+
+	map.scrollWheelZoom.disable();
+	map.touchZoom.disable();
+	var enableMapInteraction = function () {
+			map.scrollWheelZoom.enable();
+			map.touchZoom.enable();
+	}
+	$('#map').on('click touch', enableMapInteraction);
+
+	// load GeoJSON from an external file
+	// load GeoJSON from an external file
+	$.getJSON("../data/Nepal.geojson",function(data){
+		// add GeoJSON layer to the map once the file is loaded
+		var json = L.geoJson(data);
+    json.addTo(map);
+    map.fitBounds(json.getBounds());
+	});
 </script>
 
-House sales price and characteristics for a spatial hedonic regression, Baltimore, MD 1978. Download the file [here](https://s3.amazonaws.com/geoda/data/baltimore.zip).  
-Type = point shape file, projected, X,Y on Maryland grid, projection type unknown.  
-Observations = 211  
-Variables = 17  
+House sales price and characteristics for a spatial hedonic regression, Baltimore, MD 1978. Download the file [here](https://s3.amazonaws.com/geoda/data/baltimore.zip).
+Type = point shape file, projected, X,Y on Maryland grid, projection type unknown.
+Observations = 211
+Variables = 17
 
 **Source**
-Original data made available by Robin Dubin, Weatherhead School of Management, Case Western Research University, Cleveland, OH, [Robin.Dubin@weatherhead.cwru.edu](mailto:Robin.Dubin@weatherhead.cwru.edu).  
+Original data made available by Robin Dubin, Weatherhead School of Management, Case Western Research University, Cleveland, OH, [Robin.Dubin@weatherhead.cwru.edu](mailto:Robin.Dubin@weatherhead.cwru.edu).
 
 Reference: Dubin, Robin A. (1992). Spatial autocorrelation and neighborhood quality. Regional Science and Urban Economics 22(3), 433-452.
 
@@ -54,6 +71,6 @@ SQFT | interior living space in hundreds of square feet
 X | x coordinate on the Maryland grid
 Y | y coordinate on the Maryland grid
 
-Prepared by Luc Anselin  
-[UIUC-ACE Spatial Analysis Laboratory](https://anth.uic.edu/uic-anthropology/research-groups/spatial-analysis-laboratory)   
+Prepared by Luc Anselin
+[UIUC-ACE Spatial Analysis Laboratory](https://anth.uic.edu/uic-anthropology/research-groups/spatial-analysis-laboratory)
 Last updated June 16, 2003

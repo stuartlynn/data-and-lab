@@ -12,31 +12,59 @@ categories:
 twitter_text:
 introduction: 'Boston housing and neighborhood data'
 ---
-Housing and neighborhood data for the city of Boston.  
+<script>
+  var map = L.map('map').setView([28.601151, 84.115914], 6);
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the Nepal Geojson-->
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+		id: 'mapbox.light'
+	}).addTo(map);
 
-**Files**  
-boston.txt:  
-Input ASCII file to create point shape file  
-boston.shp shx dbf:  
-Point shape file  
-Observations = 506  
-Variables = 23  
+  map.scrollWheelZoom.disable();
+  map.touchZoom.disable();
+  var enableMapInteraction = function () {
+      map.scrollWheelZoom.enable();
+      map.touchZoom.enable();
+  }
+  $('#map').on('click touch', enableMapInteraction);
 
-**Source**  
-Data created from boston.c data frame in R's spdep package. Original source: [http://lib.stat.cmu.edu/datasets/boston_corrected.txt](http://lib.stat.cmu.edu/datasets/boston_corrected.txt)  
-Variables and References: R spdep Manual (p. 15), available at [http://cran.us.r-project.org](http://cran.us.r-project.org)  
+  // load GeoJSON from an external file
+  // load GeoJSON from an external file
+  $.getJSON("../data/Nepal.geojson",function(data){
+    // add GeoJSON layer to the map once the file is loaded
+    var json = L.geoJson(data);
+    json.addTo(map);
+    map.fitBounds(json.getBounds());
+  });
 
-Download the file [here](https://s3.amazonaws.com/geoda/data/boston.zip).  
+</script>
+Housing and neighborhood data for the city of Boston.
 
-**References**  
-Harrison, David, and Daniel L. Rubinfeld. (1978). Hedonic Housing Prices and the Demand for Clean Air, Journal of Environmental Economics and Management, Volume 5, 81- 102. Original data.  
+**Files**
+boston.txt:
+Input ASCII file to create point shape file
+boston.shp shx dbf:
+Point shape file
+Observations = 506
+Variables = 23
 
-Gilley, O.W., and R. Kelley Pace. (1996). On the Harrison and Rubinfeld Data, Journal of Environmental Economics and Management, 31, 403-405. Provided corrections and examined censoring.  
+**Source**
+Data created from boston.c data frame in R's spdep package. Original source: [http://lib.stat.cmu.edu/datasets/boston_corrected.txt](http://lib.stat.cmu.edu/datasets/boston_corrected.txt)
+Variables and References: R spdep Manual (p. 15), available at [http://cran.us.r-project.org](http://cran.us.r-project.org)
 
-Pace, R. Kelley, and O.W. Gilley. (1997). Using the Spatial Configuration of the Data to Improve Estimation, Journal of the Real Estate Finance and Economics, 14, 333-340.  
+Download the file [here](https://s3.amazonaws.com/geoda/data/boston.zip).
 
-**Notes**  
-In R, use library(MASS) and write.matrix (frame or matrix name, file="output file",sep=",") to write data frames or matrices to a file.  
+**References**
+Harrison, David, and Daniel L. Rubinfeld. (1978). Hedonic Housing Prices and the Demand for Clean Air, Journal of Environmental Economics and Management, Volume 5, 81- 102. Original data.
+
+Gilley, O.W., and R. Kelley Pace. (1996). On the Harrison and Rubinfeld Data, Journal of Environmental Economics and Management, 31, 403-405. Provided corrections and examined censoring.
+
+Pace, R. Kelley, and O.W. Gilley. (1997). Using the Spatial Configuration of the Data to Improve Estimation, Journal of the Real Estate Finance and Economics, 14, 333-340.
+
+**Notes**
+In R, use library(MASS) and write.matrix (frame or matrix name, file="output file",sep=",") to write data frames or matrices to a file.
 
 Variable | Description
 ----|----
@@ -64,5 +92,5 @@ PTRATIO | A numeric vector of pupil-teacher ratios per town (constant for all Bo
 B | A numeric vector of 1000*(Bk - 0.63)^2 where Bk is the proportion of blacks
 LSTAT | A numeric vector of percentage values of lower status population
 
-Prepared by Luc Anselin.  
+Prepared by Luc Anselin.
 Last updated June 3, 2004

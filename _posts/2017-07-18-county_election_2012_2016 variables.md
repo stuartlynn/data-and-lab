@@ -26,11 +26,21 @@ introduction: "US Presidential Election results in 2012 and 2016, by county Elec
 		id: 'mapbox.light'
 	}).addTo(map);
 
+  map.scrollWheelZoom.disable();
+  map.touchZoom.disable();
+  var enableMapInteraction = function () {
+      map.scrollWheelZoom.enable();
+      map.touchZoom.enable();
+  }
+  $('#map').on('click touch', enableMapInteraction);
+
   // load GeoJSON from an external file
   // load GeoJSON from an external file
-  $.getJSON("../County_election_2012/16.geojson",function(data){
+  $.getJSON("../data/County_election_2012/16.geojson",function(data){
     // add GeoJSON layer to the map once the file is loaded
-    L.geoJson(data).addTo(map);
+    var json = L.geoJson(data);
+    json.addTo(map);
+    map.fitBounds(json.getBounds());
   });
 
 </script>

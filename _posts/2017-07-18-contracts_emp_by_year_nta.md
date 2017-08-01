@@ -26,11 +26,21 @@ introduction: "This file contains information on the allocation of government co
 		id: 'mapbox.light'
 	}).addTo(map);
 
+  map.scrollWheelZoom.disable();
+  map.touchZoom.disable();
+  var enableMapInteraction = function () {
+      map.scrollWheelZoom.enable();
+      map.touchZoom.enable();
+  }
+  $('#map').on('click touch', enableMapInteraction);
+
   // load GeoJSON from an external file
   // load GeoJSON from an external file
-  $.getJSON("../contracts_emp_by_year_nta.geojson",function(data){
+  $.getJSON("../data/contracts_emp_by_year_nta.geojson",function(data){
     // add GeoJSON layer to the map once the file is loaded
-    L.geoJson(data).addTo(map);
+    var json = L.geoJson(data);
+    json.addTo(map);
+    map.fitBounds(json.getBounds());
   });
 
 </script>

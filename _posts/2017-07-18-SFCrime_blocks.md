@@ -26,11 +26,21 @@ introduction: "Incidents of robberies, drugs/narcotics possession or sale, vehic
 		id: 'mapbox.light'
 	}).addTo(map);
 
+  map.scrollWheelZoom.disable();
+  map.touchZoom.disable();
+  var enableMapInteraction = function () {
+      map.scrollWheelZoom.enable();
+      map.touchZoom.enable();
+  }
+  $('#map').on('click touch', enableMapInteraction);
+
   // load GeoJSON from an external file
   // load GeoJSON from an external file
-  $.getJSON("../SFCrime_blocks.geojson",function(data){
+  $.getJSON("../data/SFCrime_blocks.geojson",function(data){
     // add GeoJSON layer to the map once the file is loaded
-    L.geoJson(data).addTo(map);
+    var json = L.geoJson(data);
+    json.addTo(map);
+    map.fitBounds(json.getBounds());
   });
 
 </script>

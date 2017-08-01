@@ -14,14 +14,30 @@ introduction: 'Atlanta, GA region homicide counts and rates'
 ---
 <script>
 var map = L.map('map').setView([33.749, -84.38], 10);
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+	maxZoom: 18,
+	attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+		'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+		'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+	id: 'mapbox.light'
+}).addTo(map);
 
-	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-		maxZoom: 18,
-		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-		id: 'mapbox.light'
-	}).addTo(map);
+map.scrollWheelZoom.disable();
+map.touchZoom.disable();
+var enableMapInteraction = function () {
+		map.scrollWheelZoom.enable();
+		map.touchZoom.enable();
+}
+$('#map').on('click touch', enableMapInteraction);
+
+// load GeoJSON from an external file
+// load GeoJSON from an external file
+$.getJSON("../data/Nepal.geojson",function(data){
+	// add GeoJSON layer to the map once the file is loaded
+	var json = L.geoJson(data);
+	json.addTo(map);
+	map.fitBounds(json.getBounds());
+});
 </script>
 
 Homicides and selected socio-economic characteristics for counties surrounding Atlanta, GA. Data aggregated for three time periods: 1979-84 (steady decline in homicides), 1984-88 (stable period), and 1988-93 (steady increase in homicides). Download the file [here](https://s3.amazonaws.com/geoda/data/atlanta_hom.zip).
