@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AirBnB Chicago 2015"
-date: 2017-07-18 16:29:16
+date: 2017-07-1 16:29:16
 image: /assets/img/
 description:
 main-class: 'HOUSING'

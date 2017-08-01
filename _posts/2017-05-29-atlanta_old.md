@@ -24,13 +24,13 @@ var map = L.map('map').setView([33.749, -84.38], 10);
 	}).addTo(map);
 </script>
 
-Homicides and selected socio-economic characteristics for counties surrounding Atlanta, GA. Data aggregated for three time periods: 1979-84 (steady decline in homicides), 1984-88 (stable period), and 1988-93 (steady increase in homicides). Download the file [here](https://s3.amazonaws.com/geoda/data/atlanta_hom.zip).    
+Homicides and selected socio-economic characteristics for counties surrounding Atlanta, GA. Data aggregated for three time periods: 1979-84 (steady decline in homicides), 1984-88 (stable period), and 1988-93 (steady increase in homicides). Download the file [here](https://s3.amazonaws.com/geoda/data/atlanta_hom.zip).
 
-Type = polygon shape file, unprojected, lat-lon  
-Observations = 90  
-Variables = 23  
+Type = polygon shape file, unprojected, lat-lon
+Observations = 90
+Variables = 23
 
-**Source**  
+**Source**
 S. Messner, L. Anselin, D. Hawkins, G. Deane, S. Tolnay, R. Baller (2000). An Atlas of the Spatial Patterning of County-Level Homicide, 1960-1990. Pittsburgh, PA, [National Consortium on Violence Research (NCOVR)](https://www.nttac.org/index.cfm?event=projectDetails&id=339).
 
 Variable | Description
@@ -55,7 +55,7 @@ PE82 | police expenditures per capita, 1982
 PE87 | police expenditures per capita, 1987
 RDAC80 | resource deprivation/affluence composite variable, 1980
 RDAC85 | resource deprivation/affluence composite variable, 1985
-RDAC90 | resource deprivation/affluence composite variable, 1990  
+RDAC90 | resource deprivation/affluence composite variable, 1990
 
-Prepared by Luc Anselin.  
+Prepared by Luc Anselin.
 Last updated September 10, 2004
