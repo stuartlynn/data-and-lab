@@ -16,7 +16,7 @@ twitter_text:
 introduction: 'Socioeconomic data for 1830 France, collected by Andre-Michel Guerry.'
 ---
 <script>
-  var map = L.map('map').setView([28.601151, 84.115914], 6);
+  var map = L.map('map');
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the Guerry Geojson-->
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +

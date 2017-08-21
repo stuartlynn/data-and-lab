@@ -3,7 +3,7 @@
         var settings = $.extend({
             jsonFile        : '/data-and-lab/search.json',
             jsonFormat      : 'title,tags,url,date',
-            template : '<li><article><a href="{url}">{title} <span class="entry-date"><time datetime="{date}">{date}</time></span></a></article></li>',
+            template : '<li><article><a href="{url}">{title} <span class="entry-date"><time datetime="{date}"></time></span></a></article></li>',
             searchResults   : '.search-results',
             searchResultsTitle   : '<h4>Search results:</h4>',
             limit           : '10',

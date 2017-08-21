@@ -1,4 +1,15 @@
 
+## NOTE
+
+### Add new categories
+
+1. go to directory category/
+2. copy a template html to create a new html page for your new directory
+3. edit your new html page, line 10 update
+```
+{% if post.main-class == 'CRIME' %}
+```
+
 ## Basic Setup
 
 1. [Install Jekyll](http://jekyllrb.com) (use the command ```sudo gem install jekyll```)
@@ -7,7 +18,7 @@
 5. Check out the sample posts in `_posts` to see examples for assigning categories and tags, and other YAML data.
 7. **Remember to compile your assets files with Gulp.**
 
-## Creating new page 
+## Creating new page
 
 You can use the `initpost.sh` to create your new posts. Just follow the command:
 
@@ -17,7 +28,7 @@ You can use the `initpost.sh` to create your new posts. Just follow the command:
 
 The new file will be created at `_posts` with this format `date-title.md`.
 
-## Front-matter 
+## Front-matter
 
 When you create a new post, you need to fill the post information in the front-matter, follow this example:
 

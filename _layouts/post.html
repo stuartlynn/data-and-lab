@@ -4,13 +4,13 @@
     <body>
         {% include svg-icons.html %}
         {% include header-post.html %}
-        
+
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
         <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-        
+
         <section class="post">
-            <div id="map" style="width:100%;height:300px"></div>
+            <div id="map" style="width:100%;height:500px"></div>
 
             <article role="article" id="post" class="post-content" itemprop="articleBody">
                 {{ content }}
@@ -18,7 +18,6 @@
 
             {% include share.html %}
             {% include author.html %}
-            {% include comments.html %}
             {% include footer.html %}
         </section>
     </body>

@@ -13,7 +13,7 @@ twitter_text:
 introduction: 'Baltimore house sales prices and hedonics'
 ---
 <script>
-var map = L.map('map').setView([39.2904, -76.6122], 12);
+var map = L.map('map');
 
 	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 		maxZoom: 18,
