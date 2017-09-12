@@ -17,7 +17,7 @@ introduction: "Malaria Incidence in Colombian municipalities"
 
 <script>
   var map = L.map('map');
-  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the Nepal Geojson-->
+  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the Geojson-->
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
 			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -35,7 +35,7 @@ introduction: "Malaria Incidence in Colombian municipalities"
 
   // load GeoJSON from an external file
   // load GeoJSON from an external file
-  $.getJSON("../data/colmunic.geojson",function(data){
+  $.getJSON("../data/colmunic1.geojson",function(data){
     // add GeoJSON layer to the map once the file is loaded
     var json = L.geoJson(data);
     json.addTo(map);
@@ -73,8 +73,7 @@ Type = Polygon shape files
  Rates
 
 **Source:**
- Modified from the boundary files downloaded from
-http://www.cipotato.org/.
+ Modified from the boundary files downloaded from http://www.cipotato.org/.
 
 |Variable|Description|
 |---|---|
@@ -93,7 +92,7 @@ http://www.cipotato.org/.
 | TP1993                               | Total population from census in 1993 |
 | UP1993                               | Urban population form census in 1993 |
 | RP1993                               | Rural population from census in 1993 |
-| MALARI98                             | Malaria incidence in 1998. (*Source:   SIVIGILA. Ministerio de Salud, Colombia.†There are 3 files for each year     from 1995-2005. Projections from Departamento Administrativo Nacional de Estad√≠stica DANE, Colombia*   )     |
+| MALARI98                             | Malaria incidence in 1998. (Source:   SIVIGILA. Ministerio de Salud, Colombia.†There are 3 files for each year     from 1995-2005. Projections from Departamento Administrativo Nacional de Estada≠stica DANE, Colombia   )     |
 | TPyyyy                               | Total population projected in year    yyyy                                 |
 | UPyyyy                               | Urban population projected in year    yyyy                                 |
 | RPyyyy                               | Rural population projected in year   yyyy                                 |
