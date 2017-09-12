@@ -58,7 +58,7 @@ crime by community area in Chicago.
 
  Year range = 2008-2015
 
- Spatial resolution = medium
+ Spatial resolution = medium (smaller areas)
 
  Topic = housing rentals
 
