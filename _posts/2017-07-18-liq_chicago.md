@@ -33,11 +33,37 @@ introduction: "Liquor stores in Chicago, IL as of 2015. Scraped from Google Maps
   }
   $('#map').on('click touch', enableMapInteraction);
 
+  var smallIcon = L.icon({
+         iconUrl: 'http://www.hckrecruitment.nic.in/images/blue.png',
+         iconSize: [16, 16], // size of the icon
+         });
+
+   function onEachFeature(feature, layer) {
+     //console.log(feature);
+     var txt = "";
+     for (var fname in feature.properties) {
+       txt += fname;
+       txt += " : ";
+       txt += feature.properties[fname];
+       txt += "<br/>";
+     }
+     layer.bindPopup(txt);
+   }
+
+
   // load GeoJSON from an external file
   // load GeoJSON from an external file
   $.getJSON("../data/liq_chicago.geojson",function(data){
     // add GeoJSON layer to the map once the file is loaded
-    var json = L.geoJson(data);
+    var json = L.geoJson(data, {
+      pointToLayer: function(feature, latlng) {
+        
+        return L.marker(latlng, {
+          icon: smallIcon
+        });
+      },
+      onEachFeature: onEachFeature
+    });
     json.addTo(map);
     map.fitBounds(json.getBounds());
   });
