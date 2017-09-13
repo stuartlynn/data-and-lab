@@ -21,7 +21,7 @@ introduction: "Malaria Incidence in Colombian municipalities"
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
 			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+			'Imagery Â© <a href="http://mapbox.com">Mapbox</a>',
 		id: 'mapbox.light'
 	}).addTo(map);
 
@@ -77,7 +77,7 @@ Type = Polygon shape files
 
 |Variable|Description|
 |---|---|
-| ID                                   | Sequential ID                        |
+| IDÂ                                   | Sequential ID                        |
 | ADM1                                 | Departments (Administrative level 1) |
 | ADM2                                 | Municipalities (Administrative level 2)                                   |
 | CODDEPT                              | DANE code for departments            |
@@ -92,7 +92,7 @@ Type = Polygon shape files
 | TP1993                               | Total population from census in 1993 |
 | UP1993                               | Urban population form census in 1993 |
 | RP1993                               | Rural population from census in 1993 |
-| MALARI98                             | Malaria incidence in 1998. (Source:   SIVIGILA. Ministerio de Salud, Colombia.�There are 3 files for each year     from 1995-2005. Projections from Departamento Administrativo Nacional de Estada�stica DANE, Colombia   )     |
+| MALARI98                             | Malaria incidence in 1998. (Source:   SIVIGILA. Ministerio de Salud, Colombia. There are 3 files for each year     from 1995-2005. Projections from Departamento Administrativo Nacional de Estadastica DANE, Colombia   )     |
 | TPyyyy                               | Total population projected in year    yyyy                                 |
 | UPyyyy                               | Urban population projected in year    yyyy                                 |
 | RPyyyy                               | Rural population projected in year   yyyy                                 |
@@ -100,6 +100,6 @@ Type = Polygon shape files
 
 
 
-Prepared by Luis Galvis.�
+Prepared by Luis Galvis. 
 
 Last updated June 20, 2005
