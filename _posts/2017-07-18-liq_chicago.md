@@ -32,6 +32,7 @@ introduction: "Liquor stores in Chicago, IL as of 2015. Scraped from Google Maps
       map.touchZoom.enable();
   }
   $('#map').on('click touch', enableMapInteraction);
+$('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   var smallIcon = L.icon({
          iconUrl: 'http://www.hckrecruitment.nic.in/images/blue.png',

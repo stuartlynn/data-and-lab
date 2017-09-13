@@ -32,6 +32,7 @@ introduction: "Information about abandoned vehicles in Chicago, Illinois. Includ
       map.touchZoom.enable();
   }
   $('#map').on('click touch', enableMapInteraction);
+$('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   var smallIcon = L.icon({
          iconUrl: 'http://www.hckrecruitment.nic.in/images/blue.png',

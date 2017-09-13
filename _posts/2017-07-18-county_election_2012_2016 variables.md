@@ -33,6 +33,7 @@ introduction: "US Presidential Election results in 2012 and 2016, by county Elec
       map.touchZoom.enable();
   }
   $('#map').on('click touch', enableMapInteraction);
+$('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   var smallIcon = L.icon({
          iconUrl: 'http://www.hckrecruitment.nic.in/images/blue.png',
