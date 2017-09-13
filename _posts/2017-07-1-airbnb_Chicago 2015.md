@@ -45,9 +45,9 @@ introduction: 'This database is about Airbnb spots, socioeconomic indicators, an
 
 </script>
 
-Data provided "as is", no warranties.
+Note: Data provided "as is", no warranties.
 
- This database is about Airbnb spots, socioeconomic indicators, and
+This database is about Airbnb spots, socioeconomic indicators, and
 crime by community area in Chicago.
 
  Type = polygon shape file
