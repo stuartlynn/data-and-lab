@@ -3,7 +3,7 @@ layout: post
 title: "King County House Sales 2015"
 date: 2017-07-18 16:31:16
 image: /assets/img/
-description: "House sale prices for King County, which includes Seattle."
+description: ""
 main-class: 'HOUSING'
 color:
 tags:
@@ -34,7 +34,7 @@ introduction: "This dataset contains house sale prices for King County, which in
 $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   var smallIcon = L.icon({
-         iconUrl: 'http://www.hckrecruitment.nic.in/images/blue.png',
+         iconUrl: '../assets/img/icons/blue.png',
          iconSize: [16, 16], // size of the icon
          });
 
@@ -57,7 +57,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
     // add GeoJSON layer to the map once the file is loaded
     var json = L.geoJson(data, {
       pointToLayer: function(feature, latlng) {
-        
+
         return L.marker(latlng, {
           icon: smallIcon
         });

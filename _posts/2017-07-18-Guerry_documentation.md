@@ -3,7 +3,7 @@ layout: post
 title: "Guerry"
 date: 2017-07-18 15:34:43
 image: '/assets/img/'
-description: "Socioeconomic data for 1830 France, collected by Andre-Michel Guerry."
+description: ""
 main-class: 'HISTORICAL'
 color:
 tags:
@@ -35,7 +35,7 @@ introduction: 'Socioeconomic data for 1830 France, collected by Andre-Michel Gue
 $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   var smallIcon = L.icon({
-         iconUrl: 'http://www.hckrecruitment.nic.in/images/blue.png',
+         iconUrl: '../assets/img/icons/blue.png',
          iconSize: [16, 16], // size of the icon
          });
 
@@ -58,7 +58,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
     // add GeoJSON layer to the map once the file is loaded
     var json = L.geoJson(data, {
       pointToLayer: function(feature, latlng) {
-        
+
         return L.marker(latlng, {
           icon: smallIcon
         });

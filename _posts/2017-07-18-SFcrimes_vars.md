@@ -35,7 +35,7 @@ introduction: "Crimes reported to San Francisco police, for July 2012 to Decembe
 $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   var smallIcon = L.icon({
-         iconUrl: 'http://www.hckrecruitment.nic.in/images/blue.png',
+         iconUrl: '../assets/img/icons/blue.png',
          iconSize: [16, 16], // size of the icon
          });
 
@@ -58,7 +58,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
     // add GeoJSON layer to the map once the file is loaded
     var json = L.geoJson(data, {
       pointToLayer: function(feature, latlng) {
-        
+
         return L.marker(latlng, {
           icon: smallIcon
         });

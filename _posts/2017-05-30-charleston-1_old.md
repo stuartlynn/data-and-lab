@@ -32,7 +32,7 @@ introduction: '2000 Census Tract Data for Charleston, SC MSA and counties'
 $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   var smallIcon = L.icon({
-         iconUrl: 'http://www.hckrecruitment.nic.in/images/blue.png',
+         iconUrl: '../assets/img/icons/blue.png',
          iconSize: [16, 16], // size of the icon
          });
 
