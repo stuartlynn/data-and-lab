@@ -1,18 +1,21 @@
 ---
 layout: post
-title: "Health indicators"
+title: "Chicago Health Indicators (2005-11)"
 date: 2017-07-18 16:41:16
 image: /assets/img/
 description:
-main-class: 'HEALTH'
+main-class: 'health'
 color:
 tags:
 - polygon
-- health
+- <500
+- smaller areas
+- ESDA
 - open data
+- Census
 categories:
 twitter_text:
-introduction: "Health indicators for Chicago neighorhoods."
+introduction: "Health indicators for Chicago community areas (2005-11)."
 ---
 <script>
   var map = L.map('map');
@@ -34,7 +37,7 @@ introduction: "Health indicators for Chicago neighorhoods."
 $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   var smallIcon = L.icon({
-         iconUrl: '../assets/img/icons/blue.png',
+         iconUrl: 'http://www.hckrecruitment.nic.in/images/blue.png',
          iconSize: [16, 16], // size of the icon
          });
 
@@ -70,25 +73,13 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
-Data provided "as is", no warranties.
 
- Health indicators for Chicago neighorhoods.
- Source: [City of Chicago Data Portal.](https://data.cityofchicago.org/Health-Human-Services/Public-Health-Statistics-Selected-public-health-in/iqnk-2tcu)
+Health indicators for Chicago neighorhoods. Source: [City of Chicago Data Portal.](https://data.cityofchicago.org/Health-Human-Services/Public-Health-Statistics-Selected-public-health-in/iqnk-2tcu). Data provided by Illinois Department of Public Health (IDPH) and U.S. Census Bureau.
 
+* Observations = 77
+* Variables = 50
+* Years = 2005-11
 
- Type = polygon shape file
-
- Observations = 77
-
- Variables = 50
-
- Year = 2002-2012
-
- Spatial resolution = medium
-
- Topic = Health
-
- Type of sample data = open data
 
 |Variable|Description|
 |:-------|:----------|
@@ -120,6 +111,5 @@ Data provided "as is", no warranties.
 |PerCa\_come|Percapita income, 2011 adjusted dollars|
 |Unemp\_ment|Unemployment as a percent of persons aged 16 or older|
 
-Prepared by Jingyuan Zhou.
+Prepared by Jingyuan Zhou. Last updated July 10, 2017. Data provided "as is", no warranties.
 
-Last updated July 10, 2017.

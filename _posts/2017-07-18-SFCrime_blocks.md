@@ -1,20 +1,21 @@
 ---
 layout: post
-title: "San Francisco crime blocks"
+title: "San Francisco Crime Counts (2012)"
 date: 2017-07-18 16:46:16
 image: /assets/img/
 description:
-main-class: 'CRIME'
+main-class: 'crime'
 color:
 tags:
-- polygon
-- crime
-- census data
+- polygons
+- 500-5,000
+- smaller areas
 - open data
-- Rates
+- ESDA
+- rates
 categories:
 twitter_text:
-introduction: "Incidents of robberies, drugs/narcotics possession or sale, vehicle theft, and vandalism for July 1 to December 31, 2012."
+introduction: "Count of robberies, drugs/narcotics possession or sale, vehicle theft, and vandalism by San Francisco block group (06-12/2012)."
 ---
 <script>
   var map = L.map('map');
@@ -36,7 +37,7 @@ introduction: "Incidents of robberies, drugs/narcotics possession or sale, vehic
 $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   var smallIcon = L.icon({
-         iconUrl: '../assets/img/icons/blue.png',
+         iconUrl: 'http://www.hckrecruitment.nic.in/images/blue.png',
          iconSize: [16, 16], // size of the icon
          });
 
@@ -71,29 +72,12 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
   });
 
 </script>
-Data provided "as is", no warranties.
 
- Incidents of robberies, drugs/narcotics possession or sale, vehicle theft, and vandalism for July 1 to December 31, 2012.
-Sources: 2010 Census
- San Francisco Police Department Crime Incident Reporting System
+Population and incidents of robberies, drugs/narcotics possession or sale, vehicle theft, and vandalism for July 1 to December 31, 2012, aggregated to 2010 block groups. Sources: 2010 Census (population) and ["Crime Incidents from 1 Jan 2003", City of San Francisco Open Data Portal](https://data.sfgov.org/Public-Safety/Map-Crime-Incidents-from-1-Jan-2003/gxxq-x39z) (crimes).
 
-
-
- Type = polygon shape file
-
- Observations = 579
-
- Variables = 15
-
- Year = 2010-2012
-
- Spatial resolution = medium
-
- Topic = crime
-
- Type of sample data = census/open data
-
- Rates
+* Observations = 579
+* Variables = 15
+* Years = 2010 and 2012
 
 |Variable|Description|Source
 |---|---|---|
@@ -105,4 +89,4 @@ Sources: 2010 Census
 |Drugs|Incidents of drugs in each area|San Francisco Police Department Crime Incident Reporting System
 |Car Theft|Incidents of car theft in each area|San Francisco Police Department Crime Incident Reporting System
 
-Updated July 10, 2017
+Prepared by ([Center for Spatial Data Science](https://spatial.uchicago.edu/)). Updated July 10, 2017. Data provided "as is," no warranties.

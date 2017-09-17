@@ -1,19 +1,20 @@
 ---
 layout: post
-title: "Chicago supermarkets"
+title: "2015 Chicago supermarkets"
 date: 2017-07-18 16:55:16
 image: /assets/img/
 description:
-main-class: 'COMMERCE'
+main-class: 'economics'
 color:
 tags:
-- point shape file
-- Commerce
+- points
+- <500
+--ESDA
 - open data
-- Luc Anselin course lab
+- Anselin lab
 categories:
 twitter_text:
-introduction: "Grocery stores in Chicago, IL as of 2015. Scraped from Google Maps in 2015."
+introduction: "2015 Chicago grocery stores (scraped from Google Maps)."
 ---
 <script>
   var map = L.map('map');
@@ -35,7 +36,7 @@ introduction: "Grocery stores in Chicago, IL as of 2015. Scraped from Google Map
 $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   var smallIcon = L.icon({
-         iconUrl: '../assets/img/icons/blue.png',
+         iconUrl: 'http://www.hckrecruitment.nic.in/images/blue.png',
          iconSize: [16, 16], // size of the icon
          });
 
@@ -76,21 +77,10 @@ Data provided "as is", no warranties.
 
 Grocery stores in Chicago, IL as of 2015. Scraped from Google Maps in 2015.
 
+* Variables = 14
+* Observations = 149
+* Year = 2015
 
-
- Type = point shape file.
-
- Variables = 14
-
- Observations = 149
-
- Year = 2015
-
- Topic = Commerce
-
- Type of sample data = Open data
-
- Luc Anselin course lab
 
 |Variable|Description
 |--
@@ -98,5 +88,5 @@ Grocery stores in Chicago, IL as of 2015. Scraped from Google Maps in 2015.
 |Field5|Name of the store
 |Category|New stores are marked "New," rest are left blank.
 
-Prepared by Center for Spatial Data Science ([https://spatial.uchicago.edu/](https://spatial.uchicago.edu/))
- Last updated January 14, 2017.
+Prepared by ([Center for Spatial Data Science](https://spatial.uchicago.edu/))
+Last updated January 14, 2017.

@@ -1,20 +1,21 @@
 ---
 layout: post
-title: "County elections 2012/16"
+title: "2012 and 2016 Presidential Elections"
 date: 2017-07-18 16:42:16
 image: /assets/img/
 description:
-main-class: 'ELECTIONS'
+main-class: 'politics'
 color:
 tags:
-- polygon
-- elections
+- polygons
+- space-time
+- 500-5,000
+- larger areas
+- ESDA
 - open data
-- Rates
-- Space-time
 categories:
 twitter_text:
-introduction: "US Presidential Election results in 2012 and 2016, by county Election results"
+introduction: "US Presidential election results by county (2012 and 2016)."
 ---
 <script>
   var map = L.map('map');
@@ -36,7 +37,7 @@ introduction: "US Presidential Election results in 2012 and 2016, by county Elec
 $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   var smallIcon = L.icon({
-         iconUrl: '../assets/img/icons/blue.png',
+         iconUrl: 'http://www.hckrecruitment.nic.in/images/blue.png',
          iconSize: [16, 16], // size of the icon
          });
 
@@ -55,7 +56,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   // load GeoJSON from an external file
   // load GeoJSON from an external file
-  $.getJSON("../data/County_election_2012/16.geojson",function(data){
+  $.getJSON("../data/County_election_2012_16.geojson",function(data){
     // add GeoJSON layer to the map once the file is loaded
     var json = L.geoJson(data, {
       pointToLayer: function(feature, latlng) {
@@ -74,29 +75,14 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 Data provided "as is", no warranties.
 
- US Presidential Election results in 2012 and 2016, by county
- Election results from this Git repository [https://github.com/tonmcg/County\_Level\_Election\_Results\_12-16](https://github.com/tonmcg/County_Level_Election_Results_12-16)
+[US Presidential Election results in 2012 and 2016, by county.](https://github.com/tonmcg/County_Level_Election_Results_12-16)
 
- County facts from Kaggle: [https://www.kaggle.com/benhamner/2016-us-election](https://www.kaggle.com/benhamner/2016-us-election)
+[County facts](https://www.kaggle.com/benhamner/2016-us-election)
 
 
- Type = polygon shape file
-
- Variables = 84
-
- Observations = 3108
-
- Year = 2007-2016
-
- Spatial resolution = low
-
- Topic = elections
-
- Type of sample data = open data
-
- Rates
-
- Space-time
+* Variables = 84
+* Observations = 3108
+* Years = 2007-2016
 
 |Variable name|Description|
 |---|---|

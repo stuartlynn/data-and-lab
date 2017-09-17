@@ -1,22 +1,23 @@
 ---
 layout: post
-title: "Community areas"
+title: "Health and Socio-Economics in Chicago (2014)"
 date: 2017-07-18 16:50:16
 image: /assets/img/
 description:
-main-class: 'HEALTH'
+main-class: 'health'
 color:
 tags:
-- polygon
+- polygons
 - health
-- census data
+- <500
+- smaller areas
+- ESDA
+- Census
 - open data
-- Luc Anselin course lab
-- Rates
-- Space-time
+- Anselin lab
 categories:
 twitter_text:
-introduction: "Public health indicators for the 77 community areas of Chicago, IL, 2014."
+introduction: "2014 public health indicators for Chicago community areas."
 ---
 <script>
   var map = L.map('map');
@@ -38,7 +39,7 @@ introduction: "Public health indicators for the 77 community areas of Chicago, I
 $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   var smallIcon = L.icon({
-         iconUrl: '../assets/img/icons/blue.png',
+         iconUrl: 'http://www.hckrecruitment.nic.in/images/blue.png',
          iconSize: [16, 16], // size of the icon
          });
 
@@ -76,68 +77,53 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 Data provided "as is", no warranties.
 
-Public health indicators for the 77 community areas of Chicago, IL, 2014.
+Public health and socio-economic indicators for the 77 community areas of Chicago, IL, 2014.
 
 
- Type = polygon shape file.
+* Variables = 86
+* Observations = 77
+* Years = 2012-2014
 
- Variables = 86
 
- Observations = 77
-
- Year range = 2012-2014
-
- Spatial resolution = medium
-
- Topic = health
-
- Type of sample data = Census/Open data
-
- Rates
-
- Space-time
-
- Luc Anselin course lab
-
-|Variable name|Description|Source
+|**Variable**|**Description**|**Source**
 |--
-|Pop2012|Population in 2012|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|Pop2014|Population in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|PopM|Male Population in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|PopF|Female population in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|Under5|Population age 0-5 in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|Under18|Population age 0-18 in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|Over21|Population over age 21 in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|Over65|Population over age 65 in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|Wht14|White population in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|Blk14|Black population in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|AI14|American Indian population in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|AS14|Asian population in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|NHP14|Native Hawaiian population in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|Oth14|Population of other races in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|Hisp14|Hispanic population in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|PopMP, PopFP, Under5P, Under18P, Over18P, Over21P, Over65P, Wht14P, Blk14P, AI14P, AS14P, NHP14P, Oth14P, Hisp14P|Proportion of each corresponding group in the overall population (2014)|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|Property\_C|Number of property crimes|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|PropCrRt|Property crime rate in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|Violent\_C|Number of violent crimes|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|VlntCrRt|Violent crime rate in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|PerCInc14|Per Capita Income|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|PPop14|2014 Population base for 2014 poverty counts|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|Pov14|Number of people living in poverty in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|ChildPov14|Number of children (age 0-18) living in poverty in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|NoHS14|Number of adults without a high school diploma in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|HSGrad14|Number of high school graduates in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|SmClg14|Number of people who have some college education in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|ClgGrad14|Number of people who have a college degree in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|LaborFrc|Number of people in the labor force in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|Unemp14|Number of people unemployed in 2014|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|Pov50|Number of people with income below 50% of the poverty line|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|Pov125|Number of people with income below 125% of the poverty line|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|Pov150|Number of people with income below 150% of the poverty line|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|Pov185|Number of people with income below 185% of the poverty line|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|Pov200|Number of people with income below 200% of the poverty line|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|Pov50P . . . Pov200P|Proportion of each group in overall population (different poverty rates, 2014)|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|SESave|Average SES|[American Community Survey, US Census Bureau, 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Pop2012|Population in 2012|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Pop2014|Population in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|PopM|Male Population in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|PopF|Female population in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Under5|Population age 0-5 in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Under18|Population age 0-18 in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Over21|Population over age 21 in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Over65|Population over age 65 in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Wht14|White population in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Blk14|Black population in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|AI14|American Indian population in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|AS14|Asian population in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|NHP14|Native Hawaiian population in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Oth14|Population of other races in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Hisp14|Hispanic population in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|PopMP, PopFP, Under5P, Under18P, Over18P, Over21P, Over65P, Wht14P, Blk14P, AI14P, AS14P, NHP14P, Oth14P, Hisp14P|Proportion of each corresponding group in the overall population (2014)|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Property\_C|Number of property crimes|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|PropCrRt|Property crime rate in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Violent\_C|Number of violent crimes|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|VlntCrRt|Violent crime rate in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|PerCInc14|Per Capita Income|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|PPop14|2014 Population base for 2014 poverty counts|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Pov14|Number of people living in poverty in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|ChildPov14|Number of children (age 0-18) living in poverty in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|NoHS14|Number of adults without a high school diploma in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|HSGrad14|Number of high school graduates in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|SmClg14|Number of people who have some college education in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|ClgGrad14|Number of people who have a college degree in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|LaborFrc|Number of people in the labor force in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Unemp14|Number of people unemployed in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Pov50|Number of people with income below 50% of the poverty line|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Pov125|Number of people with income below 125% of the poverty line|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Pov150|Number of people with income below 150% of the poverty line|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Pov185|Number of people with income below 185% of the poverty line|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Pov200|Number of people with income below 200% of the poverty line|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Pov50P . . . Pov200P|Proportion of each group in overall population (different poverty rates, 2014)|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|SESave|Average SES|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
 |COIave|Average Childhood Opportunity Index|Chicago Dept of Public Health, Childhood Opportunity Index
 |HISave|Average Economic Hardship Index|Based on ACS 2014 data; methods: Intercity Hardship Index by Nathan and Adams
 |Hlitave|Average health literacy|Health Literacy Project
@@ -165,5 +151,5 @@ Public health indicators for the 77 community areas of Chicago, IL, 2014.
 
 Economic Hardship Index method based on the Intercity Hardship Index, by Richard P. Nathan and Charles F. Adams, Jr. in *Understanding Urban Hardship*, Political Science Quarterly 91 (Spring 1976): 47-62.)
 
-Prepared by Center for Spatial Data Science ([https://spatial.uchicago.edu/](https://spatial.uchicago.edu/))
- Last updated July 6, 2017.
+Prepared by ([Center for Spatial Data Science](https://spatial.uchicago.edu/))
+Last updated July 6, 2017.

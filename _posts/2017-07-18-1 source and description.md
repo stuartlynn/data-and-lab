@@ -1,19 +1,22 @@
 ---
 layout: post
-title: "Abandoned vehicles"
+title: "Abandoned Vehicles in Chicago (2011-15)"
 date: 2017-07-18 16:48:16
 image: /assets/img/
 description:
-main-class: 'POLICE'
+main-class: 'crime'
 color:
 tags:
-- delimited text file
+- points
+- csv
+- 5000+
 - crime
+- ESDA
 - open data
-- Luc Anselin course lab
+- Anselin lab
 categories:
 twitter_text:
-introduction: "Information about abandoned vehicles in Chicago, Illinois. Includes all open abandoned vehicle service complaints made to 311 since January 2011, and all requests completed since January 1 2011."
+introduction: "2011 abandoned vehicles in Chicago (311 complaints)."
 ---
 <script>
   var map = L.map('map');
@@ -35,7 +38,7 @@ introduction: "Information about abandoned vehicles in Chicago, Illinois. Includ
 $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   var smallIcon = L.icon({
-         iconUrl: '../assets/img/icons/blue.png',
+         iconUrl: 'http://www.hckrecruitment.nic.in/images/blue.png',
          iconSize: [16, 16], // size of the icon
          });
 
@@ -54,7 +57,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   // load GeoJSON from an external file
   // load GeoJSON from an external file
-  $.getJSON("../data/Nepal.geojson",function(data){
+  $.getJSON("../data/vehicles.geojson",function(data){
     // add GeoJSON layer to the map once the file is loaded
     L.geoJson(data).addTo(map);
   });
@@ -63,24 +66,14 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 Data provided "as is," no warranties.
 
 Information about abandoned vehicles in Chicago, Illinois. Includes all open abandoned vehicle service complaints made to 311 since January 2011, and all requests completed since January 1 2011.
-Retrieved from the City of Chicago Data Portal on August 15 2016. [https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-current-/cauq-8yn6](https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-current-/cauq-8yn6)
+Retrieved from the [City of Chicago Data Portal](https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-current-/cauq-8yn6) on August 15 2016. 
 
 
- Type = delimited text file
+* Type = delimited text file
+* Observations = 137,867
+* Variables = 21
+* Years = 2011-2015
 
- Observations = 137867
-
- Variables = 21
-
- Year range = 2011-2015
-
- Spatial resolution = high
-
- Topic = crime
-
- Type of sample data = Open data
-
- Luc Anselin course lab
 
 |Variable|Description|
 |---
@@ -106,6 +99,6 @@ Retrieved from the City of Chicago Data Portal on August 15 2016. [https://data.
 |Longitude|Longitude corresponding to address
 |Location|Coordinates of the location in format of (Latitude, Longitude)|
 
-Prepared by Center for Spatial Data Science ([https://spatial.uchicago.edu/](https://spatial.uchicago.edu/))
+Prepared by ([Center for Spatial Data Science](https://spatial.uchicago.edu/))
 
  Last updated July 10, 2017.

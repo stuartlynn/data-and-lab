@@ -1,14 +1,16 @@
 ---
 layout: post
-title: "colomb_malaria"
+title: "Malaria in Colombia (1998)"
 date: 2017-07-18 16:10:16
 image: /assets/img/
 description:
-main-class: 'HEALTH'
+main-class: 'health'
 color:
 tags:
-- polygon
-- health
+- polygons
+- 500-5,000
+- larger areas
+- ESDA
 - open data
 categories:
 twitter_text:
@@ -21,7 +23,7 @@ introduction: "Malaria Incidence in Colombian municipalities"
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
 			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery Â© <a href="http://mapbox.com">Mapbox</a>',
+			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
 		id: 'mapbox.light'
 	}).addTo(map);
 
@@ -32,84 +34,43 @@ introduction: "Malaria Incidence in Colombian municipalities"
       map.touchZoom.enable();
   }
   $('#map').on('click touch', enableMapInteraction);
-$('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
-
-  var smallIcon = L.icon({
-         iconUrl: '../assets/img/icons/blue.png',
-         iconSize: [16, 16], // size of the icon
-         });
-
-   function onEachFeature(feature, layer) {
-     //console.log(feature);
-     var txt = "";
-     for (var fname in feature.properties) {
-       txt += fname;
-       txt += " : ";
-       txt += feature.properties[fname];
-       txt += "<br/>";
-     }
-     layer.bindPopup(txt);
-   }
-
 
   // load GeoJSON from an external file
   // load GeoJSON from an external file
   $.getJSON("../data/colmunic1.geojson",function(data){
     // add GeoJSON layer to the map once the file is loaded
-    var json = L.geoJson(data, {
-      pointToLayer: function(feature, latlng) {
-        
-        return L.marker(latlng, {
-          icon: smallIcon
-        });
-      },
-      onEachFeature: onEachFeature
-    });
+    var json = L.geoJson(data);
     json.addTo(map);
     map.fitBounds(json.getBounds());
   });
 
 </script>
 
-**Malaria Incidence in Colombian municipalities 1998**
 
-*Data provided "as is," no warranties.*
+Malaria incidence and population in Colombian municipalities from 1973, 95, 93 censuses and projections until 2005.            
 
-Malaria incidence and population from 1973, 95, 93 censuses and projections until 2005.
-
-colmunic.dbf:                        Data set with malaria incidence and  population from 1973, 1985, 1993 censuses and projections until 2005; 1068 observations, 50 variables      
-
-colmunic.shp/shx/dbf:                Shape file for Colombian municipalities (Administrative level 2)
-
-coldept.shp/shx/dbf:                  Shape file for Colombian departments (Administrative level 1)             
-
-Type = Polygon shape files
-
- Observations = 1,068
-
- Variables = 50
-
- Year range = 1973-2005
-
- Spatial resolution = medium
-
- Topic = housing rentals
-
- Type of sample data = Census/open data
-
- Rates
+* Observations = Municipalities: 1,068, Departments: 33
+* Variables = 50
+* Years = 1973-2005
 
 **Source:**
- Modified from the boundary files downloaded from http://www.cipotato.org/.
+ Modified from the boundary files downloaded from http://www.cipotato.org/. Malaria incidence in 1998. (Source:   SIVIGILA. Ministerio de Salud, Colombia.�There are 3 files for each year     from 1995-2005. Projections from Departamento Administrativo Nacional de Estada�stica DANE, Colombia). 
 
-|Variable|Description|
+|**File**|**Description**|
+|---|---|
+ 
+|colmunic.shp/shx/dbf | Malaria incidence and  population from 1973, 1985, 1993 censuses and projections until 2005 (Administrative level 2)|
+| coldept.shp/shx/dbf | Data for Colombian departments (Administrative level 1) |
+
+
+|**Variable**|**Description**|
 |---|---|
 | ID                                   | Sequential ID                        |
 | ADM1                                 | Departments (Administrative level 1) |
-| ADM2                                 | Municipalities (Administrative level 2)                                   |
+| ADM2                                 | Municipalities (Administrative level 2)  |
 | CODDEPT                              | DANE code for departments            |
 | DANECODE                             | DANE code for municipalities         |
-| IDDANE                               | DANE code for municipalities in      numeric format                       |
+| IDDANE                               | DANE code for municipalities in numeric format |
 | TP1973                               | Total population from census in 1973 |
 | UP1973                               | Urban population form census in 1973 |
 | RP1973                               | Rural population from census in 1973 |
@@ -119,14 +80,11 @@ Type = Polygon shape files
 | TP1993                               | Total population from census in 1993 |
 | UP1993                               | Urban population form census in 1993 |
 | RP1993                               | Rural population from census in 1993 |
-| MALARI98                             | Malaria incidence in 1998. (Source:   SIVIGILA. Ministerio de Salud, Colombia. There are 3 files for each year from 1995-2005. Projections from Departamento Administrativo Nacional de Estadastica DANE, Colombia   )     |
-| TPyyyy                               | Total population projected in year    yyyy                                 |
-| UPyyyy                               | Urban population projected in year    yyyy                                 |
-| RPyyyy                               | Rural population projected in year   yyyy                                 |
+| MALARI98                             | Malaria incidence in 1998. |
+| TPyyyy                               | Total population projected in year    yyyy    |
+| UPyyyy                               | Urban population projected in year    yyyy    |
+| RPyyyy                               | Rural population projected in year   yyyy     |
                                     
 
+Prepared by Luis Galvis. Last updated June 20, 2005. Data provided "as is," no warranties.
 
-
-Prepared by Luis Galvis. 
-
-Last updated June 20, 2005

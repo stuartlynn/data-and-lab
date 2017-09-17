@@ -1,16 +1,22 @@
 ---
 layout: post
-title: "Atlanta"
+title: "Atlanta Homicides 1980s-90s"
 date: 2017-05-29 15:00:57
 image: '/assets/img/'
 description:
-main-class: 'CRIME'
+main-class: 'crime'
 color:
 tags:
-- polygon
+- polygons
+- rates
+- space-time
+- <500
+- ESDA
+- regression
+- research
 categories:
 twitter_text:
-introduction: 'Atlanta, GA region homicide counts and rates'
+introduction: '1980s-90s homicides and socio-economics in Atlanta, GA'
 ---
 <script>
 var map = L.map('map');
@@ -32,7 +38,7 @@ $('#map').on('click touch', enableMapInteraction);
 $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   var smallIcon = L.icon({
-         iconUrl: '../assets/img/icons/blue.png',
+         iconUrl: 'http://www.hckrecruitment.nic.in/images/blue.png',
          iconSize: [16, 16], // size of the icon
          });
 
@@ -51,7 +57,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 // load GeoJSON from an external file
 // load GeoJSON from an external file
-$.getJSON("../data/Nepal.geojson",function(data){
+$.getJSON("../data/atlanta.geojson",function(data){
 	// add GeoJSON layer to the map once the file is loaded
 	var json = L.geoJson(data, {
       pointToLayer: function(feature, latlng) {
@@ -69,36 +75,37 @@ $.getJSON("../data/Nepal.geojson",function(data){
 
 Homicides and selected socio-economic characteristics for counties surrounding Atlanta, GA. Data aggregated for three time periods: 1979-84 (steady decline in homicides), 1984-88 (stable period), and 1988-93 (steady increase in homicides). Download the file [here](https://s3.amazonaws.com/geoda/data/atlanta_hom.zip).
 
-Type = polygon shape file, unprojected, lat-lon
-Observations = 90
-Variables = 23
+* Projection: unprojected, lat-lon
+* Observations = 90
+* Variables = 23
+* Years 1980s-90s
+
 
 **Source**
 S. Messner, L. Anselin, D. Hawkins, G. Deane, S. Tolnay, R. Baller (2000). An Atlas of the Spatial Patterning of County-Level Homicide, 1960-1990. Pittsburgh, PA, [National Consortium on Violence Research (NCOVR)](https://www.nttac.org/index.cfm?event=projectDetails&id=339).
 
-Variable | Description
----|---
-NAME | county name
-STATE_NAME | state name
-STATE_FIPS | state fips code (character)
-CNTY_FIPS | county fips code (character)
-FIPS | combined state and county fips code (character)
-FIPSNO | fips code as numeric variable
-HR7984 | homicide rate per 100,000 (1979-84)
-HR8488 | homicide rate per 100,000 (1984-88)
-HR8893 | homicide rate per 100,000 (1988-93)
-HC7984 | homicide count (1979-84)
-HC8488 | homicide count (1984-88)
-HC8893 | homicide count (1988-93)
-PO7984 | population total (1979-84)
-PO8488 | population total (1984-88)
-PO8893 | population total (1988-93)
-PE77 | police expenditures per capita, 1977
-PE82 | police expenditures per capita, 1982
-PE87 | police expenditures per capita, 1987
-RDAC80 | resource deprivation/affluence composite variable, 1980
-RDAC85 | resource deprivation/affluence composite variable, 1985
-RDAC90 | resource deprivation/affluence composite variable, 1990
+|**Variable**|**Description**|
+|---|---|
+|NAME | county name||
+|STATE_NAME | state name|
+|STATE_FIPS | state FIPS code (character)|
+|CNTY_FIPS | county FIPS code (character)|
+|FIPS | combined state and county FIPS code (character)|
+|FIPSNO | fips code as numeric variable|
+|HR7984 | homicide rate per 100,000 (1979-84)|
+|HR8488 | homicide rate per 100,000 (1984-88)|
+|HR8893 | homicide rate per 100,000 (1988-93)|
+|HC7984 | homicide count (1979-84)|
+|HC8488 | homicide count (1984-88)|
+|HC8893 | homicide count (1988-93)|
+|PO7984 | population total (1979-84)|
+|PO8488 | population total (1984-88)|
+|PO8893 | population total (1988-93)|
+|PE77 | police expenditures per capita, 1977|
+|PE82 | police expenditures per capita, 1982|
+|PE87 | police expenditures per capita, 1987|
+|RDAC80 | resource deprivation/affluence composite variable, 1980|
+|RDAC85 | resource deprivation/affluence composite variable, 1985|
+|RDAC90 | resource deprivation/affluence composite variable, 1990|
 
-Prepared by Luc Anselin.
-Last updated September 10, 2004
+Prepared by Luc Anselin. Last updated September 10, 2004. Data provided "as is," no warranties.

@@ -1,19 +1,20 @@
 ---
 layout: post
-title: "Liquor Chicago"
+title: "2015 Chicago Liquor Stores"
 date: 2017-07-18 16:57:16
 image: /assets/img/
 description:
-main-class: 'COMMERCE'
+main-class: 'economics'
 color:
 tags:
-- point shape file
-- commerce
+- points
+- 500-5,000
+- ESDA
 - open data
-- Luc Anselin course lab
+- Anselin lab
 categories:
 twitter_text:
-introduction: "Liquor stores in Chicago, IL as of 2015. Scraped from Google Maps in 2015."
+introduction: "Liquor stores in Chicago. Scraped from Google Maps in 2015."
 ---
 <script>
   var map = L.map('map');
@@ -35,7 +36,7 @@ introduction: "Liquor stores in Chicago, IL as of 2015. Scraped from Google Maps
 $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   var smallIcon = L.icon({
-         iconUrl: '../assets/img/icons/blue.png',
+         iconUrl: 'http://www.hckrecruitment.nic.in/images/blue.png',
          iconSize: [16, 16], // size of the icon
          });
 
@@ -71,19 +72,15 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
-Data provided "as is", no warranties.
+Liquor stores in Chicago, IL. Scraped from Google Maps in 2015.
 
-Liquor stores in Chicago, IL as of 2015\. Scraped from Google Maps in 2015.
+* Variables = 2
+* Observations = 571
 
-Type = point shape file.
+|**Variable**|**Description**|
+|---|---|
+|ID|Unique numeric ID|
+|Place ID|Unique string ID|
 
-Variables = 2
 
-Observations = 571
-
-Type of sample data = Open data
-
-Luc Anselin course lab
-
-Prepared by Center for Spatial Data Science ([https://spatial.uchicago.edu/](https://spatial.uchicago.edu/))
-Last updated July 5, 2017.
+Prepared by ([Center for Spatial Data Science](https://spatial.uchicago.edu/)).Last updated July 5, 2017. Data provided "as is," no warranties.

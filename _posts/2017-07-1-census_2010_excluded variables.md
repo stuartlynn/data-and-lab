@@ -1,19 +1,21 @@
 ---
 layout: post
-title: "Denver foreclosures"
+title: "Denver 2010 Demographics & Housing"
 date: 2017-07-1 16:39:16
 image: /assets/img/
 description:
-main-class: 'HOUSING'
+main-class: 'housing'
 color:
 tags:
-- polygon
-- housing
-- open data
-- Rates
+- polygons
+- <500
+- smaller areas
+- ESDA
+- Census
+
 categories:
 twitter_text:
-introduction: "Demographics of Denver neighborhoods from 2010."
+introduction: "Census demographics and housing data for Denver neighborhoods (2010)."
 ---
 <script>
   var map = L.map('map');
@@ -35,7 +37,7 @@ introduction: "Demographics of Denver neighborhoods from 2010."
 $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   var smallIcon = L.icon({
-         iconUrl: '../assets/img/icons/blue.png',
+         iconUrl: 'http://www.hckrecruitment.nic.in/images/blue.png',
          iconSize: [16, 16], // size of the icon
          });
 
@@ -73,38 +75,28 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 Data provided "as is", no warranties.
 
- Demographics of Denver neighborhoods from 2010. Source: [Denver data portal](https://www.denvergov.org/opendata/dataset/city-and-county-of-denver-census-neighborhood-demographics-2010).
+ Demographics and housing characteristics of Denver neighborhoods (2010). Source: [Denver data portal](https://www.denvergov.org/opendata/dataset/city-and-county-of-denver-census-neighborhood-demographics-2010).
 
 
- Type = polygon shapefile
+* Type = polygon shapefile
+* Observations = 75
+* Variables = 55
+* Year = 2010
 
- Observations = 75
-
- variables = 55
-
- Year = 2010
-
- Spatial resolution = medium
-
- Topic = demographics and housing
-
- Type of sample data = open data
-
- Rates
 
 |Variable|Explanation|
 |:-------|:----------|
 |NBRHD\_NAME|Neighborhood name|
 |POPULATION|Population in 2010|
-|HISPANIC\_2, WHITE\_2010, BLACK\_2010, NATIVEAM\_2, ASIAN\_2010, HAWPACIS\_2, OTHER\_2010, TWO\_OR\_MOR|Population broken down by race. Hispanic, white, black, Native American, Asian, Hawaiian/Pacific Islander, other, two or more.|
+|HISPANIC\_2, WHITE\_2010, BLACK\_2010, NATIVEAM\_2, ASIAN\_2010, HAWPACIS\_2, OTHER\_2010, TWO\_OR\_MOR|Population by race. Hispanic, white, black, Native American, Asian, Hawaiian/Pacific Islander, other, two or more.|
 |PCT\_HISPAN, PCT\_WHITE, PCT\_BLACK, PCT\_AMERIN, PCT\_ASIAN, PCT\_HAW\_PA, PCT\_OTHER\_, PCT\_TWO\_OR|race, as percent of total population. Hispanic, white, black, Native American, Asian, Hawaiian/Pacific Islander, other, two or more.|
-|MALE, FEMALE|Population broken down by gender|
-|AGE10\_14, AGE15\_17, AGE18\_19, AGE60\_61, AGE62\_64, AGE\_0\_TO\_9, AGE20\_29, AGE30\_39, AGE40\_49, AGE50\_59, AGE\_80\_PLU, AGE\_LESS\_1, AGE\_65\_PLU|Population breakdown by age|
+|MALE, FEMALE|Population by gender|
+|AGE10\_14, AGE15\_17, AGE18\_19, AGE60\_61, AGE62\_64, AGE\_0\_TO\_9, AGE20\_29, AGE30\_39, AGE40\_49, AGE50\_59, AGE\_80\_PLU, AGE\_LESS\_1, AGE\_65\_PLU|Population by age|
 |PCT\_LESS\_1, PCT\_65\_PLU|Percent of population under 1 and over 65 years of age.|
 |NUM\_HOUSEH|Number of households|
-|ONE\_PERSON, TWO\_PLUS|Households broken down by number of people|
+|ONE\_PERSON, TWO\_PLUS|Households by number of people|
 |FAMILY\_HHL|Number of family households|
-|HUSB\_WIFE, OTHER\_FAMI, MALE\_SINGLE, FEMAL\_SING, NON\_FAMILY|Family households broken down by household head type.|
+|HUSB\_WIFE, OTHER\_FAMI, MALE\_SINGLE, FEMAL\_SING, NON\_FAMILY|Family households by household head type.|
 |GROUP\_QUAR|Population in group quarters|
 |GQ\_INSTITU, GQ\_NONINST|Residents of group quarters: institutional (correctional, nursing, etc.) and non-institutional (military, college, etc.)|
 |HOUSING\_UN|Number of housing units|

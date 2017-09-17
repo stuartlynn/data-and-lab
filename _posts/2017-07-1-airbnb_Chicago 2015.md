@@ -7,14 +7,13 @@ description:
 main-class: 'HOUSING'
 color:
 tags:
-- polygon
-- housing
-- census data
+- polygons
+- Census
 - open data
-- Rates
+- ESDA
 categories:
 twitter_text:
-introduction: 'This database is about Airbnb spots, socioeconomic indicators, and crime by community area in Chicago.'
+introduction: 'Airbnb rentals, socioeconomics, and crime by Chicago community area.'
 ---
 <script>
   var map = L.map('map');
@@ -36,7 +35,7 @@ introduction: 'This database is about Airbnb spots, socioeconomic indicators, an
 $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   var smallIcon = L.icon({
-         iconUrl: '../assets/img/icons/blue.png',
+         iconUrl: 'http://www.hckrecruitment.nic.in/images/blue.png',
          iconSize: [16, 16], // size of the icon
          });
 
@@ -77,21 +76,10 @@ Note: Data provided "as is", no warranties.
 This database is about Airbnb spots, socioeconomic indicators, and
 crime by community area in Chicago.
 
- Type = polygon shape file
-
- Observations = 77
-
- Variables = 20
-
- Year range = 2008-2015
-
- Spatial resolution = medium (smaller areas)
-
- Topic = housing rentals
-
- Type of sample data = Census/open data
-
- Rates
+ * Type = polygon shapefile
+ * Observations = 77
+ * Variables = 20
+ * Years = 2008-2015
 
 
 |Variable|Description|Source|

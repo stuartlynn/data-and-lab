@@ -1,19 +1,20 @@
 ---
 layout: post
-title: "San Francisco crime"
+title: "San Francisco Crime Incidents (2012)"
 date: 2017-07-18 16:52:16
 image: /assets/img/
 description:
-main-class: 'CRIME'
+main-class: 'crime'
 color:
 tags:
-- point shape file
-- crime
+- points
+- 500-5,000
+- ESDA
 - open data
-- Luc Anselin course lab
+- Anselin lab
 categories:
 twitter_text:
-introduction: "Crimes reported to San Francisco police, for July 2012 to December 2012."
+introduction: "Incidents of robberies, drugs/narcotics possession or sale, vehicle theft, and vandalism in San Francisco (06-12/2012)."
 ---
 <script>
   var map = L.map('map');
@@ -35,7 +36,7 @@ introduction: "Crimes reported to San Francisco police, for July 2012 to Decembe
 $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   var smallIcon = L.icon({
-         iconUrl: '../assets/img/icons/blue.png',
+         iconUrl: 'http://www.hckrecruitment.nic.in/images/blue.png',
          iconSize: [16, 16], // size of the icon
          });
 
@@ -58,7 +59,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
     // add GeoJSON layer to the map once the file is loaded
     var json = L.geoJson(data, {
       pointToLayer: function(feature, latlng) {
-
+        
         return L.marker(latlng, {
           icon: smallIcon
         });
@@ -71,85 +72,31 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
-Data provided "as is", no warranties.
 
-Crimes reported to San Francisco police, for July 2012 to December 2012\. Separate files for each month and category of crime.
-File names indicate the month, e.g. **SFcartheft_aug12**
-Source: ["Crime Incidents from 1 Jan 2003", City of San Francisco Open Data Portal](https://data.sfgov.org/Public-Safety/Map-Crime-Incidents-from-1-Jan-2003/gxxq-x39z)
+Incidents of robberies, drugs/narcotics possession or sale, vehicle theft, and vandalism for July 1 to December 31, 2012. Sources: 2010 Census (population) and ["Crime Incidents from 1 Jan 2003", City of San Francisco Open Data Portal](https://data.sfgov.org/Public-Safety/Map-Crime-Incidents-from-1-Jan-2003/gxxq-x39z) (crimes).
 
+* Year = 2012
 
-Type = point shape file.
+**Car thefts:**
+* Observations = 607
+* Variables = 18
 
-Variables = 16
+**Drugs:**
+* Observations = 3,897
+* Variables = 13
 
-Year = 2012
+**Robberies:**
+* Observations = 2,761
+* Variables = 13
 
-Spatial resolution = high
-
-Topic = crime
-
-Type of sample data = open data
-
-Luc Anselin course lab
-
-Observations vary by month and category:
-
-SFcartheft_july12 = 607
-
-SFcartheft_aug12 = 553
-
-SFcartheft_sep12 = 562
-
-SFcartheft_oct12 = 561
-
-SFcartheft_nov12 = 568
-
-SFcartheft_dec12 = 533
-
-
-SFdrugs_july12 = 610
-
-SFdrugs_aug12 = 671
-
-SFdrugs_sep12 = 647
-
-SFdrugs_oct12 = 688
-
-SFdrugs_nov12 = 639
-
-SFdrugs_dec12 = 643
-
-
-
-SFrob_july12 = 385
-
-SFrob_aug12 = 497
-
-SFrob_sep12 = 438
-
-SFrob_oct12 = 483
-
-SFrob_nov12 = 497
-
-SFrob_dec12 = 461
-
-
-
-SFvand_july12 = 562
-
-SFvand_aug12 = 576
-
-SFvand_sep12 = 593
-
-SFvand_oct12 = 694
-
-SFvand_nov12 = 536
-
-SFvand_dec12 = 470
+**Vandalism:**
+* Observations = 3,430
+* Variables = 13
 
 | Variable | Description |
 |--
 | IncidntNum, IncidntN_1 | Unique number for each incident report |
+| X_pr, Y_pr | projected coordinates
 | Category | Vehicle theft |
 | Descript | Description of the crime |
 | DayOfWeek | day of the week that crime was reported |
@@ -157,6 +104,8 @@ SFvand_dec12 = 470
 | Resolution | Outcome of the report, e.g. None, Arrest, Unfounded etc |
 | Location | Street address where the crime occurred |
 | Date | Date of the report |
+| Time | Time of report|
+| X, Y | Coordinates of crime location |
 
-Prepared by Center for Spatial Data Science ([https://spatial.uchicago.edu/](https://spatial.uchicago.edu/))
-Last updated July 3, 2017.
+Prepared by ([Center for Spatial Data Science](https://spatial.uchicago.edu/))
+Last updated July 3, 2017. Data provided "as is," no warranties.

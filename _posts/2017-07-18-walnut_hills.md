@@ -1,20 +1,21 @@
 ---
 layout: post
-title: "Walnut Hills"
+title: "2008 Cincinnati Crime and Socio-Demographics"
 date: 2017-07-18 16:45:16
 image: /assets/img/
 description:
-main-class: 'CRIME'
+main-class: 'crime'
 color:
 tags:
-- polygon
-- crime
-- research project
-- Rates
-- Luc Anselin course lab
+- polygons
+- rates
+- <500
+- ESDA
+- research
+- Anselin lab
 categories:
 twitter_text:
-introduction: "Crime data in the Clifton, Walnut Hills, Evanston, and Avondale neighborhoods of Cincinnati, OH for the last 6 months of 2008."
+introduction: "Crime and socio-demographics data for the Clifton, Walnut Hills, Evanston, and Avondale neighborhoods in Cincinnati, OH for 08-12/2008."
 ---
 <script>
   var map = L.map('map');
@@ -36,7 +37,7 @@ introduction: "Crime data in the Clifton, Walnut Hills, Evanston, and Avondale n
 $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   var smallIcon = L.icon({
-         iconUrl: '../assets/img/icons/blue.png',
+         iconUrl: 'http://www.hckrecruitment.nic.in/images/blue.png',
          iconSize: [16, 16], // size of the icon
          });
 
@@ -72,30 +73,16 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
-Data provided "as is", no warranties.
 
-Crime data in the Clifton, Walnut Hills, Evanston, and Avondale neighborhoods of Cincinnati, OH for the last 6 months of 2008. From Grubesic, T, R. Wei and A. Murray (2014). [Spatial clustering overview and comparison: accuracy, sensitivity and computational expense.](http://www.tandfonline.com/doi/full/10.1080/00045608.2014.958389) Annals, Association of American Geographers 104, 1134-1156.
+Crime and socio-demographic data for the Clifton, Walnut Hills, Evanston, and Avondale neighborhoods in Cincinnati, OH for the last 6 months of 2008. From Grubesic, T, R. Wei and A. Murray (2014). [Spatial clustering overview and comparison: accuracy, sensitivity and computational expense.](http://www.tandfonline.com/doi/full/10.1080/00045608.2014.958389) Annals, Association of American Geographers 104, 1134-1156.
 
 
- Type = polygon shape file
+* Variables = 89
+* Observations = 457
+* Year = 2008
 
- Variables = 89
 
- Observations = 457
-
- Year Range = 2008
-
- Spatial resolution = medium
-
- Topic = crime
-
- Type of sample data = research project
-
- Rates
-
- Luc Anselin course lab
-
-|Variable|Description|
+|**Variable**|**Description**|
 |:-------|:----------|
 |BLOCK|Census block|
 |TRACT|Census tract|
@@ -127,5 +114,5 @@ Crime data in the Clifton, Walnut Hills, Evanston, and Avondale neighborhoods of
 |BURGLARY, ASSAULT, THEFT|Counts of burglary, assault, and theft|
 |BURG\_D, ASSALT\_D, THEFT\_D, BURG\_D1, BURG\_D2|Crime dummy variables: '1' if there is at least 1 incident, '0' otherwise.|
 
-Prepared by Center for Spatial Data Science ([https://spatial.uchicago.edu/](https://spatial.uchicago.edu/))
- Last updated July 6, 2017.
+Prepared by ([Center for Spatial Data Science](https://spatial.uchicago.edu/))
+Last updated July 6, 2017. Data provided "as is," no warranties.
