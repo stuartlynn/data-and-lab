@@ -84,14 +84,13 @@ statistics" in 1830s France. Data from the [R package Guerry (Michael Friendly a
 
 |**Variable**|**Description**|**Source**|
 |---|---|---|
-
 |Variable|	Description	|Source|
 |dept, code_de	|Department ID: Standard numbers for the departments| |	
 |region	|   Region of France ('N'='North', 'S'='South', 'E'='East', 'W'='West', 'C'='Central').  Corsica is coded as NA.	| |
 |dprtmnt|	Department name: Departments are named according to usage in 1830, but without accents. A factor with levels Ain Aisne Allier ... Vosges Yonne| |	
 |crm_prs|	Population per Crime against persons.|	A2. Compte général, 1825-1830|
-|crm_prp|	|Population per Crime against property.	|Compte général, 1825-1830|
-|litercy	||Percent of military conscripts who can read and write.|	A2 |
+|crm_prp|	Population per Crime against property.	|Compte général, 1825-1830|
+|litercy	|Percent of military conscripts who can read and write.|	A2 |
 |donatns|	Donations to the poor.|	A2. Bulletin des lois|
 |infants|	Population per illegitimate birth.|	A2. Bureau des Longitudes, 1817-1821|
 |suicids|	Population per suicide.	| A2. Compte général, 1827-1830|
