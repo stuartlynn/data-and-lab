@@ -73,7 +73,6 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
-Data provided "as is", no warranties.
 
 [US Presidential Election results in 2012 and 2016, by county.](https://github.com/tonmcg/County_Level_Election_Results_12-16)
 
@@ -152,6 +151,5 @@ Data provided "as is", no warranties.
 |diff\_2012|Difference between the number of votes for Republican and Democratic candidates
 |pct\_pt\_12|The number in diff\_2012 expressed as a percent of the total votes. Negative if fewer votes were cast for the Democratic candidate|
 
-Prepared by [Center for Spatial Data Science](http://www.spatial.uchicago.edu).
+Prepared by [Center for Spatial Data Science](http://www.spatial.uchicago.edu). Updated July 10, 2017. Data provided "as is," no warranties.
 
-Updated July 10, 2017

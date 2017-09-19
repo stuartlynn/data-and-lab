@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Industry Composition in Sacramento (2000)"
+title: "Sacramento Industry Mix"
 date: 2017-07-18 16:10:16
 image: /assets/img/
 description:

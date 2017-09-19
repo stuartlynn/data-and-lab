@@ -56,7 +56,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   // load GeoJSON from an external file
   // load GeoJSON from an external file
-  $.getJSON("../data/census_2010_excluded.geojson",function(data){
+  $.getJSON("../data/vehicles.geojson",function(data){
     // add GeoJSON layer to the map once the file is loaded
     var json = L.geoJson(data, {
       pointToLayer: function(feature, latlng) {
@@ -73,7 +73,6 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
-Data provided "as is", no warranties.
 
  Demographics and housing characteristics of Denver neighborhoods (2010). Source: [Denver data portal](https://www.denvergov.org/opendata/dataset/city-and-county-of-denver-census-neighborhood-demographics-2010).
 
@@ -105,6 +104,5 @@ Data provided "as is", no warranties.
 |HU\_OWNED|Number of owner-occupied housing units|
 |HU\_RENTED|Number of renter-occupied housing units|
 
-Prepared by Leith McIndewar.
+Prepared by Leith McIndewar. Last updated July 10, 2017. Data provided "as is," no warranties.
 
-Last updated July 10, 2017

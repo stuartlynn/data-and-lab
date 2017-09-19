@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "US County Health, Income and Diversity (2000)"
+title: "2000 Health, Income + Diversity"
 date: 2017-07-18 16:44:16
 image: /assets/img/
 description:
@@ -73,13 +73,13 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
-Data provided "as is", no warranties.
 
  Income, race, and public health statistics for US counties.
- Sources:
- [philpierdo2](https://philpierdo2.carto.com/me)
- [Kaggle](https://www.kaggle.com/mikejohnsonjr/us-counties-diversity-index)
- [Chetty, Stepner, Abraham, Lin, Scuderi, Turner, Bergeron, and Cutler (2016). The Association Between Income and Life Expectancy in the United States, 2001-2014. Health Statistics by County.](http://www.equality-of-opportunity.org/data/)
+ 
+Sources:
+- [philpierdo2](https://philpierdo2.carto.com/me)
+- [Kaggle](https://www.kaggle.com/mikejohnsonjr/us-counties-diversity-index)
+- [Chetty, Stepner, Abraham, Lin, Scuderi, Turner, Bergeron, and Cutler (2016). The Association Between Income and Life Expectancy in the United States, 2001-2014. Health Statistics by County.](http://www.equality-of-opportunity.org/data/)
 
 
 * Observations = 3,984
@@ -138,6 +138,5 @@ Data provided "as is", no warranties.
 |Hispanic o|Hispanic, percent|[Kaggle](https://www.kaggle.com/mikejohnsonjr/us-counties-diversity-index)
 |White alon|White alone, percent|[Kaggle](https://www.kaggle.com/mikejohnsonjr/us-counties-diversity-index)|
 
-Prepared by Manoradhan Murugesan.
+Prepared by Manoradhan Murugesan. Updated July 10, 2017. Data provided "as is", no warranties.
 
-Updated July 10, 2017

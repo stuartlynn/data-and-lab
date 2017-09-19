@@ -86,7 +86,7 @@ S. Messner, L. Anselin, D. Hawkins, G. Deane, S. Tolnay, R. Baller (2000). An At
 
 |**Variable**|**Description**|
 |---|---|
-|NAME | county name||
+|NAME | county name|
 |STATE_NAME | state name|
 |STATE_FIPS | state FIPS code (character)|
 |CNTY_FIPS | county FIPS code (character)|
