@@ -58,7 +58,6 @@ Malaria incidence and population in Colombian municipalities from 1973, 95, 93 c
 
 |**File**|**Description**|
 |---|---|
- 
 |colmunic.shp/shx/dbf | Malaria incidence and  population from 1973, 1985, 1993 censuses and projections until 2005 (Administrative level 2)|
 | coldept.shp/shx/dbf | Data for Colombian departments (Administrative level 1) |
 

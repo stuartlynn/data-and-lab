@@ -15,61 +15,6 @@ categories:
 twitter_text:
 introduction: 'Boston data for hedonic house price modeling (1970s).'
 ---
-<script>
-  var map = L.map('map');
-  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', { <!--this is the URL for the Nepal Geojson-->
-		maxZoom: 18,
-		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
-			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-		id: 'mapbox.light'
-	}).addTo(map);
-
-  map.scrollWheelZoom.disable();
-  map.touchZoom.disable();
-  var enableMapInteraction = function () {
-      map.scrollWheelZoom.enable();
-      map.touchZoom.enable();
-  }
-  $('#map').on('click touch', enableMapInteraction);
-$('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
-
-  var smallIcon = L.icon({
-         iconUrl: 'http://www.hckrecruitment.nic.in/images/blue.png',
-         iconSize: [16, 16], // size of the icon
-         });
-
-   function onEachFeature(feature, layer) {
-     //console.log(feature);
-     var txt = "";
-     for (var fname in feature.properties) {
-       txt += fname;
-       txt += " : ";
-       txt += feature.properties[fname];
-       txt += "<br/>";
-     }
-     layer.bindPopup(txt);
-   }
-
-
-  // load GeoJSON from an external file
-  // load GeoJSON from an external file
-  $.getJSON("../data/Nepal.geojson",function(data){
-    // add GeoJSON layer to the map once the file is loaded
-    var json = L.geoJson(data, {
-      pointToLayer: function(feature, latlng) {
-        
-        return L.marker(latlng, {
-          icon: smallIcon
-        });
-      },
-      onEachFeature: onEachFeature
-    });
-    json.addTo(map);
-    map.fitBounds(json.getBounds());
-  });
-
-</script>
 
 Housing and neighborhood data for the city of Boston based on research from the 1970s-90s.
 
@@ -121,5 +66,4 @@ In R, use library(MASS) and write.matrix (frame or matrix name, file="output fil
 |B | A numeric vector of 1000*(Bk - 0.63)^2 where Bk is the proportion of blacks|
 |LSTAT | A numeric vector of percentage values of lower status population|
 
-Prepared by Luc Anselin.
-Last updated June 3, 2004
+Prepared by Luc Anselin. Last updated June 3, 2004. Data provided "as is," no warranties.

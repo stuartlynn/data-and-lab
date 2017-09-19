@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2008 Cincinnati Crime and Socio-Demographics"
+title: "2008 Cincinnati Crime + Socio-Demographics"
 date: 2017-07-18 16:45:16
 image: /assets/img/
 description:

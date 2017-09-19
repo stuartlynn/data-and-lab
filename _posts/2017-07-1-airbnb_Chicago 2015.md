@@ -71,7 +71,6 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
-Note: Data provided "as is", no warranties.
 
 This database is about Airbnb spots, socioeconomic indicators, and
 crime by community area in Chicago.
@@ -103,6 +102,5 @@ crime by community area in Chicago.
 |num\_theft|total number of thefts|[Chicago Data Portal](https://data.cityofchicago.org/view/5cd6-ry5g)
 |population|community area population in 2010|[Census 2010, Chicago Data Portal](https://www.cityofchicago.org/content/dam/city/depts/zlup/Zoning_Main_Page/Publications/Census_2010_Community_Area_Profiles/Census_2010_and_2000_CA_Populations.pdf)|
 
-Prepared by Rodrigo Valdes.
+Prepared by Rodrigo Valdes. Last updated July 10, 2017. Data provided "as is," no warranties.
 
-Last updated July 10, 2017.

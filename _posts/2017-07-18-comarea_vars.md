@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Health and Socio-Economics in Chicago (2014)"
+title: "Chicago Health + Socio-Economics"
 date: 2017-07-18 16:50:16
 image: /assets/img/
 description:
@@ -75,7 +75,6 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
-Data provided "as is", no warranties.
 
 Public health and socio-economic indicators for the 77 community areas of Chicago, IL, 2014.
 
@@ -151,5 +150,5 @@ Public health and socio-economic indicators for the 77 community areas of Chicag
 
 Economic Hardship Index method based on the Intercity Hardship Index, by Richard P. Nathan and Charles F. Adams, Jr. in *Understanding Urban Hardship*, Political Science Quarterly 91 (Spring 1976): 47-62.)
 
-Prepared by ([Center for Spatial Data Science](https://spatial.uchicago.edu/))
-Last updated July 6, 2017.
+Prepared by ([Center for Spatial Data Science](https://spatial.uchicago.edu/)). Last updated July 6, 2017. Data provided "as is," no warranties.
+
