@@ -7,7 +7,7 @@
 2. copy a template html to create a new html page for your new directory
 3. edit your new html page, line 10 update
 ```
-{% if post.main-class == 'CRIME' %}
+{% if post.main-class == 'crime' %}
 ```
 
 ## Basic Setup

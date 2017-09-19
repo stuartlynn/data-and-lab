@@ -4,7 +4,7 @@ title: "AirBnB Chicago 2015"
 date: 2017-07-1 16:29:16
 image: /assets/img/
 description:
-main-class: 'HOUSING'
+main-class: 'housing'
 color:
 tags:
 - polygons

@@ -4,7 +4,7 @@ title: "Baltimore"
 date: 2017-05-29 15:26:03
 image: '/assets/img/'
 description:
-main-class: 'HOUSING'
+main-class: 'housing'
 color:
 tags:
 - point

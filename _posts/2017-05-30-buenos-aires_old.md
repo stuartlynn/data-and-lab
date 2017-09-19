@@ -4,7 +4,7 @@ title: "Buenos Aires 1999 Elections"
 date: 2017-05-30 15:39:41
 image: '/assets/img/'
 description:
-main-class: 'POLITICS'
+main-class: 'politics'
 color:
 tags:
 - polygons
@@ -58,7 +58,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
     // add GeoJSON layer to the map once the file is loaded
     var json = L.geoJson(data, {
       pointToLayer: function(feature, latlng) {
-        
+
         return L.marker(latlng, {
           icon: smallIcon
         });
@@ -70,7 +70,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
   });
 
 </script>
-Selected Electoral Data for the 1999 National Elections, Argentine Congress (Lower House). 
+Selected Electoral Data for the 1999 National Elections, Argentine Congress (Lower House).
 
 Download the file [here](https://s3.amazonaws.com/geoda/data/buenosaires.zip).
 
