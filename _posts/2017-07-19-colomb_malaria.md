@@ -23,7 +23,7 @@ introduction: "Malaria Incidence in Colombian municipalities"
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
 			'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+			'Imagery Â© <a href="http://mapbox.com">Mapbox</a>',
 		id: 'mapbox.light'
 	}).addTo(map);
 
@@ -54,7 +54,7 @@ Malaria incidence and population in Colombian municipalities from 1973, 95, 93 c
 * Years = 1973-2005
 
 **Source:**
- Modified from the boundary files downloaded from http://www.cipotato.org/. Malaria incidence in 1998. (Source:   SIVIGILA. Ministerio de Salud, Colombia.�There are 3 files for each year     from 1995-2005. Projections from Departamento Administrativo Nacional de Estada�stica DANE, Colombia). 
+ Modified from the boundary files downloaded from http://www.cipotato.org/. Malaria incidence in 1998. (Source:   SIVIGILA. Ministerio de Salud, Colombia. There are 3 files for each year     from 1995-2005. Projections from Departamento Administrativo Nacional de Estada­stica DANE, Colombia). 
 
 |**File**|**Description**|
 |---|---|
@@ -65,7 +65,7 @@ Malaria incidence and population in Colombian municipalities from 1973, 95, 93 c
 
 |**Variable**|**Description**|
 |---|---|
-| ID                                   | Sequential ID                        |
+| IDÂ                                   | Sequential ID                        |
 | ADM1                                 | Departments (Administrative level 1) |
 | ADM2                                 | Municipalities (Administrative level 2)  |
 | CODDEPT                              | DANE code for departments            |

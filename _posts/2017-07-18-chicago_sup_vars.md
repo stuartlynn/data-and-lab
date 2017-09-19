@@ -9,7 +9,7 @@ color:
 tags:
 - points
 - <500
---ESDA
+- ESDA
 - open data
 - Anselin lab
 categories:
@@ -59,7 +59,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
     // add GeoJSON layer to the map once the file is loaded
     var json = L.geoJson(data, {
       pointToLayer: function(feature, latlng) {
-        
+
         return L.marker(latlng, {
           icon: smallIcon
         });
