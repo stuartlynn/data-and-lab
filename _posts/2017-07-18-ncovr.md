@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Homicides and Socio-Economics (1960-1990)"
+title: "Homicides + Socio-Economics (1960-90)"
 date: 2017-07-18 16:10:16
 image: /assets/img/
 description:
