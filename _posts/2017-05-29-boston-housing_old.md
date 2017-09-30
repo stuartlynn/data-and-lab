@@ -16,6 +16,9 @@ categories:
 twitter_text:
 introduction: 'Boston data for hedonic house price modeling (1970s).'
 ---
+<script>
+$('#map').hide();
+</script>
 
 Housing and neighborhood data for the city of Boston based on research from the 1970s-90s.
 

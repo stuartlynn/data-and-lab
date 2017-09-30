@@ -56,7 +56,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
   // load GeoJSON from an external file
   // load GeoJSON from an external file
-  $.getJSON("../data/vehicles.geojson",function(data){
+  $.getJSON("../data/denver.geojson",function(data){
     // add GeoJSON layer to the map once the file is loaded
     var json = L.geoJson(data, {
       pointToLayer: function(feature, latlng) {
