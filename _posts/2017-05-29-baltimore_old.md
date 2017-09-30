@@ -7,7 +7,7 @@ description:
 main-class: 'housing'
 color:
 tags:
-- point
+- points
 categories:
 twitter_text:
 introduction: 'Baltimore house sales prices and hedonics'

@@ -8,7 +8,7 @@ main-class: 'housing'
 color:
 tags:
 - points
-- 500-5000
+- 500-5,000
 - regression
 - research
 categories:

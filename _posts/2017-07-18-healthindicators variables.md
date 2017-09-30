@@ -7,7 +7,7 @@ description:
 main-class: 'health'
 color:
 tags:
-- polygon
+- polygons
 - <500
 - smaller areas
 - ESDA

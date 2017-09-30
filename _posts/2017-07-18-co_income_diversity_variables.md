@@ -8,7 +8,7 @@ main-class: 'health'
 color:
 tags:
 - polygons
-- 500 - 5,000
+- 500-5,000
 - larger areas
 - ESDA
 - Census

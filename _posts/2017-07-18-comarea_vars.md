@@ -8,7 +8,6 @@ main-class: 'health'
 color:
 tags:
 - polygons
-- health
 - <500
 - smaller areas
 - ESDA

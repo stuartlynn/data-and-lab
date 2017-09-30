@@ -9,8 +9,7 @@ color:
 tags:
 - points
 - csv
-- 5000+
-- crime
+- 5,000+
 - ESDA
 - open data
 - Anselin lab
