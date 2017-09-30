@@ -11,6 +11,7 @@ tags:
 - 500-5,000
 - regression
 - research
+- csv/txt
 categories:
 twitter_text:
 introduction: 'Boston data for hedonic house price modeling (1970s).'

@@ -8,14 +8,14 @@ main-class: 'crime'
 color:
 tags:
 - points
-- csv
+- csv/txt
 - 5,000+
 - ESDA
 - open data
 - Anselin lab
 categories:
 twitter_text:
-introduction: "2011 abandoned vehicles in Chicago (311 complaints)."
+introduction: '2011 abandoned vehicles in Chicago (311 complaints).'
 ---
 <script>
   var map = L.map('map');
