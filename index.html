@@ -3,6 +3,22 @@ layout: default
 ---
 
 <main class="home" id="post" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+  <article class="post-content">
+
+  <div class="tags">
+  {% assign tags_list = site.tags %}
+    {% if tags_list.first[0] == null %}
+      {% for tag in tags_list %}
+          <a href="tags/#{{ tag | slugify }}">{{ tag }}</a>
+      {% endfor %}
+    {% else %}
+      {% for tag in tags_list %}
+          <a href="tags/#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+      {% endfor %}
+    {% endif %}
+  {% assign tags_list = nil %}
+  </div>
+  </article>
     <div id="grid" class="row flex-grid">
     {% for post in site.posts %}
         <article class="box-item post-{{post.main-class}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
