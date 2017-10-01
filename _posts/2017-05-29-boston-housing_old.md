@@ -20,9 +20,11 @@ introduction: 'Boston data for hedonic house price modeling (1970s).'
 $('#map').hide();
 </script>
 
+[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/boston.zip)
+
+
 Housing and neighborhood data for the city of Boston based on research from the 1970s-90s.
 
-**Files**
 * Point shapefile
 * Observations = 506
 * Variables = 23

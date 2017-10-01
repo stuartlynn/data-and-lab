@@ -47,6 +47,8 @@ introduction: "Malaria Incidence in Colombian municipalities"
 </script>
 
 
+[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/malariacolomb.zip)
+
 Malaria incidence and population in Colombian municipalities from 1973, 95, 93 censuses and projections until 2005.            
 
 * Observations = Municipalities: 1,068, Departments: 33

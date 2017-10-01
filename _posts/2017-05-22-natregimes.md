@@ -49,6 +49,9 @@ map.fitBounds(json.getBounds());
 
 </script>
 
+[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/natregimes.zip)
+
+
 Homicides and selected socio-economic characteristics for continental U.S. counties. Data for four decennial census years: 1960, 1970, 1980 and 1990.
 
 * Observations = 3,085

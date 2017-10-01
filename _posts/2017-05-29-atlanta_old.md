@@ -73,6 +73,9 @@ $.getJSON("../data/atlanta.geojson",function(data){
 });
 </script>
 
+[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/atlanta_hom.zip)
+
+
 Homicides and selected socio-economic characteristics for counties surrounding Atlanta, GA. Data aggregated for three time periods: 1979-84 (steady decline in homicides), 1984-88 (stable period), and 1988-93 (steady increase in homicides). Download the file [here](https://s3.amazonaws.com/geoda/data/atlanta_hom.zip).
 
 * Projection: unprojected, lat-lon

@@ -71,9 +71,10 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
   });
 
 </script>
-2000 Census Tract Data for Charleston, SC MSA and counties. 
 
-Download the data [here](https://s3.amazonaws.com/geoda/data/CharlestonMSA.zip).
+[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/CharlestonMSA.zip)
+
+2000 Census Tract Data for Charleston, SC MSA and counties. 
 
 * Type = Polygon file
 * Observations = 117

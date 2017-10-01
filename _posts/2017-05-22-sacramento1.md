@@ -73,6 +73,8 @@ map.fitBounds(json.getBounds());
 
 </script>
 
+[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/sacramento.zip)
+
 
 2000 Employment and Demographic Census Tract Data (Summary File 3) for Sacramento MSA (OMB's 2003 MSA Definition).
 
