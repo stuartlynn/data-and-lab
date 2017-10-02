@@ -73,6 +73,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
+[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/healthIndicators.zip)
 
 Health indicators for Chicago neighorhoods. Source: [City of Chicago Data Portal.](https://data.cityofchicago.org/Health-Human-Services/Public-Health-Statistics-Selected-public-health-in/iqnk-2tcu). Data provided by Illinois Department of Public Health (IDPH) and U.S. Census Bureau.
 

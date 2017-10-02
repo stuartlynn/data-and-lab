@@ -73,6 +73,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
+[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/income_diversity.zip)
 
  Income, race, and public health statistics for US counties.
  

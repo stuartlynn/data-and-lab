@@ -63,6 +63,8 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
+[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/Abandoned_Vehicles_Map.csv)
+
 Information about abandoned vehicles in Chicago, Illinois. Includes all open abandoned vehicle service complaints made to 311 since January 2011, and all requests completed since January 1 2011.
 Retrieved from the [City of Chicago Data Portal](https://data.cityofchicago.org/Facilities-Geographic-Boundaries/Boundaries-Community-Areas-current-/cauq-8yn6) on August 15 2016. 
 

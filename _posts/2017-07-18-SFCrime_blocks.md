@@ -75,12 +75,27 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 [DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/SFCrime_July_Dec2012.zip)
 
-
-Population and incidents of robberies, drugs/narcotics possession or sale, vehicle theft, and vandalism for July 1 to December 31, 2012, aggregated to 2010 block groups. Sources: 2010 Census (population) and ["Crime Incidents from 1 Jan 2003", City of San Francisco Open Data Portal](https://data.sfgov.org/Public-Safety/Map-Crime-Incidents-from-1-Jan-2003/gxxq-x39z) (crimes).
+Population and incidents of robberies, drugs/narcotics possession or sale, vehicle theft, and vandalism for July 1 to December 31, 2012, aggregated to 2010 block groups. 
 
 * Observations = 579
 * Variables = 15
 * Years = 2010 and 2012
+
+**Data Source:** 
+San Francisco Police Department Crime Incident Reporting System
+* 2010 Census (population)
+* ["Crime Incidents from 1 Jan 2003", City of San Francisco Open Data Portal](https://data.sfgov.org/Public-Safety/Map-Crime-Incidents-from-1-Jan-2003/gxxq-x39z) (crimes).
+* http://www.sfgov.org
+* Crime Incidents: https://data.sfgov.org/Public-Safety/Crime-Incidents/snsg-xkfg
+* SFPD Plots: https://data.sfgov.org/Public-Safety/SFPD-Crime-Reporting-Plots-Zipped-Shapefile-Format/5aii-qc4e
+
+License:
+--Creative Commons license (CC0 1.0 Universal)
+--http://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+Data Extracted on January 10, 2013:
+--Incidents of robberies, drugs/narcotics possession or sale, vehicle theft, and vandalism for July 1 to December 31, 2012 (4 separate point shapefiles).
+--One polygons shapefile for SFPD reporting plots that these data were aggregated to.
 
 |Variable|Description|Source
 |---|---|---|

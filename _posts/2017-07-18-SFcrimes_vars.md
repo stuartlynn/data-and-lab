@@ -94,6 +94,37 @@ Incidents of robberies, drugs/narcotics possession or sale, vehicle theft, and v
 * Observations = 3,430
 * Variables = 13
 
+**Data Source:** 
+San Francisco Police Department Crime Incident Reporting System
+* http://www.sfgov.org
+* Crime Incidents: https://data.sfgov.org/Public-Safety/Crime-Incidents/snsg-xkfg
+* SFPD Plots: https://data.sfgov.org/Public-Safety/SFPD-Crime-Reporting-Plots-Zipped-Shapefile-Format/5aii-qc4e
+
+License:
+--Creative Commons license (CC0 1.0 Universal)
+--http://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+Data Extracted on January 10, 2013:
+--Incidents of robberies, drugs/narcotics possession or sale, vehicle theft, and vandalism for July 1 to December 31, 2012 (4 separate point shapefiles).
+--One polygons shapefile for SFPD reporting plots that these data were aggregated to.
+
+Projection:
+
+Projected Coordinate System:	NAD_1983_StatePlane_California_III_FIPS_0403_Feet
+Projection:	Lambert_Conformal_Conic
+False_Easting:	6561666.66666667
+False_Northing:	1640416.66666667
+Central_Meridian:	-120.50000000
+Standard_Parallel_1:	37.06666667
+Standard_Parallel_2:	38.43333333
+Latitude_Of_Origin:	36.50000000
+Linear Unit: 	Foot_US
+
+Geographic Coordinate System:	GCS_North_American_1983
+Datum: 	D_North_American_1983
+Prime Meridian: 	Greenwich
+Angular Unit: 	Degree
+
 | Variable | Description |
 |--
 | IncidntNum, IncidntN_1 | Unique number for each incident report |

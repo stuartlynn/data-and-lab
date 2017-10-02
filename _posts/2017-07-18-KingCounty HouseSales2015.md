@@ -72,6 +72,7 @@ map.fitBounds(json.getBounds());
 
 </script>
 
+[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/kingcounty.zip)
 
 Home sales prices and charactiersitcs for Seattle and King County, WA (May 2014 - 2015). [Source:](https://www.kaggle.com/harlfoxem/housesalesprediction/discussion)
 

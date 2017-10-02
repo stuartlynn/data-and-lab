@@ -72,6 +72,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
+[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/grocery.zip)
 
 
 Grocery stores in Chicago, IL as of 2015. Scraped from Google Maps in 2015.

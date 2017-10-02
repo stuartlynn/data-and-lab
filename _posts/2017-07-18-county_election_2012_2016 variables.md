@@ -73,15 +73,19 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
-
-[US Presidential Election results in 2012 and 2016, by county.](https://github.com/tonmcg/County_Level_Election_Results_12-16)
-
-[County facts](https://www.kaggle.com/benhamner/2016-us-election)
+[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/election.zip)
 
 
 * Variables = 84
 * Observations = 3108
 * Years = 2007-2016
+
+**Sources:**
+
+[US Presidential Election results in 2012 and 2016, by county.](https://github.com/tonmcg/County_Level_Election_Results_12-16)
+
+[County facts](https://www.kaggle.com/benhamner/2016-us-election)
+
 
 |Variable name|Description|
 |---|---|
