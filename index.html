@@ -2,34 +2,6 @@
 layout: default
 ---
 
-<main class="home" id="post" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
-  <article class="post-content">
-
-  <div class="tags">
- <h2 align="center"><b>Filter Data by Category:</b></h2>
-  
-  {% assign mytags = "polygons,points
-,csv/txt
-,<500
-,500-5000
-,5000+
-,larger areas
-,smaller areas
-,rates
-,space-time
-,ESDA
-,regression
-,Census
-,open data
-,research
-,textbook
-,Anselin lab" | split: "," %}
-  {% for tag in mytags %}
-    <a href="tags/#{{ tag | slugify }}">{{ tag }}</a>
-  {% endfor %}
-  </div>
-  </article>
-  
     <head>
     <meta charset="UTF-8">
     <title>Sample Data</title>
@@ -57,6 +29,36 @@ layout: default
     </style>
     
     </head>
+
+<main class="home" id="post" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+  <article class="post-content">
+
+  <div class="tags">
+ <h2 align="center"><b>Filter Sample Data by Category:</b></h2>
+  
+  {% assign mytags = "polygons,points
+,csv/txt
+,<500
+,500-5000
+,5000+
+,larger areas
+,smaller areas
+,rates
+,space-time
+,ESDA
+,regression
+,Census
+,open data
+,research
+,textbook
+,Anselin lab" | split: "," %}
+  {% for tag in mytags %}
+    <a href="tags/#{{ tag | slugify }}">{{ tag }}</a>
+  {% endfor %}
+  </div>
+  </article>
+  
+
   
   
     <article class="table">
@@ -64,7 +66,7 @@ layout: default
   <div class="table">
   <p>&nbsp;</p>
 <h2 align="center">
-	<b>List of Available Sample Data (<a href="https://spatial.uchicago.edu/content/about-sample-data" target="_blank">More Info</a>)</b></h2>
+	<b>View List of Sample Data (<a href="https://spatial.uchicago.edu/content/about-sample-data" target="_blank">More Info</a>):</b></h2>
 <table style="margin-left:490px">
 	<caption class="rteleft">
 		These sample data are referenced in the tutorials for&nbsp;<a href="http://geodacenter.github.io/documentation.html">GeoDa</a>, <a href="https://geodacenter.github.io/GeoDaSpace/resources.html">GeoDaSpace</a>, and <a href="https://s3.amazonaws.com/geoda/software/docs/CAST_HowToGuide.pdf">CAST</a>.<br />
@@ -659,7 +661,7 @@ layout: default
   </div>
   </article>
   
-   <h2 align="center"><b>View Data by Tag:</b></h2>
+   <h2 align="center"><b>View Sample Data by Tagged Category:</b></h2>
 
   
     <div id="grid" class="row flex-grid">
