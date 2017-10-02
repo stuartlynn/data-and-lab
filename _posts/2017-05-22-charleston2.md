@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Charleston Employment 2000"
+title: "Charleston Industry Mix 2000"
 date: 2017-07-18 16:10:16
 image: /assets/img/
 description:
