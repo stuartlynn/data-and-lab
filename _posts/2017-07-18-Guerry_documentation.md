@@ -3,7 +3,7 @@ layout: post
 title: "Guerry"
 date: 2017-07-18 15:34:43
 image: '/assets/img/'
-description: "Classic data for 1830s France."
+description:
 main-class: 'crime'
 color:
 tags:

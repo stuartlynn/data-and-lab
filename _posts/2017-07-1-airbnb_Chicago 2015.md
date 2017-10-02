@@ -77,10 +77,10 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 This database is about Airbnb spots, socioeconomic indicators, and crime by community area in Chicago.
 
- * Type = polygon shapefile
- * Observations = 77
- * Variables = 20
- * Years = 2008-2015
+* Type = polygon shapefile
+* Observations = 77
+* Variables = 20
+* Years = 2008 to 2015
 
 * The AirBnB data includes response rate, acceptance rate, review rating, price per included guest, room type (1 is entire home/apartment, 2 is private room, and 3 shared room), number of Airbnb spots. The data were collected on October 3rd, 2015.
 * The socioeconomic indicators are percentages by community area: households below poverty, housing crowed, under 18 or over 64 years old (dependency), aged 25+ without high school diploma, and unemployed above 16 years old. Also included are per capita income and hardship index. These indicators were built for the period 2008 – 2012.

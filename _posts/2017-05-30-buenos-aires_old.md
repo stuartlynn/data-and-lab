@@ -51,7 +51,7 @@ For further details contact Ernesto Calvo (ecalvo@uh.edu) or Marcelo Escolar (ma
 |TURN99CR | Percent of Effective Votes over Valid Votes|
 |EAST | East Coordinates|
 |NORTH | North Coordinates|
-I|NDRANO | Numeric ID (for use in GeoDa)|
+|NDRANO | Numeric ID (for use in GeoDa)|
 |APR99PC | Percent of APR Votes over Valid Votes (for use in GeoDa)|
 |AL99PC | Percent of Alianza Votes over Valid Votes (for use in GeoDa)|
 |TURN99PC | Percent of Effective Votes over Valid Votes (for use in GeoDa)|
