@@ -9,55 +9,49 @@ description:
 {% assign tags_list = site.tags %}
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list %}
-        <a href="#{{ tag | slugify }}">{{ tag }}</a>
+        <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}" onclick="location.reload()">{{ tag }}</a>
     {% endfor %}
   {% else %}
     {% for tag in tags_list %}
-        <a href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
+        <a href="{{ site.baseurl }}/tags/#{{ tag[0] | slugify }}" onclick="location.reload()">{{ tag[0] }}</a>
     {% endfor %}
   {% endif %}
 {% assign tags_list = nil %}
 </div>
 
-<div id="grid" class="row flex-grid">
-{% for post in site.posts %}  
-    <article class="box-item post-{{post.main-class}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-            <span class="ribbon">
-                <a href="{{site.url}}category/{{post.main-class}}"><span>{{post.main-class}}</span></a>
-            </span>
-            <div class="box-body">
-                <meta itemprop="datePublished" content="{{post.date | date_to_xmlschema }}">
-                <time itemprop="datePublished" datetime="{{ post.date }}" class="date">{{ post.date | date_to_string }}</time>
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                    <h2 class="post-title" itemprop="name">
-                        {{ post.title }}
-                    </h2>
-                </a>
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                    <p class="description">{{ post.introduction }}</p>
-                </a>
-                <div class="tags">
-                    {% for tag in post.tags %}
-                        <a href="{{site.baseurl}}/tags/#{{tag | slugify }}">{{ tag }}</a>
-                    {% endfor %}
-                </div>
-            </div>
-    </article>
+{% assign tags_list = site.tags %}
+{% for tag in tags_list %}
+  <div id="#{{ tag[0] | slugify }}" class="row flex-grid" style="display: none;">
+  {% for post in site.posts %}
+    {% if post.tags contains tag[0] %}
+      <article class="box-item post-{{post.main-class}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+              <span class="ribbon">
+                  <a href="{{site.url}}category/{{post.main-class}}"><span>{{post.main-class}}</span></a>
+              </span>
+              <div class="box-body">
+                  <meta itemprop="datePublished" content="{{post.date | date_to_xmlschema }}">
+                  <time itemprop="datePublished" datetime="{{ post.date }}" class="date">{{ post.date | date_to_string }}</time>
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                      <h2 class="post-title" itemprop="name">
+                          {{ post.title }}
+                      </h2>
+                  </a>
+                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                      <p class="description">{{ post.introduction }}</p>
+                  </a>
+                  <div class="tags">
+                      {% for tag in post.tags %}
+                          <a href="{{site.baseurl}}/tags/#{{tag | slugify }}" onclick="location.reload()">{{ tag }}</a>
+                      {% endfor %}
+                  </div>
+              </div>
+      </article>
+    {% endif %}
+  {% endfor %}
+  </div>
 {% endfor %}
-</div>
 
-{% for tag in site.tags  %}
-    <span class="tag-title" id="{{ tag[0] | slugify }}">{{ tag[0] }}</span>
-    <ul class="post-list">
-        {% assign pages_list = tag[1] %}
-        {% for post in pages_list reversed %}
-            {% if post.title != null %}
-            {% if group == null or group == post.group %}
-            <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished"></time></a></li>
-            {% endif %}
-            {% endif %}
-        {% endfor %}
-        {% assign pages_list = nil %}
-        {% assign group = nil %}
-    </ul>
-{% endfor %}
+<script>
+var tag = window.location.hash;
+document.getElementById(tag).style.display = "flex";
+</script>
