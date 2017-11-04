@@ -61,4 +61,27 @@
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+
+    <style>
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        width: 90%;
+        border: 1px solid #ddd;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    th, td {
+        border: none;
+        text-align: left;
+        padding: 8px;
+    }
+    tr:nth-child(even){background-color: #f2f2f2}
+    table a:link, table a:visited {
+      color: #005f97;
+      text-decoration: none;
+    }
+    table a:hover {
+      color: #CCC;
+    }
 </head>
