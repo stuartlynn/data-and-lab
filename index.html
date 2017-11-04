@@ -2,736 +2,650 @@
 layout: default
 ---
 
-    <head>
-    <meta charset="UTF-8">
-    <title>Sample Data</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-    	*{margin:0;padding:0;}
-	.shadowfilter {
-	-webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
-	filter: url(shadow.svg#drop-shadow);
-	}
-	.intro1 { margin-left: -45px;}
-    </style>
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/simple-slideshow-styles.css">
-    <style>
-	figcaption {
-	  top: .70em;
-   	  left: .35em;
- 	  bottom: auto!important;
-	  right: auto!important;
-	}
-    </style>
-
-    </head>
 
 <main class="home" id="post" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
   <article class="post-content">
-
-  <div class="tags">
- <h2 align="center"><b>Filter Sample Data by Category:</b></h2>
-
-  {% assign mytags = "polygons,points
-,csv/txt
-,<500
-,500-5000
-,5000+
-,larger areas
-,smaller areas
-,rates
-,space-time
-,ESDA
-,regression
-,Census
-,open data
-,research
-,textbook
-,Anselin lab" | split: "," %}
-  {% for tag in mytags %}
-    <a href="tags/#{{ tag | slugify }}">{{ tag }}</a>
-  {% endfor %}
-  </div>
-  </article>
-
-
-
-
-    <article class="table">
-
-  <div class="table">
-  <p>&nbsp;</p>
-<h2 align="center">
-	<b>View List of Sample Data (<a href="https://spatial.uchicago.edu/content/about-sample-data" target="_blank">More Info</a>):</b></h2>
-<table style="margin-left:500px">
-	<caption class="rteleft" align="center">
-		These sample data are referenced in the tutorials for&nbsp;<a href="http://geodacenter.github.io/documentation.html">GeoDa</a>, <a href="https://geodacenter.github.io/GeoDaSpace/resources.html">GeoDaSpace</a>, and <a href="https://s3.amazonaws.com/geoda/software/docs/CAST_HowToGuide.pdf">CAST</a>.<br />
-
-		  <p>&nbsp;</p>
-		&nbsp;</caption>
-	<thead>
-		<tr>
-			<th>
-				Name</th>
-			<th>
-				Description</th>
-			<th>
-				#Obs</th>
-			<th>
-				#Vars</th>
-			<th>
-				Download</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab//airbnb_Chicago-2015/" target="_blank">AirBnB</a></td>
-			<td>
-				Airbnb rentals, socioeconomics, and crime in Chicago</td>
-			<td>
-				77</td>
-			<td>
-				20</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/airbnb.zip" target="_self">airbnb.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab//atlanta_old/" target="_blank">Atlanta</a></td>
-			<td>
-				Atlanta, GA region homicide counts and rates</td>
-			<td>
-				90</td>
-			<td>
-				23</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/atlanta_hom.zip" target="_self" title="atlanta_hom.zip">atlanta_hom.zip</a></td>
-		</tr>
-		
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab//baltim/" target="_blank">Baltimore</a></td>
-			<td>
-				Baltimore house sales prices and hedonics</td>
-			<td>
-				211</td>
-			<td>
-				17</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/baltimore.zip" target="_self" title="baltimore.zip">baltimore.zip</a></td>
-		</tr>
-		
-			<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab//1-source-and-description/">Cars</a></td>
-			<td>
-				2011 abandoned vehicles in Chicago (311 complaints).</td>
-			<td>
-				137,867</td>
-			<td>
-				21</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/Abandoned_Vehicles_Map.csv/" target="_blank">cars.zip</a></td>
-		</tr>	
-		
-		<tr>
-			<td>
-				&nbsp;</td>
-			<td>
-				Baltimore house sales prices and trend surface residuals</td>
-			<td>
-				211</td>
-			<td>
-				6</td>
-			<td>
-				&nbsp;</td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab//boston-housing/" target="_blank">Bostonhsg</a></td>
-			<td>
-				Boston housing and neighborhood data</td>
-			<td>
-				506</td>
-			<td>
-				23</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/boston.zip" target="_self" title="boston.zip">boston.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab//buenos-aires_old/" target="_blank">Buenosaires</a></td>
-			<td>
-				Electoral Data for 1999 Argentinean Elections</td>
-			<td>
-				209</td>
-			<td>
-				21</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/buenosaires.zip" target="_self" title="buenosaires.zip">buenosaires.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab//charleston-1_old/" target="_blank">Charleston1</a></td>
-			<td>
-				2000 Census Tract Data for Charleston, SC MSA and counties</td>
-			<td>
-				117</td>
-			<td>
-				30</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/CharlestonMSA.zip" target="_self" title="CharlestonMSA.zip">CharlestonMSA.zip</a></td>
-		</tr>
-		<tr>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab//charleston2/" target="_blank">Charleston2</a></td>
-			<td>
-				1998 and 2001 Zip Code Business Patterns (Census Bureau) for Charleston, SC MSA</td>
-			<td>
-				44</td>
-			<td>
-				97</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/CharlestonMSA2.zip" target="_self" title="CharlestonMSA2.zip">CharlestonMSA2.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab//columbus/" target="_blank">Columbus</a></td>
-			<td>
-				Columbus neighborhood crime</td>
-			<td>
-				49</td>
-			<td>
-				20</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/columbus.zip" target="_self" title="columbus.zip">columbus.zip</a></td>
-		</tr>
-	
-	<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab//census_2010_excluded-variables/" target="_blank">Denver</a></td>
-			<td>
-				Demographics and housing in Denver neighborhoods.</td>
-			<td>
-				75</td>
-			<td>
-				55</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/denver.zip" target="_self">denver.zip</a></td>
-		</tr>
-	
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab//grid100/" target="_blank">Grid100</a></td>
-			<td>
-				Grid with simulated variables</td>
-			<td>
-				100</td>
-			<td>
-				34</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/grid100.zip" target="_self" title="grid100.zip">grid100.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/Guerry/" target="_blank">Guerry</a></td>
-			<td>
-				Moral statistics of France (Guerry, 1833)</td>
-			<td>
-				85</td>
-			<td>
-				23</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/guerry.zip" target="_blank">guerry.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/hickory1/" target="_blank">Hickory1</a></td>
-			<td>
-				2000 Census Tract Data for Hickory, NC MSA and counties</td>
-			<td>
-				68</td>
-			<td>
-				30</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/HickoryMSA.zip" target="_self" title="HickoryMSA.zip">HickoryMSA.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/hickory2/" target="_blank">Hickory2</td>
-			<td>
-				1998 and 2001 Zip Code Business Patterns (Census Bureau) for Hickory, NC MSA</td>
-			<td>
-				29</td>
-			<td>
-				97</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/HickoryMSA2.zip" target="_self" title="HickoryMSA2.zip">HickoryMSA2.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/houston/" target="_blank">Houston</a></td>
-			<td>
-				Houston, TX region homicide counts and rates</td>
-			<td>
-				52</td>
-			<td>
-				23</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/houston_hom.zip" target="_self" title="houston_hom.zip">houston_hom.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/juvenile/" target="_blank">Juvenile</a></td>
-			<td>
-				Cardiff juvenile delinquent residences</td>
-			<td>
-				168</td>
-			<td>
-				3</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/juvenile.zip" target="_self" title="juvenile.zip">juvenile.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/lansing1/" target="_blank">Lansing1</a></td>
-			<td>
-				2000 Census Tract Data for Lansing, MI MSA and counties</td>
-			<td>
-				117</td>
-			<td>
-				30</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/LansingMSA.zip" target="_self" title="LansingMSA.zip">LansingMSA.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/lansing2/" target="_blank">Lansing2</a></td>
-			<td>
-				1998 and 2001 Zip Code Business Patterns (Census Bureau) for Lansing, MI MSA</td>
-			<td>
-				46</td>
-			<td>
-				97</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/LansingMSA2.zip" target="_self" title="LansingMSA2.zip">LansingMSA2.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/ozone/" target="_blank">Laozone</a></td>
-			<td>
-				Ozone measures at monitoring stations in Los Angeles basin</td>
-			<td>
-				32</td>
-			<td>
-				8</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/laozone.zip" target="_self" title="laozone.zip">laozone.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/lasrosas/" target="_blank">LasRosas</a></td>
-			<td>
-				Corn yield, fertilizer and field data for precision agriculture, Argentina, 1999</td>
-			<td>
-				1738</td>
-			<td>
-				32</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/lasrosas.zip" target="_self" title="lasrosas.zip">lasrosas.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				&nbsp;</td>
-			<td>
-				Corn yield, fertilizer and field data for precision agriculture, Argentina, 2001</td>
-			<td>
-				1705</td>
-			<td>
-				26</td>
-			<td>
-				&nbsp;</td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/colomb_malaria/" target="_blank">Malaria</a></td>
-			<td>
-				Malaria incidence and population (1973, 95, 93 censuses and projections until 2005) &nbsp &nbsp &nbsp</td>
-			<td>
-				1068</td>
-			<td>
-				50</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/malariacolomb.zip" target="_self" title="Malaria Columbia">Malaria-Colombia.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/milwaukee1/" target="_blank">Milwaukee1</a></td>
-			<td>
-				2000 Census Tract Data for Milwaukee, WI MSA</td>
-			<td>
-				417</td>
-			<td>
-				35</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/MilwaukeeMSA.zip" target="_self" title="MilwaukeeMSA.zip">MilwaukeeMSA.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/milwaukee2/" target="_blank">Milwaukee2</a></td>
-			<td>
-				1998 and 2001 Zip Code Business Patterns (Census Bureau) for Milwaukee, WI MSA</td>
-			<td>
-				83</td>
-			<td>
-				97</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/MilwaukeeMSA2.zip" target="_self" title="MilwaukeeMSA2.zip">MilwaukeeMSA2.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/ncovr/" target="_blank">NCOVR</a></td>
-			<td>
-				US county homicides 1960-1990</td>
-			<td>
-				3085 &nbsp &nbsp &nbsp</td>
-			<td>
-				69</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/ncovr.zip" target="_self" title="ncovr.zip">ncovr.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/natregimes/" target="_blank">Natregimes</a></td>
-			<td>
-				NCOVR with regimes (book/PySAL)</td>
-			<td>
-				3085</td>
-			<td>
-				73</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/natregimes.zip">natregimes.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/ndvi/" target="_blank">NDVI</a></td>
-			<td>
-				Normalized Difference Vegetation Index grid</td>
-			<td>
-				49</td>
-			<td>
-				5</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/ndvi.zip" target="_self" title="ndvi.zip">ndvi.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/nepal/" target="_blank">Nepal</a></td>
-			<td>
-				Health, poverty and education indicators for Nepal districts</td>
-			<td>
-				75</td>
-			<td>
-				26</td>
-			<td>
-				<a href="http://s3.amazonaws.com/geoda/data/nepal.zip">nepal.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/nyc/" target="_blank">NYC</a></td>
-			<td>
-				Demographic and housing data for New York City subboroughs, 2002-09</td>
-			<td>
-				55</td>
-			<td>
-				34</td>
-			<td>
-				<a href="http://s3.amazonaws.com/geoda/data/nyc.zip">nyc.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/ohiolung/" target="_blank">Ohiolung</a></td>
-			<td>
-				Ohio lung cancer data, 1968, 1978, 1988</td>
-			<td>
-				88</td>
-			<td>
-				42</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/ohiolung.zip" target="_self" title="ohiolung.zip">ohiolung.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/orlando1/" target="_blank">Orlando1</a></td>
-			<td>
-				2000 Census Tract Data for Orlando, FL MSA and counties</td>
-			<td>
-				328</td>
-			<td>
-				30</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/OrlandoMSA.zip" target="_self" title="OrlandoMSA.zip">OrlandoMSA.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/orlando2/" target="_blank">Orlando2</a></td>
-			<td>
-				1998 and 2001 Zip Code Business Patterns (Census Bureau) for Orlando, FL MSA</td>
-			<td>
-				94</td>
-			<td>
-				97</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/OrlandoMSA2.zip" target="_self" title="OrlandoMSA2.zip">OrlandoMSA2.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/oz96/" target="_blank">Oz9799</a></td>
-			<td>
-				Monthly ozone data, 1997-99</td>
-			<td>
-				30</td>
-			<td>
-				78</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/oz9799.zip" target="_self" title="oz9799.zip">oz9799.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/phx/" target="_blank">Phoenix ACS</a></td>
-			<td>
-				Phoenix American Community Survey Data (2010, 5-year averages)</td>
-			<td>
-				685</td>
-			<td>
-				16</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/phx2.zip" target="_self" title="phx.zip">phx.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/pitt93/" target="_blank">Pittsburgh</a></td>
-			<td>
-				Pittsburgh homicide locations</td>
-			<td>
-				143</td>
-			<td>
-				8</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/pittsburgh.zip" target="_self" title="pittsburgh.zip">pittsburgh.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/police/" target="_blank">Police</a></td>
-			<td>
-				Police expenditures Mississippi counties</td>
-			<td>
-				82</td>
-			<td>
-				21</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/police.zip" target="_self" title="police.zip">police.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/sacramento1/" target="_blank">Sacramento1</a></td>
-			<td>
-				2000 Census Tract Data for Sacramento MSA</td>
-			<td>
-				403</td>
-			<td>
-				17</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/sacramento.zip" target="_self" title="sacramento.zip">sacramento.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/sacramento2/" target="_blank">Sacramento2</a></td>
-			<td>
-				1998 and 2001 Zip Code Business Patterns (Census Bureau) for Sacramento MSA</td>
-			<td>
-				125</td>
-			<td>
-				97</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/SacramentoMSA2.zip" target="_self" title="SacramentoMSA2.zip">SacramentoMSA2.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/SFcrimes_vars/" target="_blank">SanFran Crime &nbsp &nbsp &nbsp</a></td>
-			<td>
-				July-Dec 2012 crime incidents in San Francisco (points + area) - for CAST</td>
-			<td>
-				654</td>
-			<td>
-				4</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/SFCrime_July_Dec2012.zip" target="_self" title="SFCrime_July_Dec2012.zip">SFCrime_July_Dec2012.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/savannah1/" target="_blank">Savannah1</a></td>
-			<td>
-				2000 Census Tract Data for Savannah, GA MSA and counties</td>
-			<td>
-				77</td>
-			<td>
-				30</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/SavannahMSA.zip" target="_self" title="SavannahMSA.zip">SavannahMSA.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/savannah2/" target="_blank">Savannah2</a></td>
-			<td>
-				1998 and 2001 Zip Code Business Patterns (Census Bureau) for Savannah, GA MSA</td>
-			<td>
-				24</td>
-			<td>
-				97</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/SavannahMSA2.zip" target="_self" title="SavannahMSA2.zip">SavannahMSA2.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/scotlip/" target="_blank">Scotlip</a></td>
-			<td>
-				Male lip cancer in Scotland, 1975-80</td>
-			<td>
-				56</td>
-			<td>
-				8</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/scotlip.zip" target="_self" title="scotlip.zip">scotlip.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/seattle1/" target="_blank">Seattle1</a></td>
-			<td>
-				2000 Census Tract Data for Seattle, WA MSA and counties</td>
-			<td>
-				664</td>
-			<td>
-				21</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/SeattleMSA.zip" target="_self" title="SeattleMSA.zip">SeattleMSA.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/seattle2/" target="_blank">Seattle2</a></td>
-			<td>
-				1998 and 2001 Zip Code Business Patterns (Census Bureau) for Seattle, WA MSA</td>
-			<td>
-				145</td>
-			<td>
-				97</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/SeattleMSA2.zip" target="_self" title="SeattleMSA2.zip">SeattleMSA2.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/sids/" target="_blank">SIDS</a></td>
-			<td>
-				North Carolina county SIDS death counts</td>
-			<td>
-				100</td>
-			<td>
-				14</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/sids.zip" target="_self" title="sids.zip">sids.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/sids2/" target="_blank">SIDS2</a></td>
-			<td>
-				North Carolina county SIDS death counts and rates</td>
-			<td>
-				100</td>
-			<td>
-				18</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/sids2.zip" target="_self" title="sids2.zip">sids2.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/south/" target="_blank">South</a></td>
-			<td>
-				US Southern county homicides 1960-1990</td>
-			<td>
-				1412</td>
-			<td>
-				69</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/south.zip" target="_self" title="south.zip">south.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/stlouis/" target="_blank">StLouis</a></td>
-			<td>
-				St Louis region county homicide counts and rates</td>
-			<td>
-				78</td>
-			<td>
-				21</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/stl_hom.zip" target="_self" title="stl_hom.zip">stl_hom.zip</a></td>
-		</tr>
-		<tr>
-			<td>
-				<a href="https://geodacenter.github.io/data-and-lab/tampa1/" target="_blank">Tampa1</td>
-			<td>
-				2000 Census Tract Data for Tampa, FL MSA and counties</td>
-			<td>
-				547</td>
-			<td>
-				30</td>
-			<td>
-				<a href="https://s3.amazonaws.com/geoda/data/TampaMSA.zip" target="_self" title="TampaMSA.zip">TampaMSA.zip</a></td>
-		</tr>
-	</tbody>
-</table>
-<br />
-<br />
-<br />
-
-  </div>
-  </article>
-
-   <h2 align="center"><b>View Sample Data by Tagged Category:</b></h2>
- <p>&nbsp;</p>
-  <p>&nbsp;</p>
-
-    <div id="grid" class="row flex-grid">
-    {% for post in site.posts %}
-        <article class="box-item post-{{post.main-class}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-                <span class="ribbon">
-                    <a href="{{site.url}}category/{{post.main-class}}"><span>{{post.main-class}}</span></a>
-                </span>
-                <div class="box-body">
-                    <meta itemprop="datePublished" content="{{post.date | date_to_xmlschema }}">
-                    <time itemprop="datePublished" datetime="{{ post.date }}" class="date">{{ post.date | date_to_string }}</time>
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                        <h2 class="post-title" itemprop="name">
-                            {{ post.title }}
-                        </h2>
-                    </a>
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-                        <p class="description">{{ post.introduction }}</p>
-                    </a>
-                    <div class="tags">
-                        {% for tag in post.tags %}
-                            <a href="{{site.baseurl}}/tags/#{{tag | slugify }}">{{ tag }}</a>
-                        {% endfor %}
-                    </div>
-                </div>
-        </article>
-    {% endfor %}
+    <div class="tags">
+      <h2 align="center"><b>Filter Sample Data by Category:</b></h2>
+      {% assign mytags = "polygons,points
+  ,csv/txt
+  ,<500
+  ,500-5000
+  ,5000+
+  ,larger areas
+  ,smaller areas
+  ,rates
+  ,space-time
+  ,ESDA
+  ,regression
+  ,Census
+  ,open data
+  ,research
+  ,textbook
+  ,Anselin lab" | split: "," %}
+      {% for tag in mytags %}
+        <a href="tags/#{{ tag | slugify }}">{{ tag }}</a>
+      {% endfor %}
     </div>
+  </article>
+
+  <style>
+  table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 90%;
+      border: 1px solid #ddd;
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+  th, td {
+      border: none;
+      text-align: left;
+      padding: 8px;
+  }
+  tr:nth-child(even){background-color: #f2f2f2}
+  .samples a:link, .samples a:visited {
+    color: #005f97;
+    text-decoration: none;
+  }
+  .samples a:hover {
+    color: #CCC;
+  }
+  </style>
+  <article class="samples">
+    <div>
+      <h2 align="center">
+        <b>View List of Sample Data (<a href="https://spatial.uchicago.edu/content/about-sample-data" target="_blank">More Info</a>):</b>
+      </h2>
+    </div>
+    <div style="text-align:center;">
+     <table>
+  	    <caption align="center" style="margin:10px;">
+          These sample data are referenced in the tutorials for&nbsp;<a href="http://geodacenter.github.io/documentation.html">GeoDa</a>, <a href="https://geodacenter.github.io/GeoDaSpace/resources.html">GeoDaSpace</a>, and <a href="https://s3.amazonaws.com/geoda/software/docs/CAST_HowToGuide.pdf">CAST</a>.
+        </caption>
+        <thead>
+      		<tr>
+      			<th>Name</th>
+      			<th style="min-width:500px">Description</th>
+      			<th>#Obs</th>
+      			<th>#Vars</th>
+      			<th>Download</th>
+      		</tr>
+      	</thead>
+        <tbody>
+      		<tr>
+      			<td><a href="https://geodacenter.github.io/data-and-lab//airbnb_Chicago-2015/" target="_blank">AirBnB</a></td>
+      			<td>Airbnb rentals, socioeconomics, and crime in Chicago</td>
+      			<td>77</td>
+      			<td>20</td>
+      			<td><a href="https://s3.amazonaws.com/geoda/data/airbnb.zip" target="_self">airbnb.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td><a href="https://geodacenter.github.io/data-and-lab//atlanta_old/" target="_blank">Atlanta</a></td>
+      			<td>Atlanta, GA region homicide counts and rates</td>
+            <td>90</td>
+      			<td>23</td>
+      			<td><a href="https://s3.amazonaws.com/geoda/data/atlanta_hom.zip" target="_self" title="atlanta_hom.zip">atlanta_hom.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td><a href="https://geodacenter.github.io/data-and-lab//baltim/" target="_blank">Baltimore</a></td>
+      			<td>Baltimore house sales prices and hedonics</td>
+      			<td>211</td>
+      			<td>17</td>
+      			<td><a href="https://s3.amazonaws.com/geoda/data/baltimore.zip" target="_self" title="baltimore.zip">baltimore.zip</a></td>
+      		</tr>
+          <tr>
+            <td><a href="https://geodacenter.github.io/data-and-lab//1-source-and-description/">Cars</a></td>
+            <td>2011 abandoned vehicles in Chicago (311 complaints).</td>
+            <td>137,867</td>
+            <td>21</td>
+            <td><a href="https://s3.amazonaws.com/geoda/data/Abandoned_Vehicles_Map.csv/" target="_blank">cars.zip</a></td>
+          </tr>
+      		<tr>
+      			<td>&nbsp;</td>
+      			<td>Baltimore house sales prices and trend surface residuals</td>
+      			<td>211</td>
+      			<td>6</td>
+      			<td>&nbsp;</td>
+      		</tr>
+      		<tr>
+      			<td><a href="https://geodacenter.github.io/data-and-lab//boston-housing/" target="_blank">Bostonhsg</a></td>
+      			<td>Boston housing and neighborhood data</td>
+      			<td>506</td>
+      			<td>23</td>
+      			<td><a href="https://s3.amazonaws.com/geoda/data/boston.zip" target="_self" title="boston.zip">boston.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td><a href="https://geodacenter.github.io/data-and-lab//buenos-aires_old/" target="_blank">Buenosaires</a></td>
+      			<td>
+      				Electoral Data for 1999 Argentinean Elections</td>
+      			<td>
+      				209</td>
+      			<td>
+      				21</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/buenosaires.zip" target="_self" title="buenosaires.zip">buenosaires.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab//charleston-1_old/" target="_blank">Charleston1</a></td>
+      			<td>
+      				2000 Census Tract Data for Charleston, SC MSA and counties</td>
+      			<td>
+      				117</td>
+      			<td>
+      				30</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/CharlestonMSA.zip" target="_self" title="CharlestonMSA.zip">CharlestonMSA.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab//charleston2/" target="_blank">Charleston2</a></td>
+      			<td>
+      				1998 and 2001 Zip Code Business Patterns (Census Bureau) for Charleston, SC MSA</td>
+      			<td>
+      				44</td>
+      			<td>
+      				97</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/CharlestonMSA2.zip" target="_self" title="CharlestonMSA2.zip">CharlestonMSA2.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab//columbus/" target="_blank">Columbus</a></td>
+      			<td>
+      				Columbus neighborhood crime</td>
+      			<td>
+      				49</td>
+      			<td>
+      				20</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/columbus.zip" target="_self" title="columbus.zip">columbus.zip</a></td>
+      		</tr>
+          <tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab//census_2010_excluded-variables/" target="_blank">Denver</a></td>
+      			<td>
+      				Demographics and housing in Denver neighborhoods.</td>
+      			<td>
+      				75</td>
+      			<td>
+      				55</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/denver.zip" target="_self">denver.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab//grid100/" target="_blank">Grid100</a></td>
+      			<td>
+      				Grid with simulated variables</td>
+      			<td>
+      				100</td>
+      			<td>
+      				34</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/grid100.zip" target="_self" title="grid100.zip">grid100.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/Guerry/" target="_blank">Guerry</a></td>
+      			<td>
+      				Moral statistics of France (Guerry, 1833)</td>
+      			<td>
+      				85</td>
+      			<td>
+      				23</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/guerry.zip" target="_blank">guerry.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/hickory1/" target="_blank">Hickory1</a></td>
+      			<td>
+      				2000 Census Tract Data for Hickory, NC MSA and counties</td>
+      			<td>
+      				68</td>
+      			<td>
+      				30</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/HickoryMSA.zip" target="_self" title="HickoryMSA.zip">HickoryMSA.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/hickory2/" target="_blank">Hickory2</td>
+      			<td>
+      				1998 and 2001 Zip Code Business Patterns (Census Bureau) for Hickory, NC MSA</td>
+      			<td>
+      				29</td>
+      			<td>
+      				97</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/HickoryMSA2.zip" target="_self" title="HickoryMSA2.zip">HickoryMSA2.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/houston/" target="_blank">Houston</a></td>
+      			<td>
+      				Houston, TX region homicide counts and rates</td>
+      			<td>
+      				52</td>
+      			<td>
+      				23</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/houston_hom.zip" target="_self" title="houston_hom.zip">houston_hom.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/juvenile/" target="_blank">Juvenile</a></td>
+      			<td>
+      				Cardiff juvenile delinquent residences</td>
+      			<td>
+      				168</td>
+      			<td>
+      				3</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/juvenile.zip" target="_self" title="juvenile.zip">juvenile.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/lansing1/" target="_blank">Lansing1</a></td>
+      			<td>
+      				2000 Census Tract Data for Lansing, MI MSA and counties</td>
+      			<td>
+      				117</td>
+      			<td>
+      				30</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/LansingMSA.zip" target="_self" title="LansingMSA.zip">LansingMSA.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/lansing2/" target="_blank">Lansing2</a></td>
+      			<td>
+      				1998 and 2001 Zip Code Business Patterns (Census Bureau) for Lansing, MI MSA</td>
+      			<td>
+      				46</td>
+      			<td>
+      				97</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/LansingMSA2.zip" target="_self" title="LansingMSA2.zip">LansingMSA2.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/ozone/" target="_blank">Laozone</a></td>
+      			<td>
+      				Ozone measures at monitoring stations in Los Angeles basin</td>
+      			<td>
+      				32</td>
+      			<td>
+      				8</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/laozone.zip" target="_self" title="laozone.zip">laozone.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/lasrosas/" target="_blank">LasRosas</a></td>
+      			<td>
+      				Corn yield, fertilizer and field data for precision agriculture, Argentina, 1999</td>
+      			<td>
+      				1738</td>
+      			<td>
+      				32</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/lasrosas.zip" target="_self" title="lasrosas.zip">lasrosas.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				&nbsp;</td>
+      			<td>
+      				Corn yield, fertilizer and field data for precision agriculture, Argentina, 2001</td>
+      			<td>
+      				1705</td>
+      			<td>
+      				26</td>
+      			<td>
+      				&nbsp;</td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/colomb_malaria/" target="_blank">Malaria</a></td>
+      			<td>
+      				Malaria incidence and population (1973, 95, 93 censuses and projections until 2005) &nbsp &nbsp &nbsp</td>
+      			<td>
+      				1068</td>
+      			<td>
+      				50</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/malariacolomb.zip" target="_self" title="Malaria Columbia">Malaria-Colombia.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/milwaukee1/" target="_blank">Milwaukee1</a></td>
+      			<td>
+      				2000 Census Tract Data for Milwaukee, WI MSA</td>
+      			<td>
+      				417</td>
+      			<td>
+      				35</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/MilwaukeeMSA.zip" target="_self" title="MilwaukeeMSA.zip">MilwaukeeMSA.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/milwaukee2/" target="_blank">Milwaukee2</a></td>
+      			<td>
+      				1998 and 2001 Zip Code Business Patterns (Census Bureau) for Milwaukee, WI MSA</td>
+      			<td>
+      				83</td>
+      			<td>
+      				97</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/MilwaukeeMSA2.zip" target="_self" title="MilwaukeeMSA2.zip">MilwaukeeMSA2.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/ncovr/" target="_blank">NCOVR</a></td>
+      			<td>
+      				US county homicides 1960-1990</td>
+      			<td>3085</td>
+      			<td>
+      				69</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/ncovr.zip" target="_self" title="ncovr.zip">ncovr.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/natregimes/" target="_blank">Natregimes</a></td>
+      			<td>
+      				NCOVR with regimes (book/PySAL)</td>
+      			<td>
+      				3085</td>
+      			<td>
+      				73</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/natregimes.zip">natregimes.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/ndvi/" target="_blank">NDVI</a></td>
+      			<td>
+      				Normalized Difference Vegetation Index grid</td>
+      			<td>
+      				49</td>
+      			<td>
+      				5</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/ndvi.zip" target="_self" title="ndvi.zip">ndvi.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/nepal/" target="_blank">Nepal</a></td>
+      			<td>
+      				Health, poverty and education indicators for Nepal districts</td>
+      			<td>
+      				75</td>
+      			<td>
+      				26</td>
+      			<td>
+      				<a href="http://s3.amazonaws.com/geoda/data/nepal.zip">nepal.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/nyc/" target="_blank">NYC</a></td>
+      			<td>
+      				Demographic and housing data for New York City subboroughs, 2002-09</td>
+      			<td>
+      				55</td>
+      			<td>
+      				34</td>
+      			<td>
+      				<a href="http://s3.amazonaws.com/geoda/data/nyc.zip">nyc.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/ohiolung/" target="_blank">Ohiolung</a></td>
+      			<td>
+      				Ohio lung cancer data, 1968, 1978, 1988</td>
+      			<td>
+      				88</td>
+      			<td>
+      				42</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/ohiolung.zip" target="_self" title="ohiolung.zip">ohiolung.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/orlando1/" target="_blank">Orlando1</a></td>
+      			<td>
+      				2000 Census Tract Data for Orlando, FL MSA and counties</td>
+      			<td>
+      				328</td>
+      			<td>
+      				30</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/OrlandoMSA.zip" target="_self" title="OrlandoMSA.zip">OrlandoMSA.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/orlando2/" target="_blank">Orlando2</a></td>
+      			<td>
+      				1998 and 2001 Zip Code Business Patterns (Census Bureau) for Orlando, FL MSA</td>
+      			<td>
+      				94</td>
+      			<td>
+      				97</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/OrlandoMSA2.zip" target="_self" title="OrlandoMSA2.zip">OrlandoMSA2.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/oz96/" target="_blank">Oz9799</a></td>
+      			<td>
+      				Monthly ozone data, 1997-99</td>
+      			<td>
+      				30</td>
+      			<td>
+      				78</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/oz9799.zip" target="_self" title="oz9799.zip">oz9799.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/phx/" target="_blank">Phoenix ACS</a></td>
+      			<td>
+      				Phoenix American Community Survey Data (2010, 5-year averages)</td>
+      			<td>
+      				685</td>
+      			<td>
+      				16</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/phx2.zip" target="_self" title="phx.zip">phx.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/pitt93/" target="_blank">Pittsburgh</a></td>
+      			<td>
+      				Pittsburgh homicide locations</td>
+      			<td>
+      				143</td>
+      			<td>
+      				8</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/pittsburgh.zip" target="_self" title="pittsburgh.zip">pittsburgh.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/police/" target="_blank">Police</a></td>
+      			<td>
+      				Police expenditures Mississippi counties</td>
+      			<td>
+      				82</td>
+      			<td>
+      				21</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/police.zip" target="_self" title="police.zip">police.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/sacramento1/" target="_blank">Sacramento1</a></td>
+      			<td>
+      				2000 Census Tract Data for Sacramento MSA</td>
+      			<td>
+      				403</td>
+      			<td>
+      				17</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/sacramento.zip" target="_self" title="sacramento.zip">sacramento.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/sacramento2/" target="_blank">Sacramento2</a></td>
+      			<td>
+      				1998 and 2001 Zip Code Business Patterns (Census Bureau) for Sacramento MSA</td>
+      			<td>
+      				125</td>
+      			<td>
+      				97</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/SacramentoMSA2.zip" target="_self" title="SacramentoMSA2.zip">SacramentoMSA2.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/SFcrimes_vars/" target="_blank">SanFran Crime &nbsp &nbsp &nbsp</a></td>
+      			<td>
+      				July-Dec 2012 crime incidents in San Francisco (points + area) - for CAST</td>
+      			<td>
+      				654</td>
+      			<td>
+      				4</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/SFCrime_July_Dec2012.zip" target="_self" title="SFCrime_July_Dec2012.zip">SFCrime_July_Dec2012.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/savannah1/" target="_blank">Savannah1</a></td>
+      			<td>
+      				2000 Census Tract Data for Savannah, GA MSA and counties</td>
+      			<td>
+      				77</td>
+      			<td>
+      				30</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/SavannahMSA.zip" target="_self" title="SavannahMSA.zip">SavannahMSA.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/savannah2/" target="_blank">Savannah2</a></td>
+      			<td>
+      				1998 and 2001 Zip Code Business Patterns (Census Bureau) for Savannah, GA MSA</td>
+      			<td>
+      				24</td>
+      			<td>
+      				97</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/SavannahMSA2.zip" target="_self" title="SavannahMSA2.zip">SavannahMSA2.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/scotlip/" target="_blank">Scotlip</a></td>
+      			<td>
+      				Male lip cancer in Scotland, 1975-80</td>
+      			<td>
+      				56</td>
+      			<td>
+      				8</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/scotlip.zip" target="_self" title="scotlip.zip">scotlip.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/seattle1/" target="_blank">Seattle1</a></td>
+      			<td>
+      				2000 Census Tract Data for Seattle, WA MSA and counties</td>
+      			<td>
+      				664</td>
+      			<td>
+      				21</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/SeattleMSA.zip" target="_self" title="SeattleMSA.zip">SeattleMSA.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/seattle2/" target="_blank">Seattle2</a></td>
+      			<td>
+      				1998 and 2001 Zip Code Business Patterns (Census Bureau) for Seattle, WA MSA</td>
+      			<td>
+      				145</td>
+      			<td>
+      				97</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/SeattleMSA2.zip" target="_self" title="SeattleMSA2.zip">SeattleMSA2.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/sids/" target="_blank">SIDS</a></td>
+      			<td>
+      				North Carolina county SIDS death counts</td>
+      			<td>
+      				100</td>
+      			<td>
+      				14</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/sids.zip" target="_self" title="sids.zip">sids.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/sids2/" target="_blank">SIDS2</a></td>
+      			<td>
+      				North Carolina county SIDS death counts and rates</td>
+      			<td>
+      				100</td>
+      			<td>
+      				18</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/sids2.zip" target="_self" title="sids2.zip">sids2.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/south/" target="_blank">South</a></td>
+      			<td>
+      				US Southern county homicides 1960-1990</td>
+      			<td>
+      				1412</td>
+      			<td>
+      				69</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/south.zip" target="_self" title="south.zip">south.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/stlouis/" target="_blank">StLouis</a></td>
+      			<td>
+      				St Louis region county homicide counts and rates</td>
+      			<td>
+      				78</td>
+      			<td>
+      				21</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/stl_hom.zip" target="_self" title="stl_hom.zip">stl_hom.zip</a></td>
+      		</tr>
+      		<tr>
+      			<td>
+      				<a href="https://geodacenter.github.io/data-and-lab/tampa1/" target="_blank">Tampa1</td>
+      			<td>
+      				2000 Census Tract Data for Tampa, FL MSA and counties</td>
+      			<td>
+      				547</td>
+      			<td>
+      				30</td>
+      			<td>
+      				<a href="https://s3.amazonaws.com/geoda/data/TampaMSA.zip" target="_self" title="TampaMSA.zip">TampaMSA.zip</a></td>
+      		</tr>
+      	</tbody>
+      </table>
+    </div>
+  </article>
+
+  <div id="grid" class="row flex-grid">
+  </div>
 </main>

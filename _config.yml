@@ -43,5 +43,6 @@ exclude: ['package.json', 'src', 'node_modules']
 
 includes:
 - data
+- tag
 
 encoding: UTF-8
