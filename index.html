@@ -7,22 +7,22 @@ layout: default
   <article class="post-content">
     <div class="tags">
       <h2 align="center"><b>Filter Sample Data by Category:</b></h2>
-      {% assign mytags = "polygons,points
-  ,csv/txt
-  ,<500
-  ,500-5-000
-  ,5-000
-  ,larger areas
-  ,smaller areas
-  ,rates
-  ,space-time
-  ,ESDA
-  ,regression
-  ,Census
-  ,open data
-  ,research
-  ,textbook
-  ,Anselin lab" | split: "," %}
+      {% assign mytags = "polygons:points
+  :csv/txt
+  :<500
+  :500-5,000
+  :5,000
+  :larger areas
+  :smaller areas
+  :rates
+  :space-time
+  :ESDA
+  :regression
+  :Census
+  :open data
+  :research
+  :textbook
+  :Anselin lab" | split: ":" %}
       {% for tag in mytags %}
         <a href="tags/#{{ tag | slugify }}">{{ tag }}</a>
       {% endfor %}
@@ -88,7 +88,7 @@ layout: default
             <td>21</td>
             <td><a href="https://s3.amazonaws.com/geoda/data/Abandoned_Vehicles_Map.csv" target="_blank">cars.zip</a></td>
             </tr>
-            
+
             <tr>
             <td><a href="https://geodacenter.github.io/data-and-lab//FLMA/">Chile Labor</a></td>
             <td>Labor Markets in Chile (1982-2002)</td>
@@ -96,13 +96,13 @@ layout: default
             <td>62</td>
             <td><a href="https://s3.amazonaws.com/geoda/data/FMLA.zip" target="_blank">FLMA.zip</a></td>
             </tr>
-            
 
 
-      		
 
-            
-            
+
+
+
+
             <tr>
                 <td>
                     <a href="https://geodacenter.github.io/data-and-lab//CHIM/">Chile Migration</a></td>
@@ -130,7 +130,7 @@ layout: default
                 <td>
                     <a href="https://s3.amazonaws.com/geoda/data/walnuthills.zip" target="_blank">walnuthills.zip</a></td>
             </tr>
-            
+
             <tr>
             <td>
             <a href="https://geodacenter.github.io/data-and-lab//clev_sls_154_core/">Cleveland</a></td>
@@ -143,7 +143,7 @@ layout: default
             <td>
             <a href="https://s3.amazonaws.com/geoda/data/cleveland.zip" target="_blank">cleveland.zip</a></td>
             </tr>
-            
+
             <tr>
       			<td><a href="https://geodacenter.github.io/data-and-lab//boston-housing/" target="_blank">Bostonhsg</a></td>
       			<td>Boston housing and neighborhood data</td>
@@ -212,7 +212,7 @@ layout: default
             <td>
             <a href="https://s3.amazonaws.com/geoda/data/comarea.zip" target="_blank">comarea.zip</a></td>
             </tr>
-            
+
 
 
 
@@ -242,7 +242,7 @@ layout: default
             <td>
             <a href="https://s3.amazonaws.com/geoda/data/election.zip" target="_blank">election.zip</a></td>
             </tr>
-            
+
 
 
 <tr>
@@ -270,7 +270,7 @@ layout: default
             <td>
             <a href="https://s3.amazonaws.com/geoda/data/grocery.zip" target="_blank">grocery.zip</a></td>
             </tr>
-            
+
 
 
 
@@ -286,8 +286,8 @@ layout: default
       			<td>
       				<a href="https://s3.amazonaws.com/geoda/data/guerry.zip" target="_blank">guerry.zip</a></td>
       		</tr>
- 
- 
+
+
  <tr>
      <td>
          <a href="https://geodacenter.github.io/data-and-lab//co_income_diversity_variables/">Health+</a></td>
@@ -301,7 +301,7 @@ layout: default
              <a href="https://s3.amazonaws.com/geoda/data/income_diversity.zip" target="_blank">income_diversity.zip</a></td>
              </tr>
 
- 
+
  <tr>
      <td>
          <a href="https://geodacenter.github.io/data-and-lab//healthindicators-variables/">Health Indicators</a></td>
@@ -314,10 +314,10 @@ layout: default
              <td>
              <a href="https://s3.amazonaws.com/geoda/data/healthIndicators.zip" target="_blank">healthIndicators.zip</a></td>
              </tr>
-             
 
- 
- 
+
+
+
  <tr>
       			<td>
       				<a href="https://geodacenter.github.io/data-and-lab/hickory1/" target="_blank">Hickory1</a></td>
@@ -342,8 +342,8 @@ layout: default
       			<td>
       				<a href="https://s3.amazonaws.com/geoda/data/HickoryMSA2.zip" target="_self" title="HickoryMSA2.zip">HickoryMSA2.zip</a></td>
       		</tr>
-  
-  
+
+
   <tr>
       <td>
           <a href="https://geodacenter.github.io/data-and-lab//KingCounty-HouseSales2015/">Home Sales</a></td>
@@ -357,8 +357,8 @@ layout: default
               <a href="https://s3.amazonaws.com/geoda/data/kingcounty.zip" target="_blank">kingcounty.zip</a></td>
               </tr>
 
-  
-  
+
+
   <tr>
       			<td>
       				<a href="https://geodacenter.github.io/data-and-lab/houston/" target="_blank">Houston</a></td>
@@ -431,8 +431,8 @@ layout: default
       			<td>
       				<a href="https://s3.amazonaws.com/geoda/data/lasrosas.zip" target="_self" title="lasrosas.zip">lasrosas.zip</a></td>
       		</tr>
-   
-   
+
+
    <tr>
        <td>
            <a href="https://geodacenter.github.io/data-and-lab//liq_chicago/">Liquor Stores</a></td>
@@ -446,8 +446,8 @@ layout: default
                <a href="https://s3.amazonaws.com/geoda/data/liquor.zip" target="_blank">liquor.zip</a></td>
                </tr>
 
-   
-   
+
+
    <tr>
       			<td>
       				<a href="https://geodacenter.github.io/data-and-lab/colomb_malaria/" target="_blank">Malaria</a></td>
@@ -543,8 +543,8 @@ layout: default
       			<td>
       				<a href="http://s3.amazonaws.com/geoda/data/nyc.zip">nyc.zip</a></td>
       		</tr>
-  
-  
+
+
   <tr>
   <td>
                <a href="https://geodacenter.github.io/data-and-lab//LEHD_Data/">NYC Earnings</a></td>
@@ -558,7 +558,7 @@ layout: default
            <a href="https://s3.amazonaws.com/geoda/data/lehd.zip" target="_blank">lehd.zip</a></td>
    </tr>
 
-  
+
   <tr>
   <td>
   <a href="https://geodacenter.github.io/data-and-lab//NYC-Census-2000/">NYC Education</a></td>
@@ -586,7 +586,7 @@ layout: default
                 <a href="https://s3.amazonaws.com/geoda/data/nycnhood_acs.zip" target="_blank">nycnhood_acs.zip</a></td>
                 </tr>
 
-  
+
   <tr>
   <td>
   <a href="https://geodacenter.github.io/data-and-lab//NYC_Tract_ACS2008_12/">NYC Socio-Demographics</a></td>
@@ -599,9 +599,9 @@ layout: default
   <td>
   <a href="https://s3.amazonaws.com/geoda/data/nyctract_acs.zip" target="_blank">nyctract_acs.zip</a></td>
 		</tr>
-        
 
-  
+
+
   <tr>
       			<td>
       				<a href="https://geodacenter.github.io/data-and-lab/ohiolung/" target="_blank">Ohiolung</a></td>

@@ -1,6 +1,6 @@
 ---
 layout: minimal
-title: "Filter Data by Tag"
+title: ""
 permalink: /tags/index.html
 description:
 ---
@@ -54,4 +54,8 @@ description:
 <script>
 var tag = window.location.hash;
 document.getElementById(tag).style.display = "flex";
+var ptitles = document.getElementsByClassName("post-title");
+if (tag == "#500-5-000") ptitles[0].innerText = "#500-5,000";
+else if (tag == "#5-000") ptitles[0].innerText = "#5,000+";
+else ptitles[0].innerText = tag;
 </script>
