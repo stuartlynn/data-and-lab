@@ -55,7 +55,7 @@ map.fitBounds(json.getBounds());
 Homicides and selected socio-economic characteristics for continental U.S. counties. Data for four decennial census years: 1960, 1970, 1980 and 1990.
 
 * Observations = 3,085
-* Variables = 69
+* Variables = 73
 * Projection: unprojected, lat-lon
 
 

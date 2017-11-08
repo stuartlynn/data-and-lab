@@ -77,7 +77,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 
 * Variables = 84
-* Observations = 3108
+* Observations = 3,108
 * Years = 2007-2016
 
 **Sources:**
