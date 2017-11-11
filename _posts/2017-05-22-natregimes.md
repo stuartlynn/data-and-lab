@@ -7,6 +7,7 @@ description:
 main-class: 'crime'
 color:
 tags:
+- crime
 - polygons
 - space-time
 - 500-5,000

@@ -7,6 +7,7 @@ description:
 main-class: 'housing'
 color:
 tags:
+- housing
 - polygons
 - <500
 - smaller areas

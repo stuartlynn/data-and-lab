@@ -7,6 +7,7 @@ description:
 main-class: 'economics'
 color:
 tags:
+- economics
 - points
 - <500
 - ESDA

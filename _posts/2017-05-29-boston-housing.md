@@ -7,6 +7,7 @@ description:
 main-class: 'housing'
 color:
 tags:
+- housing
 - points
 - 500-5,000
 - regression

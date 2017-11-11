@@ -7,6 +7,7 @@ description:
 main-class: 'health'
 color:
 tags:
+- health
 - polygons
 - 500-5,000
 - larger areas

@@ -7,6 +7,7 @@ description:
 main-class: 'crime'
 color:
 tags:
+- crime
 - polygons
 - rates
 - space-time

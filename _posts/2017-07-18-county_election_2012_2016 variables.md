@@ -7,6 +7,7 @@ description:
 main-class: 'politics'
 color:
 tags:
+- politics
 - polygons
 - space-time
 - 500-5,000

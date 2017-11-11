@@ -7,6 +7,7 @@ description:
 main-class: 'economics'
 color:
 tags:
+- economics
 - polygons
 - <500
 - smaller areas

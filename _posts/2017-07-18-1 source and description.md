@@ -7,6 +7,7 @@ description:
 main-class: 'crime'
 color:
 tags:
+- crime
 - points
 - csv/txt
 - 5,000+

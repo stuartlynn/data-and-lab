@@ -4,9 +4,10 @@ title: "Charleston 2000 Employment"
 date: 2017-05-30 16:04:05
 image: '/assets/img/'
 description:
-main-class: 'Economics'
+main-class: 'economics'
 color:
 tags:
+- economics
 - polygons
 - <500
 - smaller areas

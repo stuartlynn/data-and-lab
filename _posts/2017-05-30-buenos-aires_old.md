@@ -7,6 +7,7 @@ description:
 main-class: 'politics'
 color:
 tags:
+- politics
 - polygons
 - <500
 - larger areas

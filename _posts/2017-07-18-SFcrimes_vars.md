@@ -7,6 +7,7 @@ description:
 main-class: 'crime'
 color:
 tags:
+- crime
 - points
 - 500-5,000
 - ESDA

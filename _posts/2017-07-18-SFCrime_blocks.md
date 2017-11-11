@@ -8,6 +8,7 @@ main-class: 'crime'
 color:
 tags:
 - polygons
+- crime
 - 500-5,000
 - smaller areas
 - open data
