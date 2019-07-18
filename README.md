@@ -1,7 +1,34 @@
+# Instructions for documenting a dataset 
 
-## NOTE
+---
 
-### Add new categories
+## How to document a dataset
+
+1. Clone repository to your computer. See below for more instructions about
+installing Jekyll, previewing the site locally, etc.
+2. With `data-and-lab` as your working directory, run the following:
+
+```
+./initdata.sh -c Chicago Socioeconomics
+```
+
+The new dataset documentation file will be created at `_posts` with the format
+`date-title.md`, ie. `2019-07-18-columbus`.
+
+3. Open the new file and fill in the sections labeled "FIXME".
+4. Add a csv with the variable and description names to `_data` - see the
+existing files in the folder for an example of what the data dictionary should
+look like.
+5. Push your changes!
+
+## Developer notes for dataset documentation
+
+- To edit the YAML template for dataset documentation, edit `initdata.sh`.
+- See `2019-07-18-columbus-template.md` for what a final documented dataset
+looks like, and `_data/columbus-template.csv` for what a data dictionary should
+look like.
+
+## How to add new categories
 
 1. go to directory category/
 2. copy a template html to create a new html page for your new directory
@@ -9,6 +36,10 @@
 ```
 {% if post.main-class == 'crime' %}
 ```
+
+# Notes from the original template below
+
+---
 
 ## Basic Setup
 
