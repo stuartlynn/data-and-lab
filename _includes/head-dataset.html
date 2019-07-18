@@ -1,0 +1,34 @@
+<!--Google Structured Data Markup -->
+    <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Dataset",
+      "name" : "{{ page.title }}",
+      "description" : "{{ page.description }}",
+      "url" : "{{ site.url }}{{ page.url }}"
+      "temporalCoverage" : "{{ page.start_date }}/{{ page.end_date }}",
+      "license" : "{{ page.license }}",
+      "distribution" : {
+        "@type" : "DataDownload",
+        "contentUrl" : "{{ page.download_link }}"
+      },
+        "keywords":[
+           {{ page.tags }}
+        ],
+      "creator":{
+         "@type":"Organization",
+         "url": "https://spatial.uchicago.edu/",
+         "name":"Center for Spatial Data Science",
+         "contactPoint":{
+            "@type":"ContactPoint",
+            "email":"spatial@uchicago.edu"
+         }
+      },
+      "includedInDataCatalog":{
+        "@type":"DataCatalog",
+        "name":"geodacenter.github.io/data-and-lab"
+      },
+      "sourceOrganization" : "{{ page.source }}"
+      "datePublished" : "{{ page.updated }}"
+    }
+    </script>

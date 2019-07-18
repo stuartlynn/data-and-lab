@@ -9,6 +9,8 @@
     <!-- Google Authorship Markup -->
     <link rel="author" href="https://plus.google.com/+{{site.gplus_username}}?rel=author">
 
+    {% if page.layout == "dataset" %}{% include head-dataset.html %}{% endif %}
+
     <!-- Social: Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@{{site.twitter_username}}">
