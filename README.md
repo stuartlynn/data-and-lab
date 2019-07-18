@@ -1,7 +1,5 @@
 # Instructions for documenting a dataset 
 
----
-
 ## How to document a dataset
 
 1. Clone repository to your computer. See below for more instructions about
@@ -38,8 +36,6 @@ look like.
 ```
 
 # Notes from the original template below
-
----
 
 ## Basic Setup
 
