@@ -75,7 +75,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
-[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/comarea.zip)
+[DOWNLOAD DATA](../data/comarea.zip)
 
 Public health and socio-economic indicators for the 77 community areas of Chicago, IL, 2014.
 

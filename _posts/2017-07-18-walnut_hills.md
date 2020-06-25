@@ -74,7 +74,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
-[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/walnuthills.zip)
+[DOWNLOAD DATA](../data/walnuthills.zip)
 
 Crime and socio-demographic data for the Clifton, Walnut Hills, Evanston, and Avondale neighborhoods in Cincinnati, OH for the last 6 months of 2008. From Grubesic, T, R. Wei and A. Murray (2014). [Spatial clustering overview and comparison: accuracy, sensitivity and computational expense.](http://www.tandfonline.com/doi/full/10.1080/00045608.2014.958389) Annals, Association of American Geographers 104, 1134-1156.
 

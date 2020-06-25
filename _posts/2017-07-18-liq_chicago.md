@@ -73,7 +73,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
-[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/liquor.zip)
+[DOWNLOAD DATA](../data/liquor.zip)
 
 Liquor stores in Chicago, IL. Scraped from Google Maps in 2015.
 

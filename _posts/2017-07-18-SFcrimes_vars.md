@@ -73,7 +73,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
-[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/SFCrime_July_Dec2012.zip)
+[DOWNLOAD DATA](../data/SFCrime_July_Dec2012.zip)
 
 Incidents of robberies, drugs/narcotics possession or sale, vehicle theft, and vandalism for July 1 to December 31, 2012. Sources: 2010 Census (population) and ["Crime Incidents from 1 Jan 2003", City of San Francisco Open Data Portal](https://data.sfgov.org/Public-Safety/Map-Crime-Incidents-from-1-Jan-2003/gxxq-x39z) (crimes).
 

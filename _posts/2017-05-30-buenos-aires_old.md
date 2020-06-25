@@ -20,7 +20,7 @@ introduction: '1999 Elections for Argentinean Congress'
 $('#map').hide();
 </script>
 
-[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/buenosaires.zip)
+[DOWNLOAD DATA](../data/buenosaires.zip)
 
 
 Selected Electoral Data for the 1999 National Elections, Argentine Congress (Lower House).

@@ -21,7 +21,7 @@ introduction: 'Boston data for hedonic house price modeling (1970s).'
 $('#map').hide();
 </script>
 
-[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/boston.zip)
+[DOWNLOAD DATA](../data/boston.zip)
 
 
 Housing and neighborhood data for the city of Boston based on research from the 1970s-90s.
@@ -35,7 +35,7 @@ Housing and neighborhood data for the city of Boston based on research from the 
 Data created from boston.c data frame in R's spdep package. Original source: [http://lib.stat.cmu.edu/datasets/boston_corrected.txt](http://lib.stat.cmu.edu/datasets/boston_corrected.txt)
 Variables and References: R spdep Manual (p. 15), available at [http://cran.us.r-project.org](http://cran.us.r-project.org)
 
-Download the file [here](https://s3.amazonaws.com/geoda/data/boston.zip).
+Download the file [here](../data/boston.zip).
 
 **References**
 Harrison, David, and Daniel L. Rubinfeld. (1978). Hedonic Housing Prices and the Demand for Clean Air, Journal of Environmental Economics and Management, Volume 5, 81- 102. Original data.

@@ -73,7 +73,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
-[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/CharlestonMSA.zip)
+[DOWNLOAD DATA](../data/CharlestonMSA.zip)
 
 2000 Census Tract Data for Charleston, SC MSA and counties. 
 

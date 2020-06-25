@@ -74,7 +74,7 @@ map.fitBounds(json.getBounds());
 
 </script>
 
-[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/SacramentoMSA2.zip)
+[DOWNLOAD DATA](../data/SacramentoMSA2.zip)
 
 
 Business data for the Sacramento-Arden-Arcade-Roseville Metropolitan Statistical Area, CA (1998 and 2001).

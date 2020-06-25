@@ -74,7 +74,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
-[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/airbnb.zip)
+[DOWNLOAD DATA](../data/airbnb.zip)
 
 This database is about Airbnb spots, socioeconomic indicators, and crime by community area in Chicago.
 

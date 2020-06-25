@@ -4,7 +4,7 @@ name: "columbus"               # one-word reference name for dataset, all lowerc
 title: "Columbus Crime 1980"              # title of dataset, e.g "Columbus Crime 1980"
 introduction: "Crime and neighborhood data for 49 neighborhoods in Columbus, OH, 1980."       # one-sentence description of dataset, e.g. "Crime and neighborhood data for 49 neighborhoods in Columbus, OH, 1980."
 description: "Crime, housing and income data for 49 neighborhoods in Columbus, OH, 1980. Textbook example."        # multiple-sentence description of dataset, e.g. "Crime, housing and income data for 49 neighborhoods in Columbus, OH, 1980. Textbook example."
-download_link: "https://s3.amazonaws.com/geoda/data/columbus.zip"      # URL of link to download dataset, e.g. "https://s3.amazonaws.com/geoda/data/columbus.zip"
+download_link: "../data/columbus.zip"      # URL of link to download dataset, e.g. "../data/columbus.zip"
 
 observations: [49, 100]         # a number, e.g. 49; a boxed, comma-separated list if multiple datasets, e.g. [49, 100]
 variables: 20           # a number, e.g. 20; a boxed, comma-separated list if multiple datasets, e.g. [20, 25]

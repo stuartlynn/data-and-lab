@@ -118,7 +118,7 @@ name: "FIXME"               # one-word reference name for dataset, all lowercase
 title: "FIXME"              # title of dataset, e.g "Columbus Crime 1980"
 introduction: "FIXME"       # one-sentence description of dataset, e.g. "Crime and neighborhood data for 49 neighborhoods in Columbus, OH, 1980."
 description: "FIXME"        # multiple-sentence description of dataset, e.g. "Crime, housing and income data for 49 neighborhoods in Columbus, OH, 1980. Textbook example."
-download_link: "FIXME"      # URL of link to download dataset, e.g. "https://s3.amazonaws.com/geoda/data/columbus.zip"
+download_link: "FIXME"      # URL of link to download dataset, e.g. "../data/columbus.zip"
 
 observations: FIXME         # a number, e.g. 49; a boxed, comma-separated list if multiple datasets, e.g. [49, 100]
 variables: FIXME            # a number, e.g. 20; a boxed, comma-separated list if multiple datasets, e.g. [20, 25]

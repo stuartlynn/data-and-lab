@@ -74,7 +74,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
-[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/election.zip)
+[DOWNLOAD DATA](../data/election.zip)
 
 
 * Variables = 84

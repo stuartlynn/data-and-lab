@@ -74,7 +74,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
-[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/denver.zip)
+[DOWNLOAD DATA](../data/denver.zip)
 
  Demographics and housing characteristics of Denver neighborhoods (2010). Source: [Denver data portal](https://www.denvergov.org/opendata/dataset/city-and-county-of-denver-census-neighborhood-demographics-2010).
 

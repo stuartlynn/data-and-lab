@@ -4,7 +4,7 @@ name: "communitypop"               # one-word reference name for dataset, all lo
 title: "Chicago Community Area Population 2010"              # title of dataset, e.g "Columbus Crime 1980"
 introduction: "Population data for 77 community areas in Chicago, IL, 2010"       # one-sentence description of dataset, e.g. "Crime and neighborhood data for 49 neighborhoods in Columbus, OH, 1980."
 description: "Population data for 77 community areas in Chicago, IL, 2010. Non-spatial file. Used in Spatial Data Handling tutorial in documentation"        # multiple-sentence description of dataset, e.g. "Crime, housing and income data for 49 neighborhoods in Columbus, OH, 1980. Textbook example."
-download_link: "https://geoda.s3.amazonaws.com/data/Community_Pop.zip"      # URL of link to download dataset, e.g. "https://s3.amazonaws.com/geoda/data/columbus.zip"
+download_link: "https://geoda.s3.amazonaws.com/data/Community_Pop.zip"      # URL of link to download dataset, e.g. "../data/columbus.zip"
 
 observations: 77         # a number, e.g. 49; a boxed, comma-separated list if multiple datasets, e.g. [49, 100]
 variables: 2            # a number, e.g. 20; a boxed, comma-separated list if multiple datasets, e.g. [20, 25]
