@@ -73,7 +73,7 @@ map.fitBounds(json.getBounds());
 
 </script>
 
-[DOWNLOAD DATA](https://s3.amazonaws.com/geoda/data/CharlestonMSA2.zip)
+[DOWNLOAD DATA](../data/CharlestonMSA2.zip)
 
 
 1998 and 2001 Zip Code Business Patterns (Census Bureau) for Charleston, SC MSA.
