@@ -38,7 +38,7 @@ For further details contact Ernesto Calvo (ecalvo@uh.edu) or Marcelo Escolar (ma
 |INDRA | Indra Code ID|
 |PROV | Indec Province Code ID|
 |CIRCUNS | Municipality ID|
-|CIRC |
+|CIRC | Precinct ID|
 |PROVINCIA | Province Name|
 |CIRCUNSCRI | Municipality Name|
 |CIRCUITO | Precinct ID|

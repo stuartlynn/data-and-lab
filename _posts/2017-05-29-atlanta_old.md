@@ -95,16 +95,18 @@ S. Messner, L. Anselin, D. Hawkins, G. Deane, S. Tolnay, R. Baller (2000). An At
 |STATE_FIPS | state FIPS code (character)|
 |CNTY_FIPS | county FIPS code (character)|
 |FIPS | combined state and county FIPS code (character)|
+|STFIPS | state FIPS code |
+|COFIPS | county FIPS code |
 |FIPSNO | fips code as numeric variable|
-|HR7984 | homicide rate per 100,000 (1979-84)|
-|HR8488 | homicide rate per 100,000 (1984-88)|
-|HR8893 | homicide rate per 100,000 (1988-93)|
-|HC7984 | homicide count (1979-84)|
-|HC8488 | homicide count (1984-88)|
-|HC8893 | homicide count (1988-93)|
-|PO7984 | population total (1979-84)|
-|PO8488 | population total (1984-88)|
-|PO8893 | population total (1988-93)|
+|HR7983 | homicide rate per 100,000 (1979-83)|
+|HR8487 | homicide rate per 100,000 (1984-87)|
+|HR8895 | homicide rate per 100,000 (1988-95)|
+|HC7983 | homicide count (1979-83)|
+|HC8487 | homicide count (1984-87)|
+|HC8895 | homicide count (1988-95)|
+|PO7983 | population total (1979-83)|
+|PO8487 | population total (1984-87)|
+|PO8895 | population total (1988-95)|
 |PE77 | police expenditures per capita, 1977|
 |PE82 | police expenditures per capita, 1982|
 |PE87 | police expenditures per capita, 1987|

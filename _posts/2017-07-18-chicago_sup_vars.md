@@ -85,9 +85,19 @@ Grocery stores in Chicago, IL as of 2015. Scraped from Google Maps in 2015.
 
 |Variable|Description
 |--
+|OBJECTID\_1|
+|OBJECTID|
+|OBJECTID\__|
+|Field1|
+|Field2|
+|Field3|
 |Field4|Street address
 |Field5|Name of the store
 |Category|New stores are marked "New," rest are left blank.
+|NEAR\_FID|
+|NEAR\_DIST|
+|NEAR\_X|
+|NEAR\_Y|
 
 Prepared by ([Center for Spatial Data Science](https://spatial.uchicago.edu/))
 Last updated January 14, 2017. Data provided "as is," no warranties.

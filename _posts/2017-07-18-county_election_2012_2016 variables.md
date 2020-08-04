@@ -90,6 +90,18 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 |Variable name|Description|
 |---|---|
+|STATEFP|State FIPS code |
+|COUNTYFP|County FIPS code |
+|COUNTYNS| |
+|AFFGEOID| |
+|GEOID| |
+|LSAD| |
+|ALAND| |
+|AWATER| |
+|county_fac| |
+|county_f_1| |
+|area_name|County name
+|state_abbr|State abbreviation
 |PST045214|Population, 2014 estimate
 |PST040210|Population, 2010 (April 1) estimates base
 |PST120214|Population, percent change - April 1, 2010 to July 1, 2014

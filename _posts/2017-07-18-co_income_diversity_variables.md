@@ -91,6 +91,24 @@ Sources:
 
 |Variable|Description|Source
 |---|---|---|
+|cartodb\_id| | |
+|awater| | |
+|aland| | |
+|lsad| | |
+|affgeoid| | |
+|countyns| | |
+|countyfp| | |
+|statefp| | |
+|cartodb\__1| | |
+|the\_geom| | |
+|countymhi| | |
+|statename| | |
+|countyname| | |
+|countyfips|County FIPS code| |
+|tractname| | |
+|name\_1| | |
+|geoid\_1| | |
+|tractce| | |
 |ratio|The county's median income divided by the state's median income|[https://philpierdo2.carto.com/me](https://philpierdo2.carto.com/me)
 |cty\_pop200|County's population in 2000|[Chetty et al. 2016](http://www.equality-of-opportunity.org/data/)
 |le\_agg\_q1\_|Female life expectancy, 1st Income Quartile, not adjusted for race.|[Chetty et al. 2016](http://www.equality-of-opportunity.org/data/)

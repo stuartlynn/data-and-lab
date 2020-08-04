@@ -67,7 +67,7 @@ Malaria incidence and population in Colombian municipalities from 1973, 95, 93 c
 
 |**Variable**|**Description**|
 |---|---|
-| IDÂ                                   | Sequential ID                        |
+| ID                                  | Sequential ID                        |
 | ADM1                                 | Departments (Administrative level 1) |
 | ADM2                                 | Municipalities (Administrative level 2)  |
 | CODDEPT                              | DANE code for departments            |

@@ -84,6 +84,7 @@ Home sales prices and charactiersitcs for Seattle and King County, WA (May 2014 
 
 |Variable|Description|
 |:-------|:----------|
+|id| Identification|
 |date|date sold|
 |price|sale price|
 |bedrooms|number of bedrooms|
