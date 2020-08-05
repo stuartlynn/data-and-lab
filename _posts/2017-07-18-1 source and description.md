@@ -19,6 +19,8 @@ twitter_text:
 introduction: '2011 abandoned vehicles in Chicago (311 complaints).'
 ---
 <script>
+$('#map').hide();
+</script>
 
 [DOWNLOAD DATA](../data/Abandoned_Vehicles_Map.csv)
 
