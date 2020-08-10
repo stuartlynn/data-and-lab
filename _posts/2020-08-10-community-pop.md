@@ -29,7 +29,7 @@ Chicago Community Area Population for 2010 (non-spatial, csv)
 * Year = 2010
 
 
-**Source**: Census population obtained from [City of Chicago](https://www.chicago.gov/city/en/depts/dcd/supp_info/community_area_2000and2010censuspopulationcomparisons.html)
+**Source**: Census population retrieved from [City of Chicago](https://www.chicago.gov/city/en/depts/dcd/supp_info/community_area_2000and2010censuspopulationcomparisons.html)
 
 |**Variable**|**Description**|
 |---|---|
