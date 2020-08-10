@@ -1,5 +1,5 @@
 ---
-layout: post
+Slayout: post
 title: "Community Population "
 date: 2020-08-10 10:10:10
 image: /assets/img/
