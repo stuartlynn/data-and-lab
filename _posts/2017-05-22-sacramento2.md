@@ -96,15 +96,16 @@ Business data for the Sacramento-Arden-Arcade-Roseville Metropolitan Statistical
 |---|---|
 |ZIP|ZIP code|
 |PO_NAME|Name of ZIP code area|
-|STATE|STATE|
-|POP2001|Population 2001| 
-|MSA|MSA name|
-|EMP98_2| EMP98  |
-|EFLAG98_2| EFLAG98 |
-|PAY98_2| PAY98 |
-|EMP01_2| EMP01 |
-|EFLAG01_2| EFLAG01 |
-|PAY01_2| PAY01 |
+|STATE|STATE abbreviation|
+|MSA|Metropolitan Statistical Area (MSA) name|
+|CBSA_CODE|U.S. Core Based Statistical (CBSA) Area code|
+|POP2001| Population 2001 |
+|EMP98| 1998 workers 16 years and over   |
+|EFLAG98| A if PAY98 missing |
+|PAY98| PAY98 |
+|EMP01| 2001 workers 16 years and over |
+|EFLAG01| A if PAY01 missing  |
+|PAY01| PAY01 |
 |MAN98|1998 total manufacturing establishments (MSA)|
 |MAN98_12|1998 total manufacturing establishments, 1-9 employees (MSA)|
 |MAN98_39|1998 total manufacturing establishments 10+ employees (MSA)|
