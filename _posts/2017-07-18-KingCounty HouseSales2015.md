@@ -75,12 +75,14 @@ map.fitBounds(json.getBounds());
 
 [DOWNLOAD DATA](../data/kingcounty.zip)
 
-Home sales prices and charactiersitcs for Seattle and King County, WA (May 2014 - 2015). [Source:](https://www.kaggle.com/harlfoxem/housesalesprediction/discussion)
+Home sales prices and charactiersitcs for Seattle and King County, WA (May 2014 - 2015) and its corresponding shape file with the zip code zones for King County.
 
 * Observations = 21,613
 * Variables = 21
 * Years = 2014-2015
 
+**Source:** 
+[House Sales in King County, USA](https://www.kaggle.com/harlfoxem/housesalesprediction). Predict house price using regression. The shape file with the zip code zones for King County was retrieved from [King county GIS Open Data ](https://gis-kingcounty.opendata.arcgis.com/datasets/zipcodes-for-king-county-and-surrounding-area-shorelines-zipcode-shore-area)
 
 |Variable|Description|
 |:-------|:----------|
@@ -105,5 +107,5 @@ Home sales prices and charactiersitcs for Seattle and King County, WA (May 2014 
 |squft\_\_ng15|average size of closest 15 houses, in square feet|
 |sqft\_lot15|average size of the closest 15 houses' lots, in square feet|
 
-Prepared by the [Center for Spatial Data Science](http://spatial.uchicago.edu/). Updated July 10, 2017. Data provided "as is," no warranties.
+Prepared by the [Center for Spatial Data Science](http://spatial.uchicago.edu/). August 14, 2020. Data provided "as is," no warranties.
 
