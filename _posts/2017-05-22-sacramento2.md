@@ -100,12 +100,12 @@ Business data for the Sacramento-Arden-Arcade-Roseville Metropolitan Statistical
 |MSA|Metropolitan Statistical Area (MSA) name|
 |CBSA_CODE|U.S. Core Based Statistical (CBSA) Area code|
 |POP2001| Population 2001 |
-|EMP98| 1998 workers 16 years and over   |
+|EMP98| Total mid-march employees, 1998 |
 |EFLAG98| A if PAY98 missing |
-|PAY98| PAY98 |
-|EMP01| 2001 workers 16 years and over |
+|PAY98| Total annual payroll ($1,000), 1998 |
+|EMP01| Total mid-march employees, 2001 |
 |EFLAG01| A if PAY01 missing  |
-|PAY01| PAY01 |
+|PAY01| Total annual payroll ($1,000), 2001 |
 |MAN98|1998 total manufacturing establishments (MSA)|
 |MAN98_12|1998 total manufacturing establishments, 1-9 employees (MSA)|
 |MAN98_39|1998 total manufacturing establishments 10+ employees (MSA)|
