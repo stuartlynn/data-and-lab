@@ -89,9 +89,11 @@ This database is about Airbnb spots, socioeconomic indicators, and crime by comm
 
 |Variable|Description|Source|
 |---|---|---|
-|community|name of community area|City of Chicago data portal
-|AREAID|ID number associated with the community area|City of Chicago data portal
-|response\_r|response rate of airbnb host|Airbnb data: [Inside Airbnb](http://insideairbnb.com/get-the-data.html) -- only public available data were used.  The data were collected on October 3rd, 2015.
+|community|name of community area|City of Chicago data portal |
+|shape_area | polygon area |
+|shape_len | polygon perimeter |
+|AREAID|ID number associated with the community area|City of Chicago data portal |
+|response\_r|response rate of airbnb host|Airbnb data: [Inside Airbnb](http://insideairbnb.com/get-the-data.html) -- only public available data were used.  The data were collected on October 3rd, 2015. |
 |accept\_r|acceptance rate of airbnb host|[Inside Airbnb](http://insideairbnb.com/get-the-data.html)|
 |rev\_rating|host's rating|[Inside Airbnb](http://insideairbnb.com/get-the-data.html)|
 |price\_pp|price per person|[Inside Airbnb](http://insideairbnb.com/get-the-data.html)|
