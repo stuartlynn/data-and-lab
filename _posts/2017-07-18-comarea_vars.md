@@ -84,9 +84,13 @@ Public health and socio-economic indicators for the 77 community areas of Chicag
 * Years = 2012-2014
 
 
-|**Variable**|**Description**|**Source**
-|--
-
+|**Variable**|**Description**|**Source**|
+|---|---|---|
+|ComAreaID| Community Area ID| |
+|community| Community Area Name | |
+|TRACTnt| Tract| |
+|shape_area| polygon area| |
+|shape_len| polygon perimeter| |
 |Pop2012|Population in 2012|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
 |Pop2014|Population in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
 |PopM|Male Population in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)

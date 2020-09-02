@@ -93,9 +93,11 @@ map.fitBounds(json.getBounds());
 |MSA|Metropolitan Statistical Area (MSA) name|
 |CBSA_CODE|U.S. Core Based Statistical (CBSA) Area code|
 |POP2001| Population 2001 |
+|EST98|Total establishments in ZIP code, 1998|
 |EMP98| Total mid-march employees, 1998 |
 |EFLAG98| A if PAY98 missing |
 |PAY98| Total annual payroll ($1,000), 1998 |
+|EST01|Total establishments in ZIP code, 2001|
 |EMP01| Total mid-march employees, 2001 |
 |EFLAG01| A if PAY01 missing  |
 |PAY01| Total annual payroll ($1,000), 2001 |
@@ -137,8 +139,6 @@ map.fitBounds(json.getBounds());
 |INFO01US_3|2001 total information establishments, 10+ employees (US)|
 |INDEX|Index|
 |NUMSEC|Number of sectors represented in ZIP code|
-|EST98|Total establishments in ZIP code, 1998|
-|EST01|Total establishments in ZIP code, 2001|
 |PCTNGE|National growth effect, percent (N)|
 |PCTIME|Industry mix effect, percent (M)|
 |PCTCSE|Competitive shift effect, percent (S)|

@@ -74,7 +74,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 </script>
 
-[DOWNLOAD DATA](../data/walnuthills.zip)
+[DOWNLOAD DATA](../data/walnuthills_updated.zip)
 
 Crime and socio-demographic data for the Clifton, Walnut Hills, Evanston, and Avondale neighborhoods in Cincinnati, OH for the last 6 months of 2008. From Grubesic, T, R. Wei and A. Murray (2014). [Spatial clustering overview and comparison: accuracy, sensitivity and computational expense.](http://www.tandfonline.com/doi/full/10.1080/00045608.2014.958389) Annals, Association of American Geographers 104, 1134-1156.
 
@@ -86,35 +86,60 @@ Crime and socio-demographic data for the Clifton, Walnut Hills, Evanston, and Av
 
 |**Variable**|**Description**|
 |:-------|:----------|
-|BLOCK|Census block|
-|TRACT|Census tract|
-|COUNTY|5 digit code for the county (Hamilton County, Ohio). Not to be confused with zip code|
-|POPULATION|Population on the block|
-|MALE, FEMALE|Population on the block broken down by gender|
-|AGE\_5, AGE\_5\_TO\_9, AGE\_10\_14, AGE\_15\_19, AGE\_20\_24, AGE\_25\_34, AGE\_35\_44, AGE\_45\_54, AGE\_55\_59, AGE\_60\_64, AGE\_65\_74, AGE\_75\_84, AGE\_85|Population on the block broken down by age|
-|MEDIAN\_AGE|Median age on the block|
-|AGE\_18, MALE\_18, FEMALE\_18, AGE\_21, AGE\_62, AGE\_65, MALE\_65, FEMALE\_65|Population aged 18 and over, 21 and over etc. Gender breakdowns included for 18-and-over and 65-and-over.|
-|F1\_RACE|Number of people who marked a race on the survey|
-|WHITE, BLACK, AMINDIAN, ASIAN, HAWAIIAN, OTHER\_RACE|Population breakdown by race|
-|F2\_RACES|Number of people who did not mark any race on the survey|
-|AP\_WHITE, AP\_BLACK, AP\_AMINDIA, AP\_ASIAN, AP\_HAWAIIA, AP\_OTHER|Population breakdown by race|
-|AP\_HISPANI, NOT\_HISPAN|Population breakdown by Hispanic and Non-Hispanic|
-|NH\_WHITE|Non-Hispanic white population|
-|IN\_HOUSEHO|Population living in households|
-|GROUP\_QUAR|Population living in group quarters instead of traditional households|
-|GQ\_INSTU, GQ\_NONINST|Population broken down by institutional and non-institutional|
-|HOUSEHOLDS|Number of households|
-|HH\_FAMILY|Number of family households|
-|HH\_NONFAMI|Number of non family households|
-|AVG\_HHSIZE|Average household size|
-|AVG\_FAMSIZ|Average family size|
-|HSNG\_UNITS|Number of housing units|
-|HU\_OCCUPIE, HU\_VACANT|Number of housing units broken down by occupied and vacant|
-|OCCHU\_OWNE, OCCHU\_RENT|Occupied housing units broken down by owner or renter occupied|
-|OWNER\_SIZE, RENTER\_SIZ|Average household size of owner and renter occupied housing units|
-|DENSITY|Population density|
-|BURGLARY, ASSAULT, THEFT|Counts of burglary, assault, and theft|
-|BURG\_D, ASSALT\_D, THEFT\_D, BURG\_D1, BURG\_D2|Crime dummy variables: '1' if there is at least 1 incident, '0' otherwise.|
+|	ID	|	Polygon ID	|
+|	AREA	|	Polygon area	|
+|	BLOCK	|	Census block ID	|
+|	BG	|	Census block group ID	|
+|	TRACT	|	Census tract ID	|
+|	COUNTY	|	5 digit code for the county (Hamilton County, Ohio). Not to be confused with zip code	|
+|	MSA	|	 Metropolitan statistical area ID	|
+|	POPULATION	|	Population on the block	|
+|	MALE, FEMALE	|	Population on the block broken down by gender	|
+|	AGE_X_Y	|	Population on the block broken down by age (From X to Y)	|
+|	MEDIAN_AGE	|	Median age on the block	|
+|	AGE_X	|	Population aged X and over}	|
+|	MALE_X	|	Male population aged X and over	|
+|	FEMALE_X	|	Female population aged X and over	|
+|	F1_RACE	|	Number of people who marked a race on the survey	|
+|	WHITE	|	White population	|
+|	BLACK 	|	Black population	|
+|	AMINDIAN	|	American Indian population	|
+|	ASIAN	|	Asian population	|
+|	HAWAIIAN	|	Hawaiian population	|
+|	OTHER_RACE	|	Population self-identified as other race (non white, black, asian or hawaiian)	|
+|	F2_RACES	|	Number of people who did not mark any race on the survey	|
+|	AP_WHITE	|	Adjusted white population	|
+|	AP_BLACK	|	Adjusted black population	|
+|	AP_AMINDIA	|	Adjusted American Indian population	|
+|	AP_ASIAN	|	Adjusted Asian population	|
+|	AP_HAWAIIA	|	Adjusted Hawaiian population	|
+|	AP_OTHER	|	Adjusted other-race population	|
+|	AP_HISPANI, NOT_HISPAN	|	Population breakdown by Hispanic and Non-Hispanic	|
+|	NH_WHITE	|	Non-Hispanic white population	|
+|	IN_HOUSEHO	|	Population living in households	|
+|	GROUP_QUAR	|	Population living in group quarters instead of traditional households	|
+|	GQ_INSTU, GQ_NONINST	|	Institutional population	|
+|	GQ_INSTU, GQ_NONINST	|	Non-institutional population	|
+|	HOUSEHOLDS	|	Number of households	|
+|	HH_FAMILY	|	Number of family households	|
+|	HH_NONFAMI	|	Number of non family households	|
+|	AVG_HHSIZE	|	Average household size	|
+|	AVG_FAMSIZ	|	Average family size	|
+|	HSNG_UNITS	|	Number of housing units	|
+|	HU_OCCUPIE  }{	|	Number of housing units occupied	|
+|	HU_VACANT	|	Number of housing units vacant	|
+|	OCCHU_OWNE	|	Occupied housing units (owner occupied)	|
+|	OCCHU_RENT	|	Occupied housing units (renter occupied)	|
+|	OWNER_SIZE	|	Average household size of owner occupied housing units	|
+|	RENTER_SIZ	|	Average household size of renter occupied housing units	|
+|	DENSITY	|	Population density	|
+|	BURGLARY	|	Counts of burglary	|
+|	ASSAULT	|	Counts of assault	|
+|	THEFT	|	Counts of theft	|
+|	BURG_D	|	Burglary dummy: ‘1’ if there is at least 1 incident, ‘0’ otherwise	|
+|	ASSALT_D	|	Assault dummy: ‘1’ if there is at least 1 incident, ‘0’ otherwise	|
+|	THEFT_D	|	Theft dummy: ‘1’ if there is at least 1 incident, ‘0’ otherwise	|
+
 
 Prepared by ([Center for Spatial Data Science](https://spatial.uchicago.edu/))
 Last updated July 6, 2017. Data provided "as is," no warranties.
