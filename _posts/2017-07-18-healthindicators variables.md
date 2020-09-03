@@ -85,10 +85,10 @@ Health indicators for Chicago neighorhoods. Source: [City of Chicago Data Portal
 
 |Variable|Description|
 |:-------|:----------|
-|area\_num| |
-|shape\_area| |
-|shape\_len| |
-|comm\_area| | 
+|area\_num| Community area ID |
+|shape\_area| Polygon area |
+|shape\_len| Shape length |
+|comm\_area| Community area name | 
 |BirthRate|Births per 1,000 residents|
 |Gener\_Rate|General fertility rate per 1,000 females 15-44|
 |LowBi\_ight|Percent of live births with low birth weight|

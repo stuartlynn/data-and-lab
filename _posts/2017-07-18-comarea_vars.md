@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Chicago Health + Socio-Economics"
+title: "Chicago Health and Socio-Economics"
 date: 2017-07-18 16:50:16
 image: /assets/img/
 description:
@@ -89,8 +89,8 @@ Public health and socio-economic indicators for the 77 community areas of Chicag
 |ComAreaID| Community Area ID| |
 |community| Community Area Name | |
 |TRACTnt| Tract| |
-|shape_area| polygon area| |
-|shape_len| polygon perimeter| |
+|shape_area| Polygon area| |
+|shape_len| Polygon perimeter| |
 |Pop2012|Population in 2012|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
 |Pop2014|Population in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
 |PopM|Male Population in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
@@ -106,7 +106,20 @@ Public health and socio-economic indicators for the 77 community areas of Chicag
 |NHP14|Native Hawaiian population in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
 |Oth14|Population of other races in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
 |Hisp14|Hispanic population in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|PopMP, PopFP, Under5P, Under18P, Over18P, Over21P, Over65P, Wht14P, Blk14P, AI14P, AS14P, NHP14P, Oth14P, Hisp14P|Proportion of each corresponding group in the overall population (2014)|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|	PopMP	|	Proportion of male in the overall population in 2014	|	[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)	|
+|	PopFP	|	Proportion of female in the overall population in 2014	|	[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)	|
+|	Under5P	|	Proportion of under 5 in the overall population in 2014	|	[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)	|
+|	Under18P	|	Proportion of under 18 in the overall population in 2014	|	[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)	|
+|	Over18P	|	Proportion of over 18 in the overall population in 2014	|	[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)	|
+|	Over21P	|	Proportion of over 21 in the overall population in 2014	|	[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)	|
+|	Over65P	|	Proportion of over 65 in the overall population in 2014	|	[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)	|
+|	Wht14P	|	Proportion of white population in 2014	|	[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)	|
+|	Blk14P	|	Proportion of black population in 2014	|	[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)	|
+|	AI14P	|	Proportion of American Indian population in 2014	|	[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)	|
+|	AS14P	|	Proportion of asian population in 2014	|	[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)	|
+|	NHP14P	|	Proportion of native hawaiian population  in 2014	|	[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)	|
+|	Oth14P	|	Proportion of other races population  in 2014	|	[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)	|
+|	Hisp14P	|	Proportion of hispanic population  in 2014	|	[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)	|
 |Property\_C|Number of property crimes|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
 |PropCrRt|Property crime rate in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
 |Violent\_C|Number of violent crimes|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
@@ -122,11 +135,15 @@ Public health and socio-economic indicators for the 77 community areas of Chicag
 |LaborFrc|Number of people in the labor force in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
 |Unemp14|Number of people unemployed in 2014|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
 |Pov50|Number of people with income below 50% of the poverty line|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Pov50P|Proportion of people with income below 50% of the poverty line|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
 |Pov125|Number of people with income below 125% of the poverty line|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Pov125P|Proportion of people with income below 125% of the poverty line|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
 |Pov150|Number of people with income below 150% of the poverty line|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Pov150P|Proportion of people with income below 150% of the poverty line|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
 |Pov185|Number of people with income below 185% of the poverty line|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Pov185P|Proportion of people with income below 185% of the poverty line|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
 |Pov200|Number of people with income below 200% of the poverty line|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
-|Pov50P . . . Pov200P|Proportion of each group in overall population (different poverty rates, 2014)|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
+|Pov200P|Proportion of people with income below 200% of the poverty line|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)S
 |SESave|Average SES|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
 |COIave|Average Childhood Opportunity Index|Chicago Dept of Public Health, Childhood Opportunity Index
 |HISave|Average Economic Hardship Index|Based on ACS 2014 data; methods: Intercity Hardship Index by Nathan and Adams
