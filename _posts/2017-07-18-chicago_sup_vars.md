@@ -79,11 +79,11 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 Grocery stores in Chicago, IL as of 2015. Scraped from Google Maps in 2015.
 
 * Variables = 7
-* Observations = 149
+* Observations = 148
 * Year = 2015
 
 
-|Variable|Description|--
+|**Variable**|**Description**|
 |	OBJECTID	|	Location ID	|
 | Xcoord	|	X-coordinate	|
 |	Ycoord	| Y-coordinate	|

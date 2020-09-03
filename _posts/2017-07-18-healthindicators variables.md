@@ -79,7 +79,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 Health indicators for Chicago neighorhoods. Source: [City of Chicago Data Portal.](https://data.cityofchicago.org/Health-Human-Services/Public-Health-Statistics-Selected-public-health-in/iqnk-2tcu). Data provided by Illinois Department of Public Health (IDPH) and U.S. Census Bureau.
 
 * Observations = 77
-* Variables = 50
+* Variables = 31
 * Years = 2005-11
 
 
