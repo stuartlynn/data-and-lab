@@ -50,43 +50,34 @@ introduction: "Malaria Incidence in Colombian municipalities"
 
 [DOWNLOAD DATA](../data/malariacolomb.zip)
 
-Malaria incidence and population in Colombian municipalities from 1973, 95, 93 censuses and projections until 2005.            
+Malaria incidence in 1998,  population from 1973, 1985, 1993 censuses, and projected population from 1995 to 2005.            
 
 * Observations = Municipalities: 1,068, Departments: 33
 * Variables = 50
 * Years = 1973-2005
 
 **Source:**
- Modified from the boundary files downloaded from http://www.cipotato.org/. Malaria incidence in 1998. (Source:   SIVIGILA. Ministerio de Salud, Colombia. There are 3 files for each year     from 1995-2005. Projections from Departamento Administrativo Nacional de Estada­stica DANE, Colombia). 
+ Modified from the boundary files downloaded from http://www.cipotato.org/. Malaria incidence in 1998. (Source:   SIVIGILA. Ministerio de Salud, Colombia.There are 3 files for each year     from 1995-2005. Projections from Departamento Administrativo Nacional de Estadastica DANE, Colombia). 
 
 |**File**|**Description**|
 |---|---|
-|colmunic.shp/shx/dbf | Malaria incidence and  population from 1973, 1985, 1993 censuses and projections until 2005 (Administrative level 2)|
-| coldept.shp/shx/dbf | Data for Colombian departments (Administrative level 1) |
+|colmunic | Data at administrative level 2 (Counties) |
+|coldept | Data at administrative level 1 (States) |
 
 
 |**Variable**|**Description**|
 |---|---|
-| ID                                  | Sequential ID                        |
-| ADM1                                 | Departments (Administrative level 1) |
-| ADM2                                 | Municipalities (Administrative level 2)  |
-| CODDEPT                              | DANE code for departments            |
-| DANECODE                             | DANE code for municipalities         |
-| IDDANE                               | DANE code for municipalities in numeric format |
-| TP1973                               | Total population from census in 1973 |
-| UP1973                               | Urban population form census in 1973 |
-| RP1973                               | Rural population from census in 1973 |
-| TP1985                               | Total population from census in 1985 |
-| UP1985                               | Urban population form census in 1985 |
-| RP1985                               | Rural population from census in 1985 |
-| TP1993                               | Total population from census in 1993 |
-| UP1993                               | Urban population form census in 1993 |
-| RP1993                               | Rural population from census in 1993 |
-| MALARI98                             | Malaria incidence in 1998. |
-| TPyyyy                               | Total population projected in year    yyyy    |
-| UPyyyy                               | Urban population projected in year    yyyy    |
-| RPyyyy                               | Rural population projected in year   yyyy     |
-                                    
+|	ID	|	Sequencial ID	|
+|	ADM0	|	Country name	|
+|	ADM1	|	Departmentos=States (Administrative level 1)	|
+|	ADM2	|	Municipioss=Counties (Administrative level 2)	|
+|	IDDANE	|	DANE (Colombian National Bureau of Statistics) code for counties in numeric format	|
+|	DANECODE	|	DANE (Colombian National Bureau of Statistics) code for counties in character format	|
+|	CODDEPT	|	DANE (Colombian National Bureau of Statistics) code for states 	|
+|	TPyyyy	|	Total population from census in year 'yyyy' (1973, 1985, and 1993 have census population, the remaning years have projected population)	|
+|	UPyyyy	|	Urban population from census in year 'yyyy' (1973, 1985, and 1993 have census population, the remaning years have projected population)	|
+|	RPyyyy	|	Rural population from census in year 'yyyy' (1973, 1985, and 1993 have census population, the remaning years have projected population)	|
+|	MALARI98	|	Malaria incidence in 1998 |                                 
 
 Prepared by Luis Galvis. Last updated June 20, 2005. Data provided "as is," no warranties.
 

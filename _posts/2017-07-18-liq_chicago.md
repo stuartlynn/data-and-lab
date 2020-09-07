@@ -82,8 +82,8 @@ Liquor stores in Chicago, IL. Scraped from Google Maps in 2015.
 
 |**Variable**|**Description**|
 |---|---|
-|ID|Unique numeric ID|
-|Place ID|Unique string ID|
+|id|Unique numeric ID|
+|placeid|Unique string ID|
 
 
 Prepared by ([Center for Spatial Data Science](https://spatial.uchicago.edu/)).Last updated July 5, 2017. Data provided "as is," no warranties.

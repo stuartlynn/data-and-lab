@@ -75,37 +75,55 @@ map.fitBounds(json.getBounds());
 
 [DOWNLOAD DATA](../data/kingcounty.zip)
 
-Home sales prices and charactiersitcs for Seattle and King County, WA (May 2014 - 2015) and its corresponding shape file with the zip code zones for King County.
+Home sales prices and characteristics for Seattle and King County, WA (May 2014 - 2015) and its corresponding shape file with the zip code zones for King County.
 
 * Observations = 21,613
 * Variables = 21
 * Years = 2014-2015
 
 **Source:** 
-[House Sales in King County, USA](https://www.kaggle.com/harlfoxem/housesalesprediction). Predict house price using regression. The shape file with the zip code zones for King County was retrieved from [King county GIS Open Data ](https://gis-kingcounty.opendata.arcgis.com/datasets/zipcodes-for-king-county-and-surrounding-area-shorelines-zipcode-shore-area)
+[House Sales in King County, USA](https://www.kaggle.com/harlfoxem/housesalesprediction). Predict house price using regression. The shape file with the zip code zones for King County was retrieved from [King county GIS Open Data ](https://gis-kingcounty.opendata.arcgis.com/datasets/zipcodes-for-king-county-and-surrounding-area-shorelines-zipcode-shore-area). Additional information of the variables descriptions can be found in ([King County Home Sales  analysis](https://rstudio-pubs-static.s3.amazonaws.com/155304_cc51f448116744069664b35e7762999f.html)).
 
-|Variable|Description|
+
+King county housing file description:
+
+|**Variable**|**Description**|
 |:-------|:----------|
 |id| Identification|
 |date|date sold|
 |price|sale price|
 |bedrooms|number of bedrooms|
 |bathrooms|number of bathrooms|
-|sqft\_\_ving|size of living area in square feet|
+|sqft\_liv|size of living area in square feet|
 |sqft\_lot|size of the lot in square feet|
 |floors|number of floors|
 |waterfront|'1' if the property has a waterfront, '0' if not.|
-|view|An index from 0 to 4 of how good the view of the property was ([definition:](https://rstudio-pubs-static.s3.amazonaws.com/155304_cc51f448116744069664b35e7762999f.html))|
+|view|An index from 0 to 4 of how good the view of the property was |
 |condition|condition of the house, ranked from 1 to 5|
-|grade|Classification by construction quality which refers to the types of materials used and the quality of workmanship. Buildings of better quality (higher grade) cost more to build per unit of measure and command higher value. ([definition:](http://info.kingcounty.gov/assessor/esales/Glossary.aspx?type=r))|
+|grade|Classification by construction quality which refers to the types of materials used and the quality of workmanship. Buildings of better quality (higher grade) cost more to build per unit of measure and command higher value. Additional information in: ([KingCounty](http://info.kingcounty.gov/assessor/esales/Glossary.aspx?type=r))|
 |sqft\_above|square feet above ground|
-|sqft\_\_ment|square feet below ground|
+|sqft\_basmt|square feet below ground|
 |yr\_built|year built|
-|yr\_re\_ated|year renovated. '0' if never renovated|
+|yr\_renov|year renovated. '0' if never renovated|
 |zipcode|5 digit zip code|
-|lat, long|latitude and longitude|
-|squft\_\_ng15|average size of closest 15 houses, in square feet|
-|sqft\_lot15|average size of the closest 15 houses' lots, in square feet|
+|lat | latitude |
+|long | longitude| 
+|squft\_liv15|average size of interior housing living space for the closest 15 houses, in square feet	|
+|squft\_lot15|average size of land lost for the closest 15 houses, in square feet	|
+|Shape_leng	|	Polygon length in meters  |
+|Shape_Area	|	Polygon area in meters |
+
+King county zones file description:
+
+|**Variable**|**Description**|
+|:-------|:----------|
+|OBJECTID|	ID code	|
+|ZIP|	Zip code |
+|COUNTY|	County code	|
+|ZIP_TYPE|	Zip code type: standard or PO box	|
+|Shape_Leng|	Polygon length	|
+|Shape_Area|	Polygon area	|
+
 
 Prepared by the [Center for Spatial Data Science](http://spatial.uchicago.edu/). August 14, 2020. Data provided "as is," no warranties.
 
