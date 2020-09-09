@@ -83,7 +83,7 @@ Health indicators for Chicago neighorhoods. Source: [City of Chicago Data Portal
 * Years = 2005-11
 
 
-|Variable|Description|
+|**Variable**|**Description**|
 |:-------|:----------|
 |area\_num| Community area ID |
 |shape\_area| Polygon area |

@@ -89,7 +89,7 @@ Sources:
 * Year = 2000
 
 
-|Variable|Description|Source
+|**Variable**|**Description**|**Source** |
 |---|---|---|
 |	cartodb_id	|	Carto ID	| |
 |	countyfp	|	County FIPS ID	|  |
