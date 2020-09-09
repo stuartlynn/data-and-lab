@@ -80,8 +80,8 @@ Incidents of robberies, drugs/narcotics possession or sale, vehicle theft, and v
 * Year = 2012
 
 **Car thefts:**
-* Observations = 607
-* Variables = 18
+* Observations = 3,384
+* Variables = 13
 
 **Drugs:**
 * Observations = 3,897
@@ -96,14 +96,10 @@ Incidents of robberies, drugs/narcotics possession or sale, vehicle theft, and v
 * Variables = 13
 
 **Data Source:** 
-San Francisco Police Department Crime Incident Reporting System
-* http://www.sfgov.org
-* Crime Incidents: https://data.sfgov.org/Public-Safety/Crime-Incidents/snsg-xkfg
-* SFPD Plots: https://data.sfgov.org/Public-Safety/SFPD-Crime-Reporting-Plots-Zipped-Shapefile-Format/5aii-qc4e
+San Francisco Police Department Crime Incident Reporting System. Retrieved from: [http://www.sfgov.org](http://www.sfgov.org). Crime Incidents source: [https://data.sfgov.org/Public-Safety/Crime-Incidents/snsg-xkfg](https://data.sfgov.org/Public-Safety/Crime-Incidents/snsg-xkfg). SFPD Plots source: [https://data.sfgov.org/Public-Safety/SFPD-Crime-Reporting-Plots-Zipped-Shapefile-Format/5aii-qc4e](https://data.sfgov.org/Public-Safety/SFPD-Crime-Reporting-Plots-Zipped-Shapefile-Format/5aii-qc4e)
 
 **License:**
-* Creative Commons license (CC0 1.0 Universal)
-* http://creativecommons.org/publicdomain/zero/1.0/legalcode
+* Creative Commons license (CC0 1.0 Universal). [http://creativecommons.org/publicdomain/zero/1.0/legalcode](http://creativecommons.org/publicdomain/zero/1.0/legalcode)
 
 **Data Extracted on January 10, 2013:**
 * Incidents of robberies, drugs/narcotics possession or sale, vehicle theft, and vandalism for July 1 to December 31, 2012 (4 separate point shapefiles).
@@ -126,19 +122,22 @@ Datum: 	D_North_American_1983
 Prime Meridian: 	Greenwich
 Angular Unit: 	Degree
 
-| Variable | Description |
+| **Variable** | **Description** |
 |--
-| IncidntNum, IncidntN_1 | Unique number for each incident report |
-| X_pr, Y_pr | projected coordinates
-| Category | Vehicle theft |
-| Descript | Description of the crime |
-| DayOfWeek | day of the week that crime was reported |
-| PdDistrict | Police district |
-| Resolution | Outcome of the report, e.g. None, Arrest, Unfounded etc |
-| Location | Street address where the crime occurred |
-| Date | Date of the report |
-| Time | Time of report|
-| X, Y | Coordinates of crime location |
+|	IncidntNum	|	Unique identifier for each incident report	|
+|	X_pr	|	Projected X-coordinates	|
+|	Y_pr	|	Projected Y-coordinates	|
+|	Category	|	Crime classification (robberies, drugs/narcotics possession or sale, vehicle theft, and vandalism)	|
+|	Descript	|	Description of the crime	|
+|	DayOfWeek	|	Day of the week that crime was reported	|
+|	Date	|	Date of the report	|
+|	Time	|	Time of report	|
+|	PdDistrict	|	Police district	|
+|	Resolution	|	Outcome of the report, e.g. None, Arrest, Unfounded, etc	|
+|	Location	|	Street address where the crime occurred	|
+|	X	|	X-Coordinates of crime location	|
+|	Y	|	Y-Coordinates of crime location	|
+
 
 Prepared by ([Center for Spatial Data Science](https://spatial.uchicago.edu/))
 Last updated July 3, 2017. Data provided "as is," no warranties.

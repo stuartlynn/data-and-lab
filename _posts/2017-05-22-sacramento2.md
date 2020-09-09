@@ -81,18 +81,12 @@ Business data for the Sacramento-Arden-Arcade-Roseville Metropolitan Statistical
 
 **Source**: 1998 and 2001 Zip Code Business Patterns, US Census Bureau
 
-* Observations = 83
-* Variables = 63
+* Observations = 125
+* Variables = 58
 * Years = 1998, 2001
 
 
-
 |**Variable**|**Description**|
-
- [1] "ZIP"        "PO_NAME"    "STATE"      "POP2001"    "MSA"        "EST98_2"   
- [7] "EMP98_2"    "EFLAG98_2"  "PAY98_2"    "EST01_2"    "EMP01_2"    "EFLAG01_2" 
-[13] "PAY01_2" 
-
 |---|---|
 |ZIP|ZIP code|
 |PO_NAME|Name of ZIP code area|
