@@ -97,7 +97,7 @@ Crime and socio-demographic data for the Clifton, Walnut Hills, Evanston, and Av
 |	MALE, FEMALE	|	Population on the block broken down by gender	|
 |	AGE_X_Y	|	Population on the block broken down by age (From X to Y)	|
 |	MEDIAN_AGE	|	Median age on the block	|
-|	AGE_X	|	Population aged X and over}	|
+|	AGE_X	|	Population aged X and over	|
 |	MALE_X	|	Male population aged X and over	|
 |	FEMALE_X	|	Female population aged X and over	|
 |	F1_RACE	|	Number of people who marked a race on the survey	|

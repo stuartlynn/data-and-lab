@@ -82,7 +82,7 @@ Business data for the Sacramento-Arden-Arcade-Roseville Metropolitan Statistical
 **Source**: 1998 and 2001 Zip Code Business Patterns, US Census Bureau
 
 * Observations = 125
-* Variables = 58
+* Variables = 53
 * Years = 1998, 2001
 
 

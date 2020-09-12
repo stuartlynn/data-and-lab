@@ -76,11 +76,14 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 [DOWNLOAD DATA](../data/healthIndicators.zip)
 
-Health indicators for Chicago neighorhoods. Source: [City of Chicago Data Portal.](https://data.cityofchicago.org/Health-Human-Services/Public-Health-Statistics-Selected-public-health-in/iqnk-2tcu). Data provided by Illinois Department of Public Health (IDPH) and U.S. Census Bureau.
+Health indicators for Chicago neighorhoods.
 
 * Observations = 77
 * Variables = 31
 * Years = 2005-11
+
+**Source:**
+[City of Chicago Data Portal.](https://data.cityofchicago.org/Health-Human-Services/Public-Health-Statistics-Selected-public-health-in/iqnk-2tcu). Data provided by Illinois Department of Public Health (IDPH) and U.S. Census Bureau.
 
 
 |**Variable**|**Description**|
@@ -91,9 +94,9 @@ Health indicators for Chicago neighorhoods. Source: [City of Chicago Data Portal
 |comm\_area| Community area name | 
 |BirthRate|Births per 1,000 residents|
 |Gener\_Rate|General fertility rate per 1,000 females 15-44|
-|LowBi\_ight|Percent of live births with low birth weight|
-|Prena\_ster|Percent of live births who had prenatal care beginning in first trimester|
-|Prete\_rths|Preterm births as percent of live births|
+|LowBi\_ight|Percentageage of live births with low birth weight|
+|Prena\_ster|Percentage of live births who had prenatal care beginning in first trimester|
+|Prete\_rths|Preterm births as percentage of live births|
 |TeenB\_Rate|Teen birth rate per 1,000 females age 15-19|
 |Assa\_cide|Assault(homicide) per 100,000 people, age adjusted.|
 |Breas\_ales|Breast cancer deaths per 100,000 females, age adjusted.|
@@ -110,12 +113,12 @@ Health indicators for Chicago neighorhoods. Source: [City of Chicago Data Portal
 |Gonor\_ales|Gonorrhea in females, per 100,000 females age 15-44|
 |Gono\_ales\_1|Gonorrhea in females, per 100,000 females age 15-44|
 |Tuber\_osis|Tuberculosis per 100,000 people|
-|Below\_evel|Percent of households below poverty level|
-|Crowd\_sing|Percent of occupied housing units|
-|Dependency|Percent of persons aged less than 16 or more than 64 years|
-|NoHig\_loma|Percent of persons age 25 or higher without high school diploma|
+|Below\_evel|Percentage of households below poverty level|
+|Crowd\_sing|Percentage of occupied housing units|
+|Dependency|Percentage of persons aged less than 16 or more than 64 years|
+|NoHig\_loma|Percentage of persons age 25 or higher without high school diploma|
 |PerCa\_come|Percapita income, 2011 adjusted dollars|
-|Unemp\_ment|Unemployment as a percent of persons aged 16 or older|
+|Unemp\_ment|Unemployment as a percentage of persons aged 16 or older|
 
 Prepared by Jingyuan Zhou. Last updated July 10, 2017. Data provided "as is", no warranties.
 

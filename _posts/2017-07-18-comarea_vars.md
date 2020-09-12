@@ -83,12 +83,15 @@ Public health and socio-economic indicators for the 77 community areas of Chicag
 * Observations = 77
 * Years = 2012-2014
 
+**Source**
+Economic Hardship Index method based on the Intercity Hardship Index, by Richard P. Nathan and Charles F. Adams, Jr. in *Understanding Urban Hardship*, Political Science Quarterly 91 (Spring 1976): 47-62.)
+
 
 |**Variable**|**Description**|**Source**|
 |---|---|---|
 |ComAreaID| Community Area ID| |
 |community| Community Area Name | |
-|TRACTnt| Tract| |
+|TRACTnt| Tract ID| |
 |shape_area| Polygon area| |
 |shape_len| Polygon perimeter| |
 |Pop2012|Population in 2012|[American Community Survey 2014](http://www.cmap.illinois.gov/data/metropulse/community-snapshots)
@@ -170,7 +173,6 @@ Public health and socio-economic indicators for the 77 community areas of Chicag
 |GonorrM|Gonorrhea in males, per 10,000 females age 15-44|[City of Chicago Data Portal](https://data.cityofchicago.org/Health-Human-Services/Public-Health-Statistics-Selected-public-health-in/iqnk-2tcu)
 |Tuberc|Tuberculosis per 100,000 persons|[City of Chicago Data Portal](https://data.cityofchicago.org/Health-Human-Services/Public-Health-Statistics-Selected-public-health-in/iqnk-2tcu)
 
-Economic Hardship Index method based on the Intercity Hardship Index, by Richard P. Nathan and Charles F. Adams, Jr. in *Understanding Urban Hardship*, Political Science Quarterly 91 (Spring 1976): 47-62.)
 
 Prepared by ([Center for Spatial Data Science](https://spatial.uchicago.edu/)). Last updated July 6, 2017. Data provided "as is," no warranties.
 

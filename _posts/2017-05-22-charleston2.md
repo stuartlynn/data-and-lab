@@ -89,7 +89,7 @@ map.fitBounds(json.getBounds());
 |---|---|
 |ZIP|ZIP code|
 |PO_NAME|Name of ZIP code area|
-|STATE|STATE abbreviation|
+|STATE|State abbreviation|
 |MSA|Metropolitan Statistical Area (MSA) name|
 |CBSA_CODE|U.S. Core Based Statistical (CBSA) Area code|
 |POP2001| Population 2001 |

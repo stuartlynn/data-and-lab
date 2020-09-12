@@ -78,15 +78,15 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
  Income, race, and public health statistics for US counties.
  
-Sources:
-- [philpierdo2](https://philpierdo2.carto.com/me)
-- [Kaggle](https://www.kaggle.com/mikejohnsonjr/us-counties-diversity-index)
-- [Chetty, Stepner, Abraham, Lin, Scuderi, Turner, Bergeron, and Cutler (2016). The Association Between Income and Life Expectancy in the United States, 2001-2014. Health Statistics by County.](http://www.equality-of-opportunity.org/data/)
-
-
 * Observations = 3,984
 * Variables = 64
 * Year = 2000
+
+**Sources:**
+- The income ratio map. [philpierdo2](https://philpierdo2.carto.com/me)
+- Diversity Index of US counties, [Kaggle](https://www.kaggle.com/mikejohnsonjr/us-counties-diversity-index).
+- Chetty, Stepner, Abraham, Lin, Scuderi, Turner, Bergeron, and Cutler (2016). The Association Between Income and Life Expectancy in the United States, 2001-2014. Health Statistics by County. [The Equality of Opportunity Project](http://www.equality-of-opportunity.org/data/).
+
 
 
 |**Variable**|**Description**|**Source** |

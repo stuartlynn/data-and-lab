@@ -80,10 +80,10 @@ map.fitBounds(json.getBounds());
 2000 Employment and Demographic Census Tract Data (Summary File 3) for Sacramento MSA (OMB's 2003 MSA Definition).
 
 * Observations = 403
-* Variables = 31
+* Variables = 30
 * Year = 2000
 
-**Source**: 2000 Census, Summary File 3. Available at http://factfinder.census.gov.
+**Source**: 2000 Census, Summary File 3. Available at [http://factfinder.census.gov](http://factfinder.census.gov).
 
 |**Variable**|**Census Label**|**Description**|
 |---|---|---|
