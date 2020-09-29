@@ -30,8 +30,7 @@ Selected Electoral Data for the 1999 National Elections, Argentine Congress (Low
 * Observations = 209 Electoral Precincts (Circuitos) of the City of Buenos Aires, Argentina
 * Variables = 21
 
-**Source**
-For further details contact Ernesto Calvo (ecalvo@uh.edu) or Marcelo Escolar (marceloescolar@fibertel.com.ar).
+**Data overview**
 
 |**Variable** | **Description**|
 |---|---|
@@ -57,5 +56,10 @@ For further details contact Ernesto Calvo (ecalvo@uh.edu) or Marcelo Escolar (ma
 |AL99PC | Percentage of Alianza Votes over Valid Votes (for use in GeoDa)|
 |TURN99PC | Percentage of Effective Votes over Valid Votes (for use in GeoDa)|
 
-Prepared by Luc Anselin.
-Last updated June 3, 2004
+**Source**
+
+For further details contact Ernesto Calvo (ecalvo@uh.edu) or Marcelo Escolar (marceloescolar@fibertel.com.ar).
+
+* * * * *
+
+Prepared by Luc Anselin. Last updated June 3, 2004.

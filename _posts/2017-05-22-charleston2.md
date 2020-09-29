@@ -53,8 +53,6 @@ txt += "<br/>";
 layer.bindPopup(txt);
 }
 
-
-// load GeoJSON from an external file
 // load GeoJSON from an external file
 $.getJSON("../data/charleston2.geojson",function(data){
 // add GeoJSON layer to the map once the file is loaded
@@ -82,8 +80,7 @@ map.fitBounds(json.getBounds());
 * Variables = 97
 * Year = 1998, 2001
 
-
-**Source**: 1998 and 2001 Zip Code Business Patterns, US Census Bureau.
+**Data overview**
 
 |**Variable**|**Description**|
 |---|---|
@@ -144,5 +141,9 @@ map.fitBounds(json.getBounds());
 |PCTCSE|Competitive shift effect, percent (S)|
 |PCTGRO|Percent growth establishments, 1998-2001 (R)|
 |ID|Unique ZIP code ID for ID variables in weights matrix creation window|
+
+**Source**: 1998 and 2001 Zip Code Business Patterns, US Census Bureau.
+
+* * * * * 
 
 Prepared by [Center for Spatial Data Science](https://spatial.uchicago.edu/) Last updated in 2004. Data provided "as is," no warranties.

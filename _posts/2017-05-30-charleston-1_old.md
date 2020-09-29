@@ -55,7 +55,6 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 
 
   // load GeoJSON from an external file
-  // load GeoJSON from an external file
   $.getJSON("../data/charleston.geojson",function(data){
     // add GeoJSON layer to the map once the file is loaded
     var json = L.geoJson(data, {
@@ -82,8 +81,7 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 * Variables = 30
 * Year = 1999
 
-**Source**
-2000 Census, Summary File 3. Available at [http://factfinder.census.gov](http://factfinder.census.gov). Note that the poverty variable names can be easily confused: pov_pop is the reference population (i.e. total population); pov_tot is all poor persons.
+**Data overview**
 
 |**Variable**|**Census Label**|**Description**|
 |---|---|---|
@@ -117,6 +115,12 @@ $('#map').on('mouseout', function(){ map.scrollWheelZoom.disable();});
 |	POV_TOT*	|	P087002 	|	Population for whom poverty status is determined: Income in 1999 below poverty level	|
 |	HSG_VAL	|	H085001	|	Owner-occupied housing units: Median value	|
 |	POLYID	|		|	Unique ID	|
+
+**Source**
+
+2000 Census, Summary File 3. Available at [http://factfinder.census.gov](http://factfinder.census.gov). Note that the poverty variable names can be easily confused: pov_pop is the reference population (i.e. total population); pov_tot is all poor persons.
+
+* * * * * 
 
 Prepared by [Center for Spatial Data Science](https://spatial.uchicago.edu/)
 Last updated 2004. Data provided "as is," no warranties.

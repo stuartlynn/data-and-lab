@@ -58,19 +58,25 @@ layer.bindPopup(txt);
 // load GeoJSON from an external file
 $.getJSON("../data/KingCountyHouseSales2015.geojson",function(data){
 // add GeoJSON layer to the map once the file is loaded
+    var geojsonMarkerOptions = {
+    radius: 3,
+    fillColor: "#0D0887",
+    color: "#000",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 0.8
+};
 var json = L.geoJson(data, {
-pointToLayer: function(feature, latlng) {
-
-return L.marker(latlng, {
-icon: smallIcon
-});
-},
-onEachFeature: onEachFeature
-});
-json.addTo(map);
-map.fitBounds(json.getBounds());
-});
-
+      pointToLayer: function(feature, latlng) {
+        
+        return L.circleMarker(latlng, geojsonMarkerOptions);
+      },
+      onEachFeature: onEachFeature
+    });
+    json.addTo(map);
+    map.fitBounds(json.getBounds());
+  });
+  
 </script>
 
 [DOWNLOAD DATA](../data/kingcounty.zip)

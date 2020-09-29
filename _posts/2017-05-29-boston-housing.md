@@ -31,21 +31,7 @@ Housing and neighborhood data for the city of Boston based on research from the 
 * Variables = 23
 * Years = 1970s
 
-**Source**
-Data created from boston.c data frame in R's spdep package. Original source: [http://lib.stat.cmu.edu/datasets/boston_corrected.txt](http://lib.stat.cmu.edu/datasets/boston_corrected.txt)
-Variables and References: R spdep Manual (p. 15), available at [http://cran.us.r-project.org](http://cran.us.r-project.org)
-
-Download the file [here](../data/boston.zip).
-
-**References**
-Harrison, David, and Daniel L. Rubinfeld. (1978). Hedonic Housing Prices and the Demand for Clean Air, Journal of Environmental Economics and Management, Volume 5, 81- 102. Original data.
-
-Gilley, O.W., and R. Kelley Pace. (1996). On the Harrison and Rubinfeld Data, Journal of Environmental Economics and Management, 31, 403-405. Provided corrections and examined censoring.
-
-Pace, R. Kelley, and O.W. Gilley. (1997). Using the Spatial Configuration of the Data to Improve Estimation, Journal of the Real Estate Finance and Economics, 14, 333-340.
-
-**Notes**
-In R, use library(MASS) and write.matrix (frame or matrix name, file="output file",sep=",") to write data frames or matrices to a file.
+**Data overview**
 
 |**Variable**|**Description**|
 |----|----|
@@ -73,4 +59,21 @@ In R, use library(MASS) and write.matrix (frame or matrix name, file="output fil
 |B | A numeric vector of 1000*(Bk - 0.63)^2 where Bk is the proportion of blacks|
 |LSTAT | A numeric vector of percentage values of lower status population|
 
+**Source**
+Data created from boston.c data frame in R's spdep package. Original source: [http://lib.stat.cmu.edu/datasets/boston_corrected.txt](http://lib.stat.cmu.edu/datasets/boston_corrected.txt)
+Variables and References: R spdep Manual (p. 15), available at [http://cran.us.r-project.org](http://cran.us.r-project.org)
+
+Download the file [here](../data/boston.zip).
+
+**References**
+Harrison, David, and Daniel L. Rubinfeld. (1978). Hedonic Housing Prices and the Demand for Clean Air, Journal of Environmental Economics and Management, Volume 5, 81- 102. Original data.
+
+Gilley, O.W., and R. Kelley Pace. (1996). On the Harrison and Rubinfeld Data, Journal of Environmental Economics and Management, 31, 403-405. Provided corrections and examined censoring.
+
+Pace, R. Kelley, and O.W. Gilley. (1997). Using the Spatial Configuration of the Data to Improve Estimation, Journal of the Real Estate Finance and Economics, 14, 333-340.
+
+**Notes**
+In R, use library(MASS) and write.matrix (frame or matrix name, file="output file",sep=",") to write data frames or matrices to a file.
+
+* * * * *
 Prepared by Luc Anselin. Last updated June 3, 2004. Data provided "as is," no warranties.
