@@ -33,7 +33,7 @@ layout: default
   :textbook
   :Anselin lab" | split: ":" %}
       {% for tag in mytags %}
-        <a href="tags/#{{ tag | slugify }}">{{ tag }}</a>
+        <a href="/tags/#{{ tag | slugify }}">{{ tag }}</a>
       {% endfor %}
     </div>
   </article>
