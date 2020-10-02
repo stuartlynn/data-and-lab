@@ -9,11 +9,11 @@ description:
 {% assign tags_list = site.tags %}
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list %}
-        <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}" onclick="location.reload()">{{ tag }}</a>
+        <a href="{{ site.baseurl }}tags/#{{ tag | slugify }}" onclick="location.reload()">{{ tag }}</a>
     {% endfor %}
   {% else %}
     {% for tag in tags_list %}
-        <a href="{{ site.baseurl }}/tags/#{{ tag[0] | slugify }}" onclick="location.reload()">{{ tag[0] }}</a>
+        <a href="{{ site.baseurl }}tags/#{{ tag[0] | slugify }}" onclick="location.reload()">{{ tag[0] }}</a>
     {% endfor %}
   {% endif %}
 {% assign tags_list = nil %}
