@@ -115,7 +115,7 @@ King county housing file description:
 |lat | Latitude |
 |long | Longitude| 
 |squft\_liv15|Average size of interior housing living space for the closest 15 houses, in square feet	|
-|squft\_lot15|Average size of land lost for the closest 15 houses, in square feet	|
+|squft\_lot15|Average size of land lots for the closest 15 houses, in square feet	|
 |Shape_leng	|	Polygon length in meters  |
 |Shape_Area	|	Polygon area in meters |
 
